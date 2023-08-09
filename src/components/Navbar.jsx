@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import logo from "../components/logo.png";
+import logo2 from "../components/logo-vercel.png";
 const navLinks = [
   {
     path: "/showcase",
@@ -35,16 +36,12 @@ const Navbar = () => {
     <nav className="mx-3">
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
-          <Image src={logo} className="w-1/2  lg:w-1/4"></Image>
+          <Image src={logo} className="w-1/2 lg:w-1/4"></Image>
 
-          <Link
-            href="/"
-            className="w-full text-2xl
-        lg:text-3xl uppercase font-medium"
-          >
+          <Link href="/" className="text-2xl lg:text-3xl uppercase font-medium">
             Next<span className="text-sm">-Docs Hub</span>
           </Link>
-          <div className="dropdown w-full">
+          <div className="dropdown ">
             <ul
               tabIndex={0}
               className="menu menu-sm  dropdown-content mt-5 z-[1] p-5 shadow bg-base-100 rounded-box w-52"
@@ -99,7 +96,7 @@ const Navbar = () => {
         />
         <div className="invisible lg:visible navbar-end ">
           <Link href="/deploy" className="btn btn-sm btn-outline">
-            Deploy
+            <Image src={logo2} className="w-5 h-5"></Image>Deploy
           </Link>
 
           <Link href="/learn" className="btn btn-sm btn-neutral mx-3">
