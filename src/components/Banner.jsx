@@ -18,7 +18,7 @@ const Banner = () => {
 
     });
     return (
-        <div className="py-36  h-96 bg-white text-center">
+        <div className="py-32  h-96 bg-white text-center">
             <div className="max-w-6xl mx-auto  px-4">
                 <div className="">
                     <div className=''>
@@ -35,7 +35,7 @@ const Banner = () => {
                         </a>
                         <a
                             href="/docs"
-                            className="bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-full transition duration-300"
+                            className="bg-gray-200 text-white hover:bg-blue-600 py-2 px-4 rounded-full transition duration-300"
                         >
                             Learn Next.js
                         </a>
