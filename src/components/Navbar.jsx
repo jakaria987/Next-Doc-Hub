@@ -41,7 +41,7 @@ const Navbar = () => {
           <Link href="/" className="text-2xl lg:text-3xl uppercase font-medium">
             Next<span className="text-sm">-Docs Hub</span>
           </Link>
-          <div className="dropdown ">
+          <div className="dropdown ms-60 lg:m-0">
             <ul
               tabIndex={0}
               className="menu menu-sm  dropdown-content mt-5 z-[1] p-5 shadow bg-base-100 rounded-box w-52"
