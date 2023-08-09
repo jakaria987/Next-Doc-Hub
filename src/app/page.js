@@ -1,9 +1,12 @@
-const page = () => {
-  return (
-    <div>
-      <h5></h5>
-    </div>
-  );
-};
+import Banner from '@/components/Banner';
+import Image from 'next/image'
 
-export default page;
+const HomePage=()=> {
+  return (
+    <main>
+      <Banner></Banner>
+    </main>
+     
+  )
+}
+export default HomePage;
