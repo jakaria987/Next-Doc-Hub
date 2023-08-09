@@ -36,7 +36,7 @@ const Banner = () => {
                         <a
                             href="/docs"
 
-                            className="bg-gray-200 text-white hover:bg-blue-600 py-2 px-4 rounded-full transition duration-300">
+                            className="bg-black text-white hover:bg-blue-600 py-2 px-4 rounded-full transition duration-300">
 
                             Learn Next.js
                         </a>
