@@ -2,8 +2,8 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import logo from "../components/logo.png";
-import logo2 from "../components/logo-vercel.png";
+import logo from "../Shared/logo.png";
+import logo2 from "../Shared/logo-vercel.png";
 const navLinks = [
   {
     path: "/showcase",
