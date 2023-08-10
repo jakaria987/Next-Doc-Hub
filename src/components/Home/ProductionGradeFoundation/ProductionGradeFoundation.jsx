@@ -8,7 +8,7 @@ import banner from "../ProductionGradeFoundation/Screenshot 2023-08-10 090503.pn
 const ProductionGradeFoundation = () => {
     return (
         <div className=' md:px-32 px-3'>
-            <h1 className=' text-center text-3xl mb-10 font-bold'>Forged upon a base of rapid, industrial-strength tooling</h1>
+            <h1 className=' text-center text-3xl mb-10 font-bold font-serif'>Forged upon a base of rapid, industrial-strength tooling</h1>
             <Image src={banner} className=' mb-5 md:mb-0'></Image>
             <div className="md:grid grid-cols-3 gap-6">
                 {[

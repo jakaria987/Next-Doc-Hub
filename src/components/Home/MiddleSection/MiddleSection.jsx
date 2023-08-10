@@ -10,7 +10,7 @@ const MiddleSection = () => {
             </h1>
             <div className="divide-y divide-dashed"></div>
             <div className="flex flex-col md:flex-row justify-center mx-3 md:gap-60 md:px-20">
-                <div className="mt-10 w-full">
+                <div className="w-full">
                     {/* ... other content */}
                     <span className="text-purple-500 bg-base-200  rounded-50 px-2 py-1 ">
                         Starter
