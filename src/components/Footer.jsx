@@ -6,39 +6,43 @@ const Footer = () => {
   return (
     <footer className="footer p-10 bg-white text-base-content container mx-auto">
       <div>
-        <span className="footer-title">Services</span>
-        <Image src={footerLogo} className="w-16 h-16 lg:w-16 lg:h-16"></Image>
-        <Link href="/" className="text-2xl lg:text-3xl uppercase font-medium">
+        <span className="footer-title mx-auto lg:text-2xl lg:mb-10">Welcome </span>
+        <Image src={footerLogo} className="w-16 h-16 lg:w-20 lg:h-16 mx-auto"></Image>
+        <Link href="/" className="text-xl lg:text-2xl uppercase font-medium mx-auto">
             Next<span className="text-sm">-Docs Hub</span>
           </Link>
       </div>
       <div>
-        <span className="footer-title">Company</span>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <span className="footer-title mx-auto lg:text-2xl">Query</span>
+        <Link href="/showcase" className="link link-hover mx-auto text-xl font-semibold">Showcase</Link>
+        <Link href="/docs" className="link link-hover mx-auto text-xl font-semibold">Docs      </Link>
+        <Link href="/blog" className="link link-hover mx-auto text-xl font-semibold">Blog      </Link>
+        <Link href="/analytics" className="link link-hover mx-auto text-xl font-semibold">Analytics </Link>
+        <Link href="/templates" className="link link-hover mx-auto text-xl font-semibold">Templates </Link>
+        <Link href="/enterprise" className="link link-hover mx-auto text-xl font-semibold">Enterprise</Link>
       </div>
       <div>
-        <span className="footer-title">Legal</span>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
+        <span className="footer-title mx-auto lg:text-2xl">Legal</span>
+        <a className="link link-hover mx-auto text-xl font-semibold">Terms of use</a>
+        <a className="link link-hover mx-auto text-xl font-semibold">Privacy policy</a>
+        <a className="link link-hover mx-auto text-xl font-semibold">Cookie policy</a>
+        
       </div>
       <div>
-        <span className="footer-title">Newsletter</span>
-        <div className="form-control w-80">
-          <label className="label">
-            <span className="label-text">Enter your email address</span>
+        <span className="footer-title mx-auto lg:text-2xl">Contact Us</span>
+        <div className="form-control w-80 ">
+          <label className="label mx-auto">
+            <span className="label-text lg:text-2xl font-semibold">Enter your Query</span>
           </label>
-          <div className="relative">
-            <input
+          <div className="relative mx-auto">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            {/* <input
               type="text"
               placeholder="username@site.com"
               className="input input-bordered w-full pr-16"
-            />
-            <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
-              Subscribe
+            /> */}
+            <button className="btn btn-ghost absolute top-0 right-0 rounded-l-none">
+              Send
             </button>
           </div>
         </div>
