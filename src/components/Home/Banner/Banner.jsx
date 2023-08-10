@@ -26,17 +26,17 @@ const Banner = () => {
                         <p className="text-lg text-gray-600 mt-4">{text}
                         <Cursor cursorBlinking cursorStyle='' cursorColor='#ffaa17'/> </p>
                     </div>
-                    <div className=' mt-4 lg:mt-10 flex space-x-5 justify-center items-center'>
+                    <div className=' mt-4 lg:mt-10 '>
                         <a
                             href="/docs"
-                            className="bg-black  text-white hover:bg-gray-800 py-3 px-3 rounded-md transition duration-300"
+                            className="bg-black  text-white hover:bg-blue-600 py-2 px-4 rounded-full transition duration-300"
                         >
                             Get Started
                         </a>
                         <a
                             href="/docs"
 
-                            className=" text-black border hover:bg-gray-200 py-3 px-3 rounded-md transition duration-300">
+                            className="bg-gray-400 text-white hover:bg-black py-2 px-4 rounded-full transition duration-300">
 
                             Learn Next.js
                         </a>

@@ -1,12 +1,12 @@
-import Banner from '@/components/Home/Banner/Banner';
-import ProductionGradeFoundation from '@/components/Home/ProductionGradeFoundation/ProductionGradeFoundation';
+import AboutNextjs from '@/components/AboutNextjs';
+import Banner from '@/components/Banner';
 import Image from 'next/image'
 
 const HomePage=()=> {
   return (
     <main>
-      <Banner/>
-      <ProductionGradeFoundation></ProductionGradeFoundation>
+      <Banner></Banner>
+      <AboutNextjs></AboutNextjs>
     </main>
      
   )
