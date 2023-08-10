@@ -87,6 +87,7 @@ const Navbar = () => {
           placeholder="Search Documentation..."
           className="input input-sm invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs "
         />
+
         <div className="invisible lg:visible navbar-end ">
           <Link href="/deploy" className="btn btn-sm btn-outline">
             <Image src={logo2} className="w-5 h-5"></Image>Deploy
