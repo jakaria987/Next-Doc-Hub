@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { FiArrowUpRight } from "react-icons/fi";
 const MiddleSection = () => {
   return (
     <div className="mb-20 bg-base-100 shadow-xl ">
@@ -47,6 +47,7 @@ const MiddleSection = () => {
             href="/"
           >
             Deploy a Template On Vercel
+            <FiArrowUpRight className="text-base-200 w-5 h-5"></FiArrowUpRight>
           </Link>
         </div>
         <>{/* Here  */}</>
