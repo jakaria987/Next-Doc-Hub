@@ -3,14 +3,14 @@ import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 const MiddleSection = () => {
   return (
-    <div className="mb-20 bg-base-100 ">
+    <div className="mb-20 bg-base-100 px-2">
       <h1 className="text-black font-bold text-4xl text-center mt-10 font-serif">
         Get started in seconds
         <span className="text-lg text-slate-600"> Deploy Next.js to Vercel</span>
       </h1>
       <div className="divide-y divide-dashed"></div>
       <div className="flex flex-col md:flex-row justify-center mx-3 md:gap-60 md:px-20 mt-14">
-        <div className="mt-10 w-full">
+        <div className="mt-10 w-full md:text-left text-center">
           {/* ... other content */}
           <span className="text-purple-500 bg-base-200  rounded-50 px-2 py-1 ">
             Starter
@@ -55,7 +55,7 @@ const MiddleSection = () => {
             />
           </div>
           <img
-            className="w-[320px] h-50 absolute left-16 md:bottom-20 bottom-2 -rotate-[3deg]"
+            className="w-[320px] h-50 absolute left-16 md:bottom-28 bottom-2 -rotate-[3deg]"
             src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122387%2Fnextjs%2Fshowcase%2Ftemplate-next-gallery.jpg&w=1920&q=75&dpl=dpl_3Sto41PsBArywegnuUrpLSNmSfm4"
             alt="Image 2"
           />

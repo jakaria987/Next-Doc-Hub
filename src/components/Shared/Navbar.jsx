@@ -32,18 +32,17 @@ const navLinks = [
 ];
 const Navbar = () => {
   return (
-    <nav className="mx-3 w-full">
-      <div className="navbar fixed  z-10 bg-white shadow-sm ">
+    <nav className="mx-3 w-full p-0">
+      <div className="navbar fixed z-10 bg-white shadow-sm ">
         <div className="navbar-start">
           <Image src={logo} className="w-1/2 lg:w-1/4"></Image>
-
-          <Link href="/" className="md:text-2xl lg:text-3xl uppercase font-medium">
+            <Link href="/" className="md:text-2xl lg:text-3xl font-medium">
             Next<span className="text-sm">-Docs Hub</span>
           </Link>
           <div className="dropdown ml-28">
             <ul
               tabIndex={0}
-              className="menu menu-sm  dropdown-content mt-10 pr-4 py-7  z-[5] shadow bg-base-100 rounded-box"
+              className="menu menu-sm  dropdown-content mt-10 pr-4 py-7  z-[5] shadow bg-white rounded-box"
             >
               <li>
                 <Link href="/learn">Learn</Link>
@@ -73,7 +72,7 @@ const Navbar = () => {
             </label>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex ">
+        <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 ">
             {navLinks.map(({ path, title }) => (
               <li key={path}>
