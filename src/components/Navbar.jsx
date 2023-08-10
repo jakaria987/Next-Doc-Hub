@@ -33,8 +33,8 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="mx-3">
-      <div className="navbar  fixed bg-base-100 shadow-sm">
+    <nav className="mx-3 ">
+      <div className="navbar fixed z-10  bg-base-100 shadow-sm">
         <div className="navbar-start">
           <Image src={logo} className="w-1/2 lg:w-1/4"></Image>
 
