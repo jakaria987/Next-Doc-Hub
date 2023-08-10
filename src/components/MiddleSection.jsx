@@ -25,11 +25,11 @@ const MiddleSection = () => {
           <span className="text-orange-500 bg-base-200  rounded-full px-2 py-1 ml-3 lg:mx-3">
             AI
           </span>
-          <span className="text-secondary-focus  bg-base-200  rounded-full px-2 py-1 invisible lg:visible">
-            Edge Fuctions
-          </span>
-          <span className="text-info bg-base-200  rounded-full px-2 py-1 ml-3 invisible lg:visible">
+          <span className="text-rose-500 bg-base-300  rounded-full px-2 py-1 ml-3 invisible lg:visible">
             Edge Config
+          </span>
+          <span className="text-pink-400 bg-base-300 rounded-full px-2 py-1 invisible lg:visible">
+            Edge Fuctions
           </span>
 
           <p className="text-slate-500 text-lg mt-5">
@@ -43,10 +43,10 @@ const MiddleSection = () => {
             pre-built solutions.
           </p>
           <Link
+            className="btn mt-10 mb-20 sm:btn-sm md:btn-md lg:btn-md"
             href="/"
-            className="btn btn-neutral mb-20 text-white sm:btn-sm md:btn-md mt-10"
           >
-            Deploy a Template on Vercel
+            Deploy a Template On Vercel
           </Link>
         </div>
         <>{/* Here  */}</>
