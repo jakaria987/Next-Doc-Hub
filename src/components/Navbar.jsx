@@ -14,8 +14,8 @@ const navLinks = [
     title: "Docs",
   },
   {
-    path: "/blog",
-    title: "Blog",
+    path: "/about",
+    title: "About",
   },
   {
     path: "/analytics",
@@ -34,14 +34,14 @@ const navLinks = [
 const Navbar = () => {
   return (
     <nav className="mx-3">
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar  fixed bg-base-100 shadow-sm">
         <div className="navbar-start">
           <Image src={logo} className="w-1/2 lg:w-1/4"></Image>
 
           <Link href="/" className="text-2xl lg:text-3xl uppercase font-medium">
             Next<span className="text-sm">-Docs Hub</span>
           </Link>
-          <div className="dropdown ms-60 lg:m-0">
+          <div className="dropdown">
             <ul
               tabIndex={0}
               className="menu menu-sm  dropdown-content mt-5 z-[1] p-5 shadow bg-base-100 rounded-box w-52"
@@ -80,7 +80,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="navbar hidden lg:flex ">
+        <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 ">
             {navLinks.map(({ path, title }) => (
               <li key={path}>
