@@ -1,8 +1,10 @@
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import Image from "next/image";
 
 const AboutNext = () => {
-  return (
-    <div className="my-20">
+    return (
+       
+          <div className="my-20">
       {/* section's heading */}
       <div className="lg:flex justify-center">
         <h1 className="text-center font-bold text-3xl font-serif pe-6">
@@ -158,27 +160,21 @@ const AboutNext = () => {
           </div>
         </div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://i.ibb.co/3z52y7W/rsz-11nextjs-cover.jpg"
-              alt="Shoes"
-            />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Next.js 13</h2>
-            <p>
-              The power of full-stack to the frontend. Read the release notes.
-            </p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-sm btn-circle ">
-                <AiOutlineArrowRight> </AiOutlineArrowRight>{" "}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <figure><img src="https://i.ibb.co/3z52y7W/rsz-11nextjs-cover.jpg" alt="Shoes" /></figure>
+  <div className="card-body">
+    <h2 className="card-title">
+      Next.js 13
+    </h2>
+    <p>The power of full-stack to the frontend. Read the release notes.</p>
+    <div className="card-actions justify-end">
+    <button className="btn btn-sm btn-circle "> <AiOutlineArrowRight> </AiOutlineArrowRight>  </button>
     </div>
-  );
+  </div>
+</div>
+      </div>
+    </div>  
+      
+    );
 };
 
 export default AboutNext;
