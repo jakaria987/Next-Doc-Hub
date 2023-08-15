@@ -6,7 +6,7 @@ import logo from "../Shared/logo.png";
 import logo2 from "../Shared/logo-vercel.png";
 const navLinks = [
   {
-    path: "/showcase",
+    path: "/Showcase",
     title: "Showcase",
   },
   {
@@ -33,7 +33,7 @@ const navLinks = [
 const Navbar = () => {
   return (
     <nav className="mx-3 w-full p-0">
-      <div className="navbar fixed z-10 bg-white shadow-sm ">
+      <div className="navbar bg-white shadow-sm ">
         <div className="navbar-start">
           <Image src={logo} className="w-1/2 lg:w-1/4"></Image>
             <Link href="/" className="md:text-2xl lg:text-3xl font-medium">
