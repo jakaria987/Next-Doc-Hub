@@ -1,10 +1,11 @@
-import Framework from '@/components/Showcase/Framework';
+
+import Framework from '@/components/Showcase/FrameWork/Framework';
 import React from 'react';
 
 const ShowcasePage = () => {
     return (
         <div>
-           <Framework/> 
+           <Framework/>
         </div>
     );
 };
