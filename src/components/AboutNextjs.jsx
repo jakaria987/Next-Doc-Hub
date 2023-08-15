@@ -2,24 +2,29 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import Image from "next/image";
 
 const AboutNext = () => {
+<<<<<<< HEAD
     return (
        
           <div className="my-20">
+=======
+  return (
+    <div className="my-20 px-5">
+>>>>>>> 1ddfabf0f26ec9c572329900200f5b8fd0045cf8
       {/* section's heading */}
-      <div className="lg:flex justify-center">
-        <h1 className="text-center font-bold text-3xl font-serif pe-6">
+      <div className="lg:flex justify-center items-center w-full">
+        <h1 className="text-center font-bold text-3xl font-serif">
           What's in Next.js?
         </h1>
-        <p className="text-xl text-slate-500 font-serif">
+        <p className="text-xl text-slate-500 font-serif text-center">
           All the tools you need to make the Web. Faster.
         </p>
       </div>
       {/* card section started */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-auto max-w-7xl mt-12 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mx-auto max-w-7xl mt-12">
         {/* Card -1 */}
         <div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card  md:w-96 w-full h-96 bg-base-100 border shadow-sm hover:border hover:border-current transition">
             <figure>
               <img
                 className="w-[384px] h-[280]"
@@ -38,7 +43,7 @@ const AboutNext = () => {
         </div>
         {/* card-2 */}
         <div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card h-96  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition">
             <figure>
               <img
                 className="w-[384px] h-[280px]"
@@ -57,7 +62,7 @@ const AboutNext = () => {
         </div>
         {/* card-3 */}
         <div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card  md:w-96 w-full h-96 bg-base-100 border shadow-sm hover:border hover:border-current transition">
             <figure>
               <img
                 src="https://i.ibb.co/zrZGf1T/react-Server-Component.png"
@@ -66,7 +71,7 @@ const AboutNext = () => {
             </figure>
             <div className="card-body">
               <h2 className="card-title">React Server Components</h2>
-              <p className="text-slate-500">
+              <p className="text-slate-500 ">
                 Add components without sending additional client-side
                 JavaScript. Built on the latest React features.
               </p>
@@ -75,10 +80,10 @@ const AboutNext = () => {
         </div>
         {/* card-4 */}
         <div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition">
             <div className="card-body">
               <h2 className="card-title">CSS Support</h2>
-              <p className="text-slate-500">
+              <p className="text-slate-500 hidden md:block">
                 {" "}
                 Style your application with your favorite tools, including
                 support for CSS Modules,Sass, Tailwind CSS, styled-jsx, and
@@ -88,10 +93,10 @@ const AboutNext = () => {
           </div>
         </div>
         <div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition">
             <div className="card-body">
               <h2 className="card-title">Route Handlers</h2>
-              <p className="text-slate-500">
+              <p className="text-slate-500 hidden md:block">
                 Build API endpoints to securely connect with third party
                 services and consume from your frontend.
               </p>
@@ -99,10 +104,10 @@ const AboutNext = () => {
           </div>
         </div>
         <div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition">
             <div className="card-body">
               <h2 className="card-title">Middleware</h2>
-              <p className="text-slate-500">
+              <p className="text-slate-500 hidden md:block">
                 Take control of the incoming request. Use code to define routing
                 and access rules for authentication, experimentation, and
                 internationalization.
@@ -112,46 +117,45 @@ const AboutNext = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-96 mx-auto max-w-7xl mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-96 mx-auto max-w-7xl md:mt-3">
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-96">
-            <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-96">
+            <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition  ">
               <div className="card-body">
                 <h2 className="card-title">Data Fetching</h2>
-                <p className="text-slate-500">
+                <p className="text-slate-500 hidden md:block">
                   Make your React component async and await your data. Next.js
                   supports both server and client data fetching.
                 </p>
               </div>
             </div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition">
               <div className="card-body">
                 <h2 className="card-title">Node.js & Edge Runtimes</h2>
-                <p className="text-slate-500">
+                <p className="text-slate-500 hidden md:block">
                   Build scalable solutions with Serverless functions, and
                   deliver fast dynamic, personalized content with Edge.{" "}
                 </p>
               </div>
             </div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-96 mt-4">
-            <div className="card w-96 bg-base-100 shadow-xl">
-              <div className="card-body">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-96 md:mt-4">
+            <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition  ">
+              <div className="card-body ">
                 <h2 className="card-title">Client and Server Rendering</h2>
-                <p className="text-slate-500">
+                <p className="text-slate-500 hidden md:block">
                   Flexible rendering and caching options, including Incremental
                   Static Regeneration (ISR), on a per-page level.
                 </p>
               </div>
             </div>
 
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition">
               <div className="card-body">
                 <h2 className="card-title">
                   Advanced Routing & Nested Layouts
                 </h2>
-                <p className="text-slate-500">
+                <p className="text-slate-500 hidden md:block">
                   Create routes using the file system, including support for
                   more advanced routing patterns and UI layouts.
                 </p>
@@ -159,6 +163,7 @@ const AboutNext = () => {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div className="card w-96 bg-base-100 shadow-xl">
   <figure><img src="https://i.ibb.co/3z52y7W/rsz-11nextjs-cover.jpg" alt="Shoes" /></figure>
   <div className="card-body">
@@ -168,6 +173,28 @@ const AboutNext = () => {
     <p>The power of full-stack to the frontend. Read the release notes.</p>
     <div className="card-actions justify-end">
     <button className="btn btn-sm btn-circle "> <AiOutlineArrowRight> </AiOutlineArrowRight>  </button>
+=======
+        <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition md:ml-7 mt-4 md:mt-0">
+          <figure>
+            <img
+              src="https://i.ibb.co/3z52y7W/rsz-11nextjs-cover.jpg"
+              alt="Shoes"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Next.js 13</h2>
+            <p>
+              The power of full-stack to the frontend. Read the release notes.
+            </p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-sm btn-circle ">
+                <AiOutlineArrowRight> </AiOutlineArrowRight>{" "}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+>>>>>>> 1ddfabf0f26ec9c572329900200f5b8fd0045cf8
     </div>
   </div>
 </div>

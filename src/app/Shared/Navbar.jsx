@@ -6,7 +6,7 @@ import logo from "./logo.png";
 import logo2 from "./logo-vercel.png";
 const navLinks = [
   {
-    path: "/showcase",
+    path: "/Showcase",
     title: "Showcase",
     
   },
@@ -31,21 +31,19 @@ const navLinks = [
     title: "Enterprise",
   },
 ];
-
 const Navbar = () => {
   return (
-    <nav className="mx-3 ">
-      <div className="navbar fixed z-10  bg-base-100 shadow-sm">
+    <nav className="mx-3 w-full p-0">
+      <div className="navbar bg-white shadow-sm ">
         <div className="navbar-start">
           <Image src={logo} className="w-1/2 lg:w-1/4"></Image>
-
-          <Link href="/" className="text-2xl lg:text-3xl uppercase font-medium">
+            <Link href="/" className="md:text-2xl lg:text-3xl font-medium">
             Next<span className="text-sm">-Docs Hub</span>
           </Link>
-          <div className="dropdown">
+          <div className="dropdown ml-28">
             <ul
               tabIndex={0}
-              className="menu menu-sm  dropdown-content mt-5 z-[1] p-5 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm  dropdown-content mt-10 pr-4 py-7  z-[5] shadow bg-white rounded-box"
             >
               <li>
                 <Link href="/learn">Learn</Link>
@@ -53,14 +51,14 @@ const Navbar = () => {
               </li>
               {navLinks.map(({ path, title }) => (
                 <li key={path}>
-                  <Link href={path}>{title}</Link>
+                  <Link className=" text-[15px]" href={path}>{title}</Link>
                 </li>
               ))}
             </ul>
             <label tabIndex={0} className=" btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-7 w-7"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -74,14 +72,8 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-          <Link href="/search">
-            <FontAwesomeIcon
-              className="w-5 h-5 visible lg:invisible"
-              icon={faSearch}
-            />
-          </Link>
         </div>
-        <div className="navbar-center hidden lg:flex ">
+        <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 ">
             {navLinks.map(({ path, title }) => (
               <li key={path}>
