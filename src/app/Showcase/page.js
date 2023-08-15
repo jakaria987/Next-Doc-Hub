@@ -1,12 +1,13 @@
-import Framework from '@/components/Showcase/Framework';
-import React from 'react';
+import Framework from "@/components/Showcase/Framework";
+import PowerfulFramework from "@/components/Showcase/PowerfulFramework";
 
 const ShowcasePage = () => {
-    return (
-        <div>
-           <Framework/> 
-        </div>
-    );
+  return (
+    <div>
+      <Framework />
+      <PowerfulFramework />
+    </div>
+  );
 };
 
 export default ShowcasePage;
