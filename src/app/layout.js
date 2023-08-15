@@ -1,9 +1,9 @@
-
-import Navbar from "@/app/Shared/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Footer from "@/components/Shared/Footer";
+
 import { Container } from "postcss";
+import Navbar from "./Shared/Navbar";
+import Footer from "./Shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
