@@ -1,8 +1,15 @@
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import Image from "next/image";
 
 const AboutNext = () => {
+<<<<<<< HEAD
+    return (
+       
+          <div className="my-20">
+=======
   return (
     <div className="my-20 px-5">
+>>>>>>> 1ddfabf0f26ec9c572329900200f5b8fd0045cf8
       {/* section's heading */}
       <div className="lg:flex justify-center items-center w-full">
         <h1 className="text-center font-bold text-3xl font-serif">
@@ -156,6 +163,17 @@ const AboutNext = () => {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
+        <div className="card w-96 bg-base-100 shadow-xl">
+  <figure><img src="https://i.ibb.co/3z52y7W/rsz-11nextjs-cover.jpg" alt="Shoes" /></figure>
+  <div className="card-body">
+    <h2 className="card-title">
+      Next.js 13
+    </h2>
+    <p>The power of full-stack to the frontend. Read the release notes.</p>
+    <div className="card-actions justify-end">
+    <button className="btn btn-sm btn-circle "> <AiOutlineArrowRight> </AiOutlineArrowRight>  </button>
+=======
         <div className="card  md:w-96 w-full bg-base-100 border shadow-sm hover:border hover:border-current transition md:ml-7 mt-4 md:mt-0">
           <figure>
             <img
@@ -176,8 +194,14 @@ const AboutNext = () => {
           </div>
         </div>
       </div>
+>>>>>>> 1ddfabf0f26ec9c572329900200f5b8fd0045cf8
     </div>
-  );
+  </div>
+</div>
+      </div>
+    </div>  
+      
+    );
 };
 
 export default AboutNext;
