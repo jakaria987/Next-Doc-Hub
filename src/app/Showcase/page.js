@@ -1,4 +1,5 @@
 import Framework from "@/components/Showcase/FrameWork/Framework";
+import PoweredBy from "@/components/Showcase/PoweredBy/PoweredBy";
 import PowerfulFramework from "@/components/Showcase/PowerfulFramework";
 
 const ShowcasePage = () => {
@@ -6,6 +7,7 @@ const ShowcasePage = () => {
     <div>
       <Framework />
       <PowerfulFramework />
+      <PoweredBy/>
     </div>
   );
 };

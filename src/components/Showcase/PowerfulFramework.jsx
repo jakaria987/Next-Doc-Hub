@@ -10,9 +10,11 @@ const PowerfulFramework = () => {
         <br />
         server rendered web applications
       </h1>
-      <div className="py-16  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
-        <div className="mx-auto">
-          <LiaGreaterThanEqualSolid className="text-3xl mb-3  border rounded-full" />
+      <div className="py-16  md:grid md:grid-cols-2 items-center lg:grid-cols-3 w-full px-3">
+        <div className="mx-auto text-center md:text-left">
+          <div>
+            <LiaGreaterThanEqualSolid className="text-5xl mb-3 mx-auto md:mx-0  border p-2 rounded-full " />
+          </div>
           <h1 className="text-xl font-semibold">
             Superior Developer Experience
           </h1>
@@ -22,8 +24,8 @@ const PowerfulFramework = () => {
             with zero configuration just Git push to get started.
           </p>
         </div>
-        <div className="mx-auto">
-          <FaBattleNet className="text-3xl mb-3 border rounded-full" />
+        <div className="mx-auto text-center md:text-left mt-7 md:mt-0">
+          <FaBattleNet className="text-5xl mb-3 border p-2 rounded-full mx-auto md:mx-0" />
           <h1 className="text-xl font-semibold">Battle-tested in Production</h1>
           <p className="text-gray-500 mt-2">
             All the features you need for production: hybrid
@@ -33,8 +35,8 @@ const PowerfulFramework = () => {
             smart bundling, route pre-fetching, and more.
           </p>
         </div>
-        <div className="mx-auto">
-          <TbPlayerTrackNext className="text-3xl mb-3 border rounded-full" />
+        <div className="mx-auto text-center md:text-left mt-7 md:mt-0">
+          <TbPlayerTrackNext className="text-5xl mb-3 border p-2 rounded-full mx-auto md:mx-0" />
           <h1 className="text-xl font-semibold">Performance-obsessed stack</h1>
           <p className="text-gray-500 mt-2">
             Next.js brings years of experience in building
@@ -43,13 +45,17 @@ const PowerfulFramework = () => {
           </p>
         </div>
       </div>
-      <div className="text-center pb-28">
-        <Link href="" className="btn bg-white border-slate-300">
-          Find a Partner
-        </Link>
-        <Link href="" className="btn bg-black hover:text-black mx-2 text-white">
-          Start learning next.js
-        </Link>
+      <div className="text-center pb-28 md:flex items-center justify-center gap-3">
+        <div>
+          <Link href="" className="btn bg-white border-slate-300">
+            Find a Partner
+          </Link>
+        </div>
+        <div className=" mt-3 md:mt-0">
+          <Link href="" className="btn bg-black hover:text-black mx-2 text-white">
+            Start learning next.js
+          </Link>
+        </div>
       </div>
     </div>
   );

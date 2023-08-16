@@ -10,6 +10,7 @@ import mrBeast from "./mrbeast-picture.avif"
 import basement from "./basement-stickers.svg"
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Link from 'next/link';
 
 const Framework = () => {
     return (
@@ -23,7 +24,7 @@ const Framework = () => {
             <p className='md:text-2xl mb-14 text-gray-500 text-center'>Peerless performance, efficiency and developer experience. Next.js is trusted by some of the biggest names of the web.</p>
             <div className='hidden sm:block px-20'>
                 <div className='grid grid-cols-3 gap-5 items-center justify-center'>
-                    <a href="https://vercel.com/customers/loom-headless-with-nextjs" target='blank'>
+                    <a href="https://vercel.com/customers/loom-headless-with-nextjs" target='blank' className=' shadow-md'>
                         <div
                             className="overflow-hidden  aspect-video cursor-pointer rounded-md relative group border"
                         >
@@ -64,7 +65,7 @@ const Framework = () => {
                         </div>
                     </a>
                     <div
-                        className="overflow-hidden h-full w-[440px]  aspect-video  cursor-pointer rounded-md relative group row-span-2 border"
+                        className="overflow-hidden h-full w-[440px]  aspect-video  cursor-pointer rounded-md relative group row-span-2 border shadow-md"
                     >
                         <a href="https://vercel.com/blog/aws-and-vercel-accelerating-innovation-with-serverless-computing" target='blank'>
                             <div
@@ -100,7 +101,7 @@ const Framework = () => {
                         </a>
                     </div>
 
-                    <a href="https://vercel.com/blog/serving-millions-of-users-on-the-new-mrbeast-storefront" target='blank'>
+                    <a href="https://vercel.com/blog/serving-millions-of-users-on-the-new-mrbeast-storefront" target='blank'  className=' shadow-md'>
                         <div
                             className="overflow-hidden  aspect-video cursor-pointer rounded-md relative group border"
                         >
@@ -137,7 +138,7 @@ const Framework = () => {
                             </div>
                         </div>
                     </a>
-                    <a href="https://vercel.com/blog/how-plex-6x-their-impressions-deploying-next-js-on-vercel" target='blank'>
+                    <a href="https://vercel.com/blog/how-plex-6x-their-impressions-deploying-next-js-on-vercel" target='blank'  className=' shadow-md'>
                         <div
                             className="overflow-hidden  aspect-video  cursor-pointer rounded-md relative group border"
                         >
@@ -181,7 +182,7 @@ const Framework = () => {
                             </div>
                         </div>
                     </a>
-                    <a href="https://vercel.com/blog/navigating-tradeoffs-in-large-scale-website-migrations" target='blank'>
+                    <a href="https://vercel.com/blog/navigating-tradeoffs-in-large-scale-website-migrations" target='blank'  className=' shadow-md'>
                         <div
                             className="overflow-hidden  aspect-video cursor-pointer rounded-md relative group border"
                         >
@@ -222,6 +223,12 @@ const Framework = () => {
                         </div>
                     </a>
                 </div>
+                <div className=' text-center flex items-center justify-center mt-10 gap-4'>
+                    <p className=' text-xl text-gray-600'>Find out what Next.js can do for your business</p>
+                    <Link href="https://vercel.com/contact/sales" >
+                    <button className='bg-black px-4 py-3 text-white rounded-md'>Contact Sales</button>
+                    </Link>
+                </div>
             </div>
             <div className='block sm:hidden'>
                 <Carousel >
@@ -229,7 +236,7 @@ const Framework = () => {
                     <div
                         className="overflow-hidden h-[350px] w-full cursor-pointer rounded-md relative group border"
                     >
-                        <a href="" className=' overflow-hidden'>
+                        <a href="">
                             <Image
                                 alt=""
                                 className="object-cover relative h-full"
@@ -245,7 +252,7 @@ const Framework = () => {
                                 <p className=' mt-4 overflow-hidden'>With Next.js, Vercel, and Sanity, Loom empowers every team to iterate</p>
                             </div>
                             <div className=' absolute bottom-6'>
-                                <div className=" flex gap-3 text-black ml-3">
+                                <div className=" flex gap-3 text-black ml-5">
                                     <div className='border-2 p-3 rounded-md'>
                                         <h4 className=' text-[18px] font-bold'>Preview</h4>
                                         <p className=' text-sm text-gray-500'>deployed seamlessly</p>
