@@ -231,7 +231,7 @@ const Framework = () => {
                 </div>
             </div>
             <div className='block sm:hidden'>
-                <Carousel >
+                <Carousel  showThumbs={false}>
                     {/* Carousel item 1 */}
                     <div
                         className="overflow-hidden h-[350px] w-full cursor-pointer rounded-md relative group border"

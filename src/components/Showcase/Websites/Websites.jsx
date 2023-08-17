@@ -60,7 +60,7 @@ const Websites = () => {
   };
 
   return (
-    <div className="p-8 mt-20">
+    <div className="md:p-8 mt-20">
       <h1 className='text-3xl text-center mb-8 font-semibold'>
         <span className=' bg-gradient-to-r from-gray-500 to-black bg-clip-text text-transparent'>
           Explore numerous stunning <br />websites created using Next.js by Vercel
@@ -68,13 +68,12 @@ const Websites = () => {
       </h1>
 
       <Tabs>
-        <TabList className="flex space-x-4">
+        <TabList className="grid grid-cols-3 md:grid-cols-10 gap-2 md:px-10 md:ml-24 px-5">
           {categories.map(category => (
             <Tab
               key={category}
               onClick={() => setActiveTab(category)}
-              className={`cursor-pointer bg-black text-white ml-[250px] px-4 py-2 rounded ${activeTab === category ? 'font-semibold' : ''
-                }`}
+              className={`cursor-pointer bg-black text-white md:px-4 px-3 py-2 rounded ${activeTab === category ? 'font-semibold' : ''}`}
             >
               {category}
             </Tab>
@@ -82,14 +81,14 @@ const Websites = () => {
         </TabList>
         {categories.map(category => (
           <TabPanel key={category}>
-            <div className="grid grid-cols-1 md:grid-cols-3 mt-10 px-28">
+            <div className="grid grid-cols-1 md:grid-cols-3 mt-10 md:px-28">
               {visibleData[category]?.map(item => (
                 <Card key={item.title} item={item} />
               ))}
             </div>
             {activeTab === 'All' && visibleData[category]?.length < data.filter(item => category === 'All' || item.category === category).length && (
               <button
-                className="mt-4 ml-[670px] px-3 font-semibold py-3 border bg-white text-black rounded hover:bg-gray-100"
+                className="mt-4 md:ml-[670px] ml-36 px-3 font-semibold py-3 border bg-white text-black rounded hover:bg-gray-100"
                 onClick={() => handleShowMore(category)}
               >
                 Load More
