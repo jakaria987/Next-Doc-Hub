@@ -223,7 +223,7 @@ const Framework = () => {
                         </div>
                     </a>
                 </div>
-                <div className=' text-center flex items-center justify-center mt-10 gap-4'>
+                <div className=' text-center flex items-center justify-center mt-16 gap-4'>
                     <p className=' text-xl text-gray-600'>Find out what Next.js can do for your business</p>
                     <Link href="https://vercel.com/contact/sales" >
                     <button className='bg-black px-4 py-3 text-white rounded-md'>Contact Sales</button>

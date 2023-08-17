@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const GithubStats = () => {
     return (
-        <div className="github-stats md:flex lg:flex justify-around mt-16 text-center px-40 bg-slate-50 pt-14">
+        <div className="github-stats md:flex lg:flex justify-around mt-20 text-center px-40 bg-slate-50 pt-14">
             <div>
                 <h1 className="font-bold text-black text-4xl mb-5">14th</h1>
                 <h1 className='text-2xl font-semibold text-gray-800 mt-2'>Largest</h1>
