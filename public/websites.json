@@ -1,0 +1,146 @@
+[
+  {
+    "image_url": "https://i.ibb.co/Smx7JVF/nubank-welcomekit-01.png",
+    "title": "Nubank",
+    "category": "Finance",
+    "url": "https://www.nubank.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/VHf6pcw/images-q-tbn-ANd9-Gc-SGAVdre-Jhv-Ikh7-Ult-Lrva56t-Ud-Ug-Cm-Ilsm-Ew-usqp-CAU.png",
+    "title": "Sumup",
+    "category": "Finance",
+    "url": "https://www.sumup.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/0CCY3YQ/1200px-Verge-color-logo-svg.png",
+    "title": "Verge",
+    "category": "Finance",
+    "url": "https://www.verge.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/qDZY7yP/sidekick-desktop-app.png",
+    "title": "Notion",
+    "category": "Tech",
+    "url": "https://www.notion.so"
+  },
+  {
+    "image_url": "https://i.ibb.co/T4HzY6Z/1200px-Typeform-logo-01-svg.png",
+    "title": "Typeform",
+    "category": "Tech",
+    "url": "https://www.typeform.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/StFQFR7/maxresdefault.jpg",
+    "title": "Invision",
+    "category": "Tech",
+    "url": "https://www.invisionapp.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/Hq7nMbp/Product-Hunt-Homepage-2019.png",
+    "title": "Product Hunt",
+    "category": "News",
+    "url": "https://www.producthunt.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/JCQzsB6/vice-media-logo-16x9jpg.jpg",
+    "title": "Vice",
+    "category": "News",
+    "url": "https://www.vice.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/X2rKzdH/images-q-tbn-ANd9-Gc-Sq-Z1mn-Lra-PGqvn-Np3-BABx-Ldo-An-SCUJxqubmw-usqp-CAU.jpg",
+    "title": "Futurism",
+    "category": "News",
+    "url": "https://www.futurism.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/4Fg6GLf/800px-AT-T-logo-2016-svg.png",
+    "title": "AT&T",
+    "category": "Ecommerce",
+    "url": "https://www.att.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/4gDpbGY/images-q-tbn-ANd9-Gc-Tm-A-hq-Mjyo-XP5f8k-F54bz-P-r-VMCMo-CSOw-ZVg-usqp-CAU.jpg",
+    "title": "Nike",
+    "category": "Ecommerce",
+    "url": "https://www.nike.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/PNgzDMy/images-q-tbn-ANd9-Gc-R6-U-3-T4-B96-SA543t7-Qx-Vqjbc-Utmgoc-IYSQ-usqp-CAU.jpg",
+    "title": "Target",
+    "category": "Ecommerce",
+    "url": "https://www.target.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/C67mwVT/images-q-tbn-ANd9-Gc-QXPgpuqs-Zg-ZEU2-Rni-NX5-Rw-GR-k9l-USm-Ol-U6-Q-usqp-CAU.jpg",
+    "title": "Ticketmaster",
+    "category": "Travel",
+    "url": "https://www.ticketmaster.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/PTj2rWP/images-q-tbn-ANd9-Gc-QEzx-KPegf-KSGBq-Lx-EUw-DO-u-X7-FIv-GF0p6f-A-usqp-CAU.jpg",
+    "title": "Hilton",
+    "category": "Travel",
+    "url": "https://www.hilton.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/Mcqs2gB/images-q-tbn-ANd9-Gc-T0-UQPv-Ww-Km-E6op-THOD8k-N6bs3ce-Ut8dld-Ig-usqp-CAU.jpg",
+    "title": "Trip.com",
+    "category": "Travel",
+    "url": "https://www.trip.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/kHNkyK2/tiktok-banner-with-watercolor-splatter-69286-194.jpg",
+    "title": "TikTok",
+    "category": "Creative",
+    "url": "https://www.tiktok.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/qDZY7yP/sidekick-desktop-app.png",
+    "title": "Notion",
+    "category": "Creative",
+    "url": "https://www.notion.so"
+  },
+  {
+    "image_url": "https://i.ibb.co/T4HzY6Z/1200px-Typeform-logo-01-svg.png",
+    "title": "Typeform",
+    "category": "Creative",
+    "url": "https://www.typeform.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/0tw1hdz/acastro-211025-1777-netflix-0001.jpg",
+    "title": "Netflix Jobs",
+    "category": "Entertainment",
+    "url": "https://jobs.netflix.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/8883Jy0/og.jpg",
+    "title": "Twitch",
+    "category": "Entertainment",
+    "url": "https://www.twitch.tv"
+  },
+  {
+    "image_url": "https://i.ibb.co/kHNkyK2/tiktok-banner-with-watercolor-splatter-69286-194.jpg",
+    "title": "TikTok",
+    "category": "Entertainment",
+    "url": "https://www.tiktok.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/4gDpbGY/images-q-tbn-ANd9-Gc-Tm-A-hq-Mjyo-XP5f8k-F54bz-P-r-VMCMo-CSOw-ZVg-usqp-CAU.jpg",
+    "title": "Nike",
+    "category": "Marketing",
+    "url": "https://www.nike.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/C67mwVT/images-q-tbn-ANd9-Gc-QXPgpuqs-Zg-ZEU2-Rni-NX5-Rw-GR-k9l-USm-Ol-U6-Q-usqp-CAU.jpg",
+    "title": "Ticketmaster",
+    "category": "Marketing",
+    "url": "https://www.ticketmaster.com"
+  },
+  {
+    "image_url": "https://i.ibb.co/4Fg6GLf/800px-AT-T-logo-2016-svg.png",
+    "title": "AT&T",
+    "category": "Marketing",
+    "url": "https://www.att.com"
+  }
+]
