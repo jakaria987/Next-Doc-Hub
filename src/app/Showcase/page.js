@@ -1,5 +1,4 @@
 import Book from "@/components/Showcase/Book/Book";
-import Discover from "@/components/Showcase/Discover/Discover";
 import Framework from "@/components/Showcase/FrameWork/Framework";
 import GithubStats from "@/components/Showcase/GithubStats/GithubStats";
 import PoweredBy from "@/components/Showcase/PoweredBy/PoweredBy";
