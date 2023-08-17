@@ -1,3 +1,4 @@
+import BuildCards from "@/components/Showcase/BuildCards/BuildCards";
 import Framework from "@/components/Showcase/FrameWork/Framework";
 import GithubStats from "@/components/Showcase/GithubStats/GithubStats";
 import PoweredBy from "@/components/Showcase/PoweredBy/PoweredBy";
@@ -10,6 +11,7 @@ const ShowcasePage = () => {
       <PowerfulFramework />
       <GithubStats/>
       <PoweredBy/>
+      <BuildCards></BuildCards>
     </div>
   );
 };
