@@ -18,6 +18,10 @@ const Links = [
     title: "Docs",
   },
   {
+    path: "/Blog",
+    title: "Blog",
+  },
+  {
     path: "/about",
     title: "About",
   },
