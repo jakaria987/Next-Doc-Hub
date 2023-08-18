@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
-const Blog = () => {
+const BlogPage = () => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -48,4 +48,4 @@ const Blog = () => {
     );
 };
 
-export default Blog;
+export default BlogPage;
