@@ -1,146 +1,293 @@
 [
   {
+      "image_url": "https://i.ibb.co/gd6FNGr/photo-1616077168737-6b1884d804e0-ixlib-rb-4-0.jpg",
+      "title": "Western Union",
+      "category": "Finance",
+      "link": "https://www.westernunion.com/bd/en/home.html"
+    },
+    {
+      "image_url": "https://i.ibb.co/t8sXMgc/images-q-tbn-ANd9-Gc-S607l-Kmonqjxb-LURW7h-Gsk-Gnr-Qfoxk-Xipmeg-usqp-CAU.jpg",
+      "title": "Supervielle",
+      "category": "Finance",
+      "link": "https://www.supervielle.com.ar/personas"
+    },
+    {
+      "image_url": "https://i.ibb.co/ww1kRpS/images-q-tbn-ANd9-Gc-QU0bvw7-A4mr2-Y1pya-Rv7g-SV4-0-Iy-MV4-PFu3-Q-usqp-CAU.jpg",
+      "title": "GiveCrypto",
+      "category": "Finance",
+      "link": "https://givecrypto.org/"
+    },
+
+
+  {
     "image_url": "https://i.ibb.co/Smx7JVF/nubank-welcomekit-01.png",
     "title": "Nubank",
     "category": "Finance",
-    "url": "https://www.nubank.com"
+    "link": "https://nubank.com.br/"
   },
   {
     "image_url": "https://i.ibb.co/VHf6pcw/images-q-tbn-ANd9-Gc-SGAVdre-Jhv-Ikh7-Ult-Lrva56t-Ud-Ug-Cm-Ilsm-Ew-usqp-CAU.png",
     "title": "Sumup",
     "category": "Finance",
-    "url": "https://www.sumup.com"
+    "link": "https://www.sumup.com/en-us/"
   },
   {
     "image_url": "https://i.ibb.co/0CCY3YQ/1200px-Verge-color-logo-svg.png",
     "title": "Verge",
     "category": "Finance",
-    "url": "https://www.verge.com"
+    "link": "https://vergecurrency.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/PTdCRtB/images-q-tbn-ANd9-Gc-Szq-DBk-FVOPe-Qo5c5r-IKCE8-UCo-Ct-XTOY-yhjg-usqp-CAU.jpg",
+    "title": "Nvidia",
+    "category": "Tech",
+    "link": "https://catalog.ngc.nvidia.com/?filters=&orderBy=weightPopularDESC&query="
+  },
+  {
+    "image_url": "https://i.ibb.co/n7cJmNB/images-q-tbn-ANd9-Gc-Tk-L8xb-ABcd-XCS-Mn-SM-KZ9-CIsyd4-Fcf-WLUGA-usqp-CAU.png",
+    "title": "AuthO",
+    "category": "Tech",
+    "link": "https://auth0.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/sHqrLGp/04s-FMHGyy0-Zbya-ADj-RPJWKS-13-v1582648292.png",
+    "title": "HostGator",
+    "category": "Tech",
+    "link": "https://www.hostgator.com/help"
   },
   {
     "image_url": "https://i.ibb.co/qDZY7yP/sidekick-desktop-app.png",
     "title": "Notion",
     "category": "Tech",
-    "url": "https://www.notion.so"
+    "link": "https://www.notion.so/"
   },
   {
     "image_url": "https://i.ibb.co/T4HzY6Z/1200px-Typeform-logo-01-svg.png",
     "title": "Typeform",
     "category": "Tech",
-    "url": "https://www.typeform.com"
+    "link": "https://www.typeform.com/"
   },
   {
     "image_url": "https://i.ibb.co/StFQFR7/maxresdefault.jpg",
     "title": "Invision",
     "category": "Tech",
-    "url": "https://www.invisionapp.com"
+    "link": "https://www.invisionapp.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/QHW4pyv/images-q-tbn-ANd9-Gc-R3-Rzot-HHLy-Y6lh0-HSw-TAz-OSMEenq70b7to-Fg-usqp-CAU.jpg",
+    "title": "Tencent News",
+    "category": "News",
+    "link": "https://xw.qq.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/YtFrL5z/images-q-tbn-ANd9-Gc-Tvfj-Rx-Zy1u-gl-OQs-Yv72222-Tu-s6y-Qr-O-g5g-usqp-CAU.png",
+    "title": "Today",
+    "category": "News",
+    "link": "https://www.today.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/xms72zP/images-q-tbn-ANd9-Gc-Rx-K1-Hnf-EOdh-Spf-Iz-IIeb6-PA2-Md-GWvi-Fdg-usqp-CAU.png",
+    "title": "Friday Digital",
+    "category": "News",
+    "link": "https://friday.kodansha.co.jp/"
   },
   {
     "image_url": "https://i.ibb.co/Hq7nMbp/Product-Hunt-Homepage-2019.png",
     "title": "Product Hunt",
     "category": "News",
-    "url": "https://www.producthunt.com"
+    "link": "https://www.invisionapp.com/"
   },
   {
     "image_url": "https://i.ibb.co/JCQzsB6/vice-media-logo-16x9jpg.jpg",
     "title": "Vice",
     "category": "News",
-    "url": "https://www.vice.com"
+    "link": "https://www.invisionapp.com/"
   },
   {
     "image_url": "https://i.ibb.co/X2rKzdH/images-q-tbn-ANd9-Gc-Sq-Z1mn-Lra-PGqvn-Np3-BABx-Ldo-An-SCUJxqubmw-usqp-CAU.jpg",
     "title": "Futurism",
     "category": "News",
-    "url": "https://www.futurism.com"
+    "link": "https://www.invisionapp.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/ThpTNJb/images-q-tbn-ANd9-Gc-SIRJvw9-7fn-OF198-ZJj-Hhr2-EVM5t-O2-Kb-V8-A-usqp-CAU.jpg",
+    "title": "DoorDash",
+    "category": "Ecommerce",
+    "link": "https://www.doordash.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/7vsHLZZ/images-q-tbn-ANd9-Gc-R-7l-A7pqop-Ah2kdy-JCI7-R-K1cab-Fpds-Hf-YTA-usqp-CAU.jpg",
+    "title": "Vodafone",
+    "category": "Ecommerce",
+    "link": "https://www.vodafone.com/"
+  },
+  {
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJcDyYeYSAn_tWxapikQY12ugxGrUUa499g&usqp=CAU",
+    "title": "TrueCar",
+    "category": "Ecommerce",
+    "link": "https://www.truecar.com/"
   },
   {
     "image_url": "https://i.ibb.co/4Fg6GLf/800px-AT-T-logo-2016-svg.png",
     "title": "AT&T",
     "category": "Ecommerce",
-    "url": "https://www.att.com"
+    "link": "https://www.att.com/"
   },
   {
     "image_url": "https://i.ibb.co/4gDpbGY/images-q-tbn-ANd9-Gc-Tm-A-hq-Mjyo-XP5f8k-F54bz-P-r-VMCMo-CSOw-ZVg-usqp-CAU.jpg",
     "title": "Nike",
     "category": "Ecommerce",
-    "url": "https://www.nike.com"
+    "link": "https://www.nike.com/help"
   },
   {
     "image_url": "https://i.ibb.co/PNgzDMy/images-q-tbn-ANd9-Gc-R6-U-3-T4-B96-SA543t7-Qx-Vqjbc-Utmgoc-IYSQ-usqp-CAU.jpg",
     "title": "Target",
     "category": "Ecommerce",
-    "url": "https://www.target.com"
+    "link": "https://www.target.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/7SmTNSN/images-q-tbn-ANd9-Gc-RRAZJLSs-Yf-Hu-GNU6w-Vk-Dbcou-L8pe-Qz80-Y0g-usqp-CAU.jpg",
+    "title": "United Airlines",
+    "category": "Travel",
+    "link": "https://packages.united.com/vacationpackages/"
+
+  },
+  {
+    "image_url": "https://i.ibb.co/HTfrXKK/images-q-tbn-ANd9-Gc-QQy-Tnz-Uf-WDo-P-s-Ok-Tk-Zrd-Y9-Y5-Jlk-IFi7-Sy-UA-usqp-CAU.png",
+    "title": "Culture Trip",
+    "category": "Travel",
+    "link": "https://theculturetrip.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/44vhCS2/images-q-tbn-ANd9-Gc-T5-Vg-GOIU0-UFP5-PJt-Oa-EPMO2j-Ukz-Ex-TZb-KGZQ-usqp-CAU.jpg",
+    "title": "Gopro",
+    "category": "Travel",
+    "link": "https://gopro.com/en/bd/"
   },
   {
     "image_url": "https://i.ibb.co/C67mwVT/images-q-tbn-ANd9-Gc-QXPgpuqs-Zg-ZEU2-Rni-NX5-Rw-GR-k9l-USm-Ol-U6-Q-usqp-CAU.jpg",
     "title": "Ticketmaster",
     "category": "Travel",
-    "url": "https://www.ticketmaster.com"
+    "link": "https://www.ticketmaster.com/"
   },
   {
     "image_url": "https://i.ibb.co/PTj2rWP/images-q-tbn-ANd9-Gc-QEzx-KPegf-KSGBq-Lx-EUw-DO-u-X7-FIv-GF0p6f-A-usqp-CAU.jpg",
     "title": "Hilton",
     "category": "Travel",
-    "url": "https://www.hilton.com"
+    "link": "https://www.hilton.com/en/brands/hilton-hotels/"
   },
   {
     "image_url": "https://i.ibb.co/Mcqs2gB/images-q-tbn-ANd9-Gc-T0-UQPv-Ww-Km-E6op-THOD8k-N6bs3ce-Ut8dld-Ig-usqp-CAU.jpg",
     "title": "Trip.com",
     "category": "Travel",
-    "url": "https://www.trip.com"
+    "link": "https://www.trip.com/travel-guide"
+  },
+  {
+    "image_url": "https://i.ibb.co/7zHFPBc/images-q-tbn-ANd9-Gc-SZbu-GGPz-YXUTTIK17aw-C23-T-PCp-XOv-QSg-A-usqp-CAU.jpg",
+    "title": "Plotly",
+    "category": "Creative",
+    "link": "https://plotly.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/tHN4JDm/images-q-tbn-ANd9-Gc-Smm-I4-Ska6a-Senu-Ob-XL5yf-Tm9a-CUl-Jtmli-Lf-Q-usqp-CAU.png",
+    "title": "Expo",
+    "category": "Creative",
+    "link": "https://expo.dev/"
+  },
+  {
+    "image_url": "https://i.ibb.co/88k9yFQ/images-q-tbn-ANd9-Gc-Tust-Lg-I-o-YGZWDOwz-Ab3-Xi-Dik-Jw-G7-YS1d-Ovw-usqp-CAU.jpg",
+    "title": "British Council",
+    "category": "Creative",
+    "link": "https://film.britishcouncil.org/"
   },
   {
     "image_url": "https://i.ibb.co/kHNkyK2/tiktok-banner-with-watercolor-splatter-69286-194.jpg",
     "title": "TikTok",
     "category": "Creative",
-    "url": "https://www.tiktok.com"
+    "link": "https://www.tiktok.com/"
   },
   {
     "image_url": "https://i.ibb.co/qDZY7yP/sidekick-desktop-app.png",
     "title": "Notion",
     "category": "Creative",
-    "url": "https://www.notion.so"
+    "link": "https://www.notion.so/"
   },
   {
     "image_url": "https://i.ibb.co/T4HzY6Z/1200px-Typeform-logo-01-svg.png",
     "title": "Typeform",
     "category": "Creative",
-    "url": "https://www.typeform.com"
+    "link": "https://www.typeform.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/bJTBMz8/images-q-tbn-ANd9-Gc-QKf9pt-REV8-DRv1-H1-Vr-PSc4-GTc4-T9xda-RUEYQ-usqp-CAU.jpg",
+    "title": "Hulu",
+    "category": "Entertainment",
+    "link": "https://www.hulu.com/welcome"
+  },
+  {
+    "image_url": "https://i.ibb.co/VCKmXq9/images-q-tbn-ANd9-Gc-TAY-3-UVl7yu-Da-JAOsnk-Tc-Q06kku-Oc2-Qlq6-QA-usqp-CAU.jpg",
+    "title": "HBO MAX",
+    "category": "Entertainment",
+    "link": "https://www.hbomax.com/geo-availability"
+  },
+  {
+    "image_url": "https://i.ibb.co/6rDWYMv/images-q-tbn-ANd9-Gc-SNI-6-KNH2i-G3-PDXLk4-AP1-Exg-Z0z-H8cik-SPg-usqp-CAU.jpg",
+    "title": "IGN",
+    "category": "Entertainment",
+    "link": "https://www.ign.com/"
   },
   {
     "image_url": "https://i.ibb.co/0tw1hdz/acastro-211025-1777-netflix-0001.jpg",
     "title": "Netflix Jobs",
     "category": "Entertainment",
-    "url": "https://jobs.netflix.com"
+    "link": "https://jobs.netflix.com/"
   },
   {
     "image_url": "https://i.ibb.co/8883Jy0/og.jpg",
     "title": "Twitch",
     "category": "Entertainment",
-    "url": "https://www.twitch.tv"
+    "link": "https://m.twitch.tv/"
   },
   {
     "image_url": "https://i.ibb.co/kHNkyK2/tiktok-banner-with-watercolor-splatter-69286-194.jpg",
     "title": "TikTok",
     "category": "Entertainment",
-    "url": "https://www.tiktok.com"
+    "link": "https://www.tiktok.com/"
   },
   {
-    "image_url": "https://i.ibb.co/4gDpbGY/images-q-tbn-ANd9-Gc-Tm-A-hq-Mjyo-XP5f8k-F54bz-P-r-VMCMo-CSOw-ZVg-usqp-CAU.jpg",
-    "title": "Nike",
+    "image_url": "https://i.ibb.co/gtZDDVT/images-q-tbn-ANd9-Gc-R6a9ws4-DWRHy4fzucke-Jhyq-K-5d-Bm8cpe-N1g-usqp-CAU.jpg",
+    "title": "Staples",
     "category": "Marketing",
-    "url": "https://www.nike.com"
+    "link": "https://www.staples.com/"
   },
   {
-    "image_url": "https://i.ibb.co/C67mwVT/images-q-tbn-ANd9-Gc-QXPgpuqs-Zg-ZEU2-Rni-NX5-Rw-GR-k9l-USm-Ol-U6-Q-usqp-CAU.jpg",
-    "title": "Ticketmaster",
+    "image_url": "https://i.ibb.co/tJtPJsH/images-q-tbn-ANd9-Gc-Tbo5mi-MOIiq0-Fi-Of-Jtmfxduy1-A3-ZJd-ZNQDs-Q-usqp-CAU.jpg",
+    "title": "Porsche",
     "category": "Marketing",
-    "url": "https://www.ticketmaster.com"
+    "link": "https://finder.porsche.com/in/en-IN"
   },
   {
-    "image_url": "https://i.ibb.co/4Fg6GLf/800px-AT-T-logo-2016-svg.png",
-    "title": "AT&T",
+    "image_url": "https://i.ibb.co/2kcjNmz/images-q-tbn-ANd9-Gc-TFd-Rf-UR-n0qzo-Kuvfqppe-KUpum9-Bj-UZy-Qn-ZQ-usqp-CAU.png",
+    "title": "Leafly",
     "category": "Marketing",
-    "url": "https://www.att.com"
-  }
+    "link": "https://www.leafly.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/4Rg5Nc8/images-q-tbn-ANd9-Gc-T1-CCl-JS3no-A4ugp-W0-PX8-Zu-IL3-ED5ovh-Iw-Fhg-usqp-CAU.jpg",
+    "title": "Deliveroo",
+    "category": "Marketing",
+    "link": "https://deliveroo.co.uk/"
+  },
+  {
+    "image_url": "https://i.ibb.co/w7f15nG/images-q-tbn-ANd9-Gc-QTn-ZAy2a-Ov9-FPKoizsny-Q6-P9-ZFMIji-s67zg-usqp-CAU.jpg",
+    "title": "RealSelf",
+    "category": "Marketing",
+    "link": "https://www.realself.com/"
+  },
+  {
+    "image_url": "https://i.ibb.co/7yYdMKr/images-q-tbn-ANd9-Gc-Q-Kjca-Zeo-Xb-R0-In-RHh-Pys-MLdr-TT-Vb-Fy-Sj-A-usqp-CAU.jpg",
+    "title": "Eurostar",
+    "category": "Marketing",
+    "link": "https://www.eurostar.com/rw-en"
+  } 
 ]

@@ -6,7 +6,7 @@ import 'react-tabs/style/react-tabs.css';
 
 const Card = ({ item }) => (
   <div className="p-4">
-    <a href={item.url} target='blank'>
+    <a href={item.link} target='blank'>
       <div className=" rounded-sm py-4 px-3 shadow-sm bg-gray-50 group hover:text-blue-600">
         <img src={item.image_url} alt={item.title} className="w-full h-52 border object-cover rounded shadow-sm" />
         <div >

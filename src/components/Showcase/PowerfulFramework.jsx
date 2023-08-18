@@ -4,8 +4,8 @@ import { TbPlayerTrackNext } from "react-icons/tb";
 import { FaBattleNet } from "react-icons/fa";
 const PowerfulFramework = () => {
   return (
-    <div className=" mt-10 bg-gray-50">
-      <h1 className="text-center text-3xl text-neutral font-semibold pt-32">
+    <div className=" bg-gray-50 px-1">
+      <h1 className="text-center md:text-3xl text-2xl text-neutral font-semibold md:pt-32 pt-14">
         A powerful framework for building high-performance,
         <br />
         server rendered web applications
