@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useContext } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,7 +27,7 @@ const Links = [
   },
   {
     path: "/analytics",
-    title: "Analytics",
+    title: "Analytic",
   },
   {
     path: "/templates",
@@ -51,20 +51,36 @@ const Navbar = () => {
             Next<span className="text-sm">-Docs Hub</span>
           </Link>
           <div className="dropdown ml-28">
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-10 pr-4 py-7 z-[5] shadow bg-white rounded-box">
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-10 pr-4 py-7 z-[5] shadow bg-white rounded-box"
+            >
               <li>
                 <Link href="/learn">Learn</Link>
                 <Link href="/Login">Login</Link>
               </li>
               {Links.map(({ path, title }) => (
                 <li key={path}>
-                  <Link className="text-[15px]" href={path}>{title}</Link>
+                  <Link className="text-[15px]" href={path}>
+                    {title}
+                  </Link>
                 </li>
               ))}
             </ul>
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
               </svg>
             </label>
           </div>
@@ -104,11 +120,16 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faSignOutAlt} />
                 </button>
               ) : (
-                <Link  href="/Login"><FaUserPlus className=' text-3xl mr-5' /></Link>
+                <Link href="/Login">
+                  <FaUserPlus className=" text-3xl mr-5" />
+                </Link>
               )}
             </div>
 
-            <Link href="/learn" className=" border-2 px-4 py-1 border-black rounded-md hover:bg-gray-300 mr-4">
+            <Link
+              href="/learn"
+              className=" border-2 px-4 py-1 border-black rounded-md hover:bg-gray-300 mr-4"
+            >
               Learn
             </Link>
           </div>
