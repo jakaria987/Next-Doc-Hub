@@ -17,7 +17,7 @@ const Links = [
     title: "Showcase",
   },
   {
-    path: "/docs",
+    path: "/Docs",
     title: "Docs",
   },
   {
@@ -30,7 +30,7 @@ const Links = [
   },
   {
     path: "/analytics",
-    title: "Analytic",
+    title: "Analytics",
   },
   {
     path: "/templates",
