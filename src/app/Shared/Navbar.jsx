@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +7,9 @@ import Image from "next/image";
 import logo from "./logo.png";
 import { Authcontext } from "@/components/Provider/AuthProvider";
 import { FaUserPlus } from "react-icons/fa";
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { RxCross2 } from 'react-icons/rx';
+
 
 const Links = [
   {
@@ -41,17 +44,19 @@ const Links = [
 
 const Navbar = () => {
   const { currentUser, logout } = useContext(Authcontext);
+const [navbar,setNavbar] = useState(true);
 
   return (
     <nav className="w-full p-0">
       <div className="navbar bg-white shadow-sm">
         <div className="navbar-start">
-          <Image src={logo} className="w-1/2 lg:w-1/4" />
+          { navbar ? <> <Image src={logo} className="w-1/2 lg:w-1/4" />
           <Link href="/" className="md:text-2xl lg:text-3xl font-medium">
             Next<span className="text-sm">-Docs Hub</span>
-          </Link>
-          <div className="dropdown ml-28">
-            <ul
+          </Link> </> : <></>}
+          
+          <div className="dropdown ">
+            {/* <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-10 pr-4 py-7 z-[5] shadow bg-white rounded-box"
             >
@@ -66,8 +71,8 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-            </ul>
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            </ul> */}
+            {/* <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-7 w-7"
@@ -82,7 +87,31 @@ const Navbar = () => {
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </label>
+            </label> */}
+            {/* <div className="md:hidden items-end">
+            <button onClick={()=> setNavbar(!navbar)} className="">
+              {
+                navbar ? <><GiHamburgerMenu  className="w-6 h-6"></GiHamburgerMenu> 
+                
+                </> : <> <RxCross2  className="w-6 h-6"></RxCross2> <div className=""><ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-10  z-[5] shadow bg-white w-screen h-screen"
+            >
+              <li>
+                <Link href="/learn">Learn</Link>
+                <Link href="/Login">Login</Link>
+              </li>
+              {Links.map(({ path, title }) => (
+                <li key={path}>
+                  <Link className="text-[15px]" href={path}>
+                    {title}
+                  </Link>
+                </li>
+              ))}
+            </ul></div> </>
+              }
+            </button>
+            </div> */}
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -134,7 +163,38 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        <div>
+        <div className="md:hidden items-end">
+            <button onClick={()=> setNavbar(!navbar)} className="">
+              {
+                navbar ? <><GiHamburgerMenu  className="w-6 h-6"></GiHamburgerMenu> 
+                
+                </> : <> <RxCross2  className="w-6 h-6"></RxCross2> <div className=""><ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-10  z-[5] shadow bg-white w-screen h-screen  gap-3 "
+            >
+              <li><div className="flex"><Image src={logo} className="w-36" />
+          <Link href="/" className="font-medium text-2xl">
+            Next<span className="text-sm">-Docs Hub</span>
+          </Link></div></li>
+              <li className="">
+                <Link href="/learn">Learn</Link> </li>
+                <li className=""> <Link href="/Login">Login</Link> </li>
+              
+              {Links.map(({ path, title }) => (
+                <li className="" key={path}>
+                  <Link className="text-[15px]" href={path}>
+                    {title}
+                  </Link>
+                </li>
+              ))}
+            </ul></div> </>
+              }
+            </button>
+            </div>
       </div>
+      </div>
+      
     </nav>
   );
 };
