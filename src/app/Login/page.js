@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useState } from 'react';
 
-import { FaGoogle, FaLock, FaUser, FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaGoogle, FaLock, FaUser, FaEye, FaEyeSlash, FaGithub } from "react-icons/fa";
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import log from "./undraw_secure_login_pdn4.svg";
@@ -12,7 +12,7 @@ import Link from 'next/link';
 const LoginPage = () => {
     const [loginError, setLoginError] = useState(null);
     const [passwordVisible, setPasswordVisible] = useState(false);
-    const { signIn, signInWithGoogle } = useContext(Authcontext);
+    const { signIn, signInWithGoogle,signInWithGithub } = useContext(Authcontext);
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const handleLogin = (data) => {
         const { email, password } = data;
@@ -38,8 +38,18 @@ const LoginPage = () => {
                 console.error("Google login error:", error);
             });
     };
+    const handleGithubSignIn = () => {
+        signInWithGithub()
+            .then(result => {
+                // You can choose to do something with the result if needed
+                console.log("Google login successful:", result.user);
+            })
+            .catch(error => {
+                console.error("Google login error:", error);
+            });
+    };
 
-
+    
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
     };
@@ -87,6 +97,10 @@ const LoginPage = () => {
                             <button onClick={handleGoogleLogin} className="social-icon">
                                 <FaGoogle />
                             </button>
+                            <button onClick={handleGithubSignIn} className="social-icon">
+                                <FaGithub />
+                            </button>
+
                         </div>
                     </div>
                 </div>
