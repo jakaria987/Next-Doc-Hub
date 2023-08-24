@@ -98,7 +98,8 @@ const LoginPage = () => {
                                 <FaGoogle />
                             </button>
                             <button onClick={handleGithubSignIn} className="social-icon">
-                                <FaGithub />
+                                <FaGithub
+                                />
                             </button>
 
                         </div>
