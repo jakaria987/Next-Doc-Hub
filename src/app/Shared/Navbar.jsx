@@ -47,7 +47,7 @@ const Navbar = () => {
 const [navbar,setNavbar] = useState(true);
 
   return (
-    <nav className="w-full p-0">
+    <nav className="w-full fixed top-0 left-0 right-0 z-10 sm:h-full">
       <div className="navbar bg-white shadow-sm">
         <div className="navbar-start">
           { navbar ? <> <Image src={logo} className="w-1/2 lg:w-1/4" />
@@ -163,15 +163,15 @@ const [navbar,setNavbar] = useState(true);
             </Link>
           </div>
         </div>
-        <div>
-        <div className="md:hidden items-end">
+        <div className="">
+        <div className="md:hidden items-end ">
             <button onClick={()=> setNavbar(!navbar)} className="">
               {
                 navbar ? <><GiHamburgerMenu  className="w-6 h-6"></GiHamburgerMenu> 
                 
                 </> : <> <RxCross2  className="w-6 h-6"></RxCross2> <div className=""><ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-10  z-[5] shadow bg-white w-screen h-screen  gap-3 "
+              className="menu m-0 dropdown-content mt-10 shadow bg-white w-screen h-screen  gap-3 "
             >
               <li><div className="flex"><Image src={logo} className="w-36" />
           <Link href="/" className="font-medium text-2xl">
