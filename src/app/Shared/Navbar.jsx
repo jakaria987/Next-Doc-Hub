@@ -7,9 +7,8 @@ import Image from "next/image";
 import logo from "./logo.png";
 import { Authcontext } from "@/components/Provider/AuthProvider";
 import { FaUserPlus } from "react-icons/fa";
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { RxCross2 } from 'react-icons/rx';
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
 
 const Links = [
   {
@@ -44,17 +43,17 @@ const Links = [
 
 const Navbar = () => {
   const { currentUser, logout } = useContext(Authcontext);
-const [navbar,setNavbar] = useState(true);
+  const [navbar, setNavbar] = useState(true);
 
   return (
-    <nav className="w-full fixed top-0 left-0 right-0 z-10 sm:h-full">
+    <nav className="w-full  md:h-full">
       <div className="navbar bg-white shadow-sm">
         <div className="navbar-start">
           { navbar ? <> <Image src={logo} className="w-1/2 lg:w-1/4" />
           <Link href="/" className="md:text-2xl lg:text-3xl font-medium">
             Next<span className="text-sm">-Docs Hub</span>
           </Link> </> : <></>}
-          
+
           <div className="dropdown ">
             {/* <ul
               tabIndex={0}
@@ -91,8 +90,8 @@ const [navbar,setNavbar] = useState(true);
             {/* <div className="md:hidden items-end">
             <button onClick={()=> setNavbar(!navbar)} className="">
               {
-                navbar ? <><GiHamburgerMenu  className="w-6 h-6"></GiHamburgerMenu> 
-                
+                navbar ? <><GiHamburgerMenu  className="w-6 h-6"></GiHamburgerMenu>
+
                 </> : <> <RxCross2  className="w-6 h-6"></RxCross2> <div className=""><ul
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-10  z-[5] shadow bg-white w-screen h-screen"
@@ -164,11 +163,11 @@ const [navbar,setNavbar] = useState(true);
           </div>
         </div>
         <div className="">
-        <div className="md:hidden items-end ">
+        <div className="lg:hidden items-end ">
             <button onClick={()=> setNavbar(!navbar)} className="">
               {
-                navbar ? <><GiHamburgerMenu  className="w-6 h-6"></GiHamburgerMenu> 
-                
+                navbar ? <><GiHamburgerMenu  className="w-6 h-6"></GiHamburgerMenu>
+
                 </> : <> <RxCross2  className="w-6 h-6"></RxCross2> <div className=""><ul
               tabIndex={0}
               className="menu m-0 dropdown-content mt-10 shadow bg-white w-screen h-screen  gap-3 "
@@ -180,7 +179,7 @@ const [navbar,setNavbar] = useState(true);
               <li className="">
                 <Link href="/learn">Learn</Link> </li>
                 <li className=""> <Link href="/Login">Login</Link> </li>
-              
+
               {Links.map(({ path, title }) => (
                 <li className="" key={path}>
                   <Link className="text-[15px]" href={path}>
@@ -194,8 +193,9 @@ const [navbar,setNavbar] = useState(true);
             </div>
       </div>
       </div>
-      
+
     </nav>
+   
   );
 };
 
