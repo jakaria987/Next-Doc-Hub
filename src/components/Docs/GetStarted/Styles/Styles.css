@@ -1,0 +1,8 @@
+/* styles.module.css */
+.divider {
+    width: 70%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 32px 0; /* Adjust margin as needed */
+  }
+  

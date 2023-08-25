@@ -1,3 +1,4 @@
+import GetStarted from "@/components/Docs/GetStarted/GetStarted";
 import Link from "next/link";
 import React from "react";
 import { FiBox } from "react-icons/fi";
@@ -112,9 +113,12 @@ const Docs = () => {
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
           {/* Page content here */}
+        <GetStarted></GetStarted>
+
+
           <label
             htmlFor="my-drawer-2"
-            className="btn btn-primary my-28 drawer-button lg:hidden"
+            className="btn btn-primary my-36 drawer-button lg:hidden"
           >
             Open Docs
           </label>
