@@ -46,7 +46,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(true);
 
   return (
-    <nav className="w-full  md:h-full">
+    <nav className="w-full md:h-full">
       <div className="navbar bg-white shadow-sm">
         <div className="navbar-start">
           { navbar ? <> <Image src={logo} className="w-1/2 lg:w-1/4" />
