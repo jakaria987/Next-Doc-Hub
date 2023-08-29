@@ -146,7 +146,7 @@ const SideNav = () => {
             ))}
             <li>
               <Link
-                href="/application"
+                href="/Application"
                 className="text-base text-semibold text-black"
               >
                 Building Your Application
