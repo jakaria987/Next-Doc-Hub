@@ -7,12 +7,8 @@ const getStart = [
     title: "Installation",
   },
   {
-    path: "/projectStructure",
+    path: "/ProjectStructure",
     title: "Project Structure",
-  },
-  {
-    path: "/reactEssential",
-    title: "React Essentials",
   },
 ];
 const application = [
@@ -119,7 +115,7 @@ const SideNav = () => {
             Open Docs
           </label>
         </div>
-        <div className="drawer-side shadow  h-full">
+        <div className="drawer-side ">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <div className="pt-10 px-8 flex items-center">
             <FiBox
@@ -137,12 +133,9 @@ const SideNav = () => {
           <ul className="menu px-10 pt-8 w-80 h-[calc (100vh-121px)] sticky top-[121px] bg-white  text-base-content">
             {/* Sidebar content here */}
             <li>
-              <Link
-                href="/GetStart"
-                className="text-lg text-semibold text-black"
-              >
+              <a href="/GetStart" className="text-lg text-semibold text-black">
                 Getting Started
-              </Link>
+              </a>
             </li>
             {getStart.map(({ path, title }) => (
               <li key={path}>
@@ -169,7 +162,7 @@ const SideNav = () => {
             ))}
 
             <li>
-              <Link href="/api" className="text-lg text-semibold text-black">
+              <Link href="/Api" className="text-lg text-semibold text-black">
                 ApI Reference
               </Link>
             </li>
@@ -181,7 +174,10 @@ const SideNav = () => {
               </li>
             ))}
             <li>
-              <Link href="/api" className="text-lg text-semibold text-black">
+              <Link
+                href="/Architecture"
+                className="text-lg text-semibold text-black"
+              >
                 Architecture
               </Link>
             </li>
@@ -194,7 +190,7 @@ const SideNav = () => {
             ))}
             <li>
               <Link
-                href="/community"
+                href="/Community"
                 className="text-lg text-semibold text-black"
               >
                 Community
@@ -202,7 +198,7 @@ const SideNav = () => {
             </li>
             <li>
               <Link
-                href="/contribution"
+                href="/Contribution"
                 className="text-medium text-gray-500 mb-16"
               >
                 Contribution Guide
