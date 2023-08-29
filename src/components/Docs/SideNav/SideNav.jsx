@@ -12,10 +12,13 @@ const getStart = [
   },
 ];
 const application = [
-  {
-    path: "/Routing",
-    title: "Routing",
-  },
+
+  // {
+  //   path: "/Routing",
+  //   title: "Routing",
+  // },
+
+
   {
     path: "/dataFetching",
     title: "Data Fetching",
@@ -49,6 +52,7 @@ const application = [
     title: "Upgrading",
   },
 ];
+
 const api = [
   {
     path: "/components",
@@ -102,6 +106,7 @@ const architecture = [
   },
 ];
 const SideNav = () => {
+
   return (
     <div>
       <div className="drawer lg:drawer-open">
@@ -152,6 +157,31 @@ const SideNav = () => {
                 Building Your Application
               </Link>
             </li>
+            <li>
+              <Link href="/Routing" className="text-medium text-semibold text-black">
+                Routing
+              </Link>
+
+              <ul>
+                <li>
+                  <Link
+                    href="/Routing/LinkingAndNavigating"
+                    className="text-medium text-gray-500"
+                  >
+                    Linking And Navigating
+
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/Routing/GroupRoutes"
+                    className="text-medium text-gray-500"
+                  >
+                    RouteGroups
+                  </Link>
+                </li>
+              </ul>
+            </li>
 
             {application.map(({ path, title }) => (
               <li key={path}>
@@ -159,6 +189,7 @@ const SideNav = () => {
                   {title}
                 </Link>
               </li>
+
             ))}
 
             <li>
@@ -205,6 +236,8 @@ const SideNav = () => {
               </Link>
             </li>
           </ul>
+
+
         </div>
       </div>
     </div>
