@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image'
-import capture from '../LinkingandNavigating/assets/Capturecode.PNG'
-import pic1 from '../LinkingandNavigating/assets/2.PNG'
-import pic2 from '../LinkingandNavigating/assets/3.PNG'
-import pic3 from '../LinkingandNavigating/assets/4.PNG'
-import pic4 from '../LinkingandNavigating/assets/5.PNG'
-import pic5 from '../LinkingandNavigating/assets/6.PNG'
-import pic6 from '../LinkingandNavigating/assets/8.PNG'
-import pic7 from '../LinkingandNavigating/assets/9.PNG'
+import capture from './assets/Capturecode.PNG'
+import pic1 from './assets/2.PNG'
+import pic2 from './assets/3.PNG'
+import pic3 from './assets/4.PNG'
+import pic4 from './assets/5.PNG'
+import pic5 from './assets/6.PNG'
+import pic6 from './assets/8.PNG'
+import pic7 from './assets/9.PNG'
 
 
 const Linking = () => {

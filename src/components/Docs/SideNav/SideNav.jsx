@@ -90,16 +90,19 @@ const routes = [
     path: "/Routing",
     title: "Routing",
     subItems: [
-      "Pages and Layouts",
-      "Dynamic Routes",
-      "Linking and Navigating",
-      "Custom App",
-      "Custom Document",
-      "Custom Errors",
-      "API Routes",
-      "Internationalization",
-      "Authenticating",
-      "Middleware",
+"Defining Routes",
+"Pages and Layouts",
+"Linking and Navigating",
+"Route Groups",
+"Dynamic Routes",
+"Loading UI and Streaming",
+"Error Handling",
+"Parallel Routes",
+"Intercepting Routes",
+"Route Handlers",
+"Middleware",
+"Project Organization",
+"Internationalization",
     ]
   },
   // ... other routes ...
@@ -140,7 +143,7 @@ const SideNav = () => {
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
           {/* Page content here */}
-          <GetStart/>
+          <GetStart />
           <label
             htmlFor="my-drawer-2"
             className="btn btn-primary my-36 drawer-button lg:hidden"

@@ -1,7 +1,7 @@
 import Linking from '@/components/LinkingandNavigating/Linking';
 import React from 'react';
 
-const Linkging = () => {
+const Linking = () => {
     return (
         <div>
             <Linking></Linking>
@@ -9,4 +9,4 @@ const Linkging = () => {
     );
 };
 
-export default Linkging;
+export default Linking;
