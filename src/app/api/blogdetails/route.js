@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 export async function GET(request) {
     try {
         const db = await connect();
-        const blogs = db.collection('blog');
+        const blogs = db.collection('Blog');
         
         const query = {};
         const blog = await blogs.find(query).toArray();
