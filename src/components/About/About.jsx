@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='bg-zinc-200 mb-12'>
+        <div className='bg-zinc-200 my-12 '>
            
            <div className="hero h-[250px] bg-opacity-80" style={{backgroundImage: 'url(https://png.pngtree.com/thumb_back/fh260/background/20201009/pngtree-dark-green-cyan-paper-cut-minimalist-background-for-brochure-poster-banner-image_405384.jpg)'}}>
 
