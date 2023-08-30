@@ -1,0 +1,501 @@
+[
+  {
+    "language": "C",
+    "logo":"https://ibb.co/SxDpjPC",
+    "introduction": "Welcome to the documentation for the C programming language! This guide will introduce you to the basics of C and provide you with examples to help you get started.",
+    "tableOfContents": [
+      "Introduction",
+      "Syntax",
+      "Data Types",
+      "Control Flow",
+      "Functions",
+      "Memory Management",
+      "Pointers",
+      "Structures",
+      "File I/O",
+      "Example Code"
+    ],
+    "sections": {
+      "Introduction": "C is a powerful and widely used programming language known for its efficiency and low-level features. Whether you're a beginner or an experienced developer, this documentation will help you understand the fundamental concepts of the C language.",
+      "Syntax": "The syntax of C is concise and follows a procedural programming style. Here's a basic example of a C program:\n\n```c\n// Hello World example\n#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}\n```",
+      "Data Types": [
+        {
+          "name": "int",
+          "description": "Integers are used to represent whole numbers. They can be positive or negative."
+        },
+        {
+          "name": "float",
+          "description": "Floats are used to represent floating-point numbers. They can hold real numbers with decimal points."
+        },
+        {
+          "name": "char",
+          "description": "Chars represent individual characters. They are enclosed in single quotes."
+        },
+        {
+          "name": "double",
+          "description": "Doubles are used to represent double-precision floating-point numbers. They provide higher precision than floats."
+        },
+        {
+          "name": "short",
+          "description": "Shorts are used to represent small integers. They consume less memory compared to integers."
+        }
+      ],
+      "Control Flow": [
+        {
+          "name": "if statement",
+          "description": "Conditional statements allow you to execute code based on conditions. Use the `if`, `else if`, and `else` keywords."
+        },
+        {
+          "name": "for loop",
+          "description": "A `for` loop is used for iterative execution. It consists of initialization, condition, iteration, and body parts."
+        },
+        {
+          "name": "while loop",
+          "description": "A `while` loop continues execution as long as a specified condition is true."
+        },
+        {
+          "name": "switch statement",
+          "description": "The `switch` statement allows you to perform different actions based on different conditions. It's useful for menu-driven programs."
+        }
+      ],
+      "Functions": "Functions in C allow you to encapsulate and reuse code. Here's an example of a function that adds two integers:\n\n```c\n#include <stdio.h>\n\nint add(int a, int b) {\n    return a + b;\n}\n```",
+      "Memory Management": "C provides memory management features using functions like `malloc` and `free` to allocate and deallocate memory dynamically. This helps in optimizing memory usage and preventing memory leaks.",
+      "Pointers": "Pointers are a powerful feature in C. They allow you to directly access memory addresses and manipulate data. Understanding pointers is crucial for efficient memory management and working with data structures.",
+      "Structures": "Structures allow you to create custom data types by grouping variables together. They are useful for creating more complex data structures, such as representing a person with multiple attributes.",
+      "File I/O": "C supports file input and output operations. You can read from and write to files using functions like `fopen`, `fread`, and `fwrite`. This is essential for handling persistent data and interacting with external files.",
+      "Example Code": [
+        {
+          "description": "Example: Finding the maximum of two numbers",
+          "code": "int max(int a, int b) {\n    if (a > b) {\n        return a;\n    } else {\n        return b;\n    }\n}\n\nint main() {\n  int num1 = 10;\n    int num2 = 20;\n    int result = max(num1, num2);\n    printf(\"The maximum number is %d\\n\", result);\n    return 0;\n}"
+        },
+        {
+          "description": "Example: Fibonacci sequence using recursion",
+          "code": "int fibonacci(int n) {\n    if (n <= 1) {\n        return n;\n    }\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\n\nint main() {\n    int n = 10;\n    printf(\"Fibonacci sequence up to %d terms:\\n\", n);\n    for (int i = 0; i < n; i++) {\n        printf(\"%d \", fibonacci(i));\n    }\n    return 0;\n}"
+        }
+      ] 
+    }
+  },
+  {
+    "language": "Python",
+    "logo":"https://ibb.co/SmvvyNr",
+    "introduction": "Welcome to the documentation for the Python programming language! This guide will introduce you to the basics of Python and provide you with examples to help you get started.",
+    "tableOfContents": [
+      "Introduction",
+      "Syntax",
+      "Data Types",
+      "Control Flow",
+      "Functions",
+      "Lists",
+      "Tuples",
+      "Dictionaries",
+      "Sets",
+      "Classes and Objects",
+      "File I/O",
+      "Example Code"
+    ],
+    "sections": {
+      "Introduction": "Python is a versatile and widely used programming language known for its readability and ease of use. This documentation will help you grasp the essential concepts of Python programming.",
+      "Syntax": "Python's syntax emphasizes readability and straightforward code structure. Here's a basic example of a Python program:\n\n```python\n# Hello World example\nprint(\"Hello, World!\")\n```",
+      "Data Types": [
+        {
+          "name": "int",
+          "description": "Integers are used to represent whole numbers. They can be positive or negative."
+        },
+        {
+          "name": "float",
+          "description": "Floats are used to represent floating-point numbers. They can hold real numbers with decimal points."
+        },
+        {
+          "name": "str",
+          "description": "Strings represent sequences of characters. They are enclosed in single or double quotes."
+        },
+        {
+          "name": "bool",
+          "description": "Booleans represent either True or False values. They are used for logical operations and conditional expressions."
+        },
+        {
+          "name": "list",
+          "description": "Lists are ordered collections of items. They can hold different data types and are mutable."
+        },
+        {
+          "name": "tuple",
+          "description": "Tuples are similar to lists, but they are immutable. They are often used for grouping related data."
+        },
+        {
+          "name": "dict",
+          "description": "Dictionaries are used to store key-value pairs. They allow fast data retrieval based on keys."
+        },
+        {
+          "name": "set",
+          "description": "Sets are unordered collections of unique elements. They are useful for operations like membership testing and removing duplicates."
+        }
+      ],
+      "Control Flow": [
+        {
+          "name": "if statement",
+          "description": "Conditional statements allow you to execute code based on conditions. Use the `if`, `elif`, and `else` keywords."
+        },
+        {
+          "name": "for loop",
+          "description": "A `for` loop is used for iterative execution. It iterates over a sequence or collection."
+        },
+        {
+          "name": "while loop",
+          "description": "A `while` loop continues execution as long as a specified condition is true."
+        },
+        {
+          "name": "try-except block",
+          "description": "The `try` block allows you to test a block of code for errors. The `except` block handles exceptions that may occur."
+        }
+      ],
+      "Functions": "Functions in Python allow you to encapsulate and reuse code. Here's an example of a function that adds two integers:\n\n```python\ndef add(a, b):\n    return a + b\n```",
+      "Lists": "Lists are versatile data structures in Python. They can store elements of different types and can be modified after creation.",
+      "Tuples": "Tuples are similar to lists, but they are immutable. They are often used for returning multiple values from functions.",
+      "Dictionaries": "Dictionaries are used to store key-value pairs. They allow fast data retrieval based on keys.",
+      "Sets": "Sets are unordered collections of unique elements. They are useful for membership testing and eliminating duplicates.",
+      "Classes and Objects": "Python supports object-oriented programming with classes and objects. They allow you to create custom data types with attributes and methods.",
+      "File I/O": "Python provides file input and output operations using functions like `open`, `read`, and `write`. This is essential for working with files.",
+      "Example Code": [
+        {
+          "description": "Example: Factorial using recursion",
+          "code": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))"
+        },
+        {
+          "description": "Example: Reading and writing to a file",
+          "code": "file = open('sample.txt', 'w')\nfile.write('Hello, World!')\nfile.close()\n\nfile = open('sample.txt', 'r')\ndata = file.read()\nprint(data)\nfile.close()"
+        },
+        {
+          "description": "Example: Using a dictionary",
+          "code": "student = {\n    'name': 'John',\n    'age': 25,\n    'courses': ['Math', 'Science']\n}\n\nprint(student['name'])\nprint(student.get('age'))"
+        }
+      ]
+    }
+  },
+  {
+    "language": "Java",
+    "icon":"https://ibb.co/54qJFyY",
+    "introduction": "Welcome to the documentation for the Java programming language! This guide will introduce you to the basics of Java and provide you with examples to help you get started.",
+    "tableOfContents": [
+      "Introduction",
+      "Syntax",
+      "Data Types",
+      "Control Flow",
+      "Functions",
+      "Arrays",
+      "Classes and Objects",
+      "Inheritance",
+      "Interfaces",
+      "File I/O",
+      "Example Code"
+    ],
+    "sections": {
+      "Introduction": "Java is a widely used and platform-independent programming language known for its robustness and versatility. This documentation will help you understand the foundational concepts of Java programming.",
+      "Syntax": "Java syntax is C-like and object-oriented. Here's a basic example of a Java program:\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```",
+      "Data Types": [
+        {
+          "name": "int",
+          "description": "Integers are used to represent whole numbers. They can be positive or negative."
+        },
+        {
+          "name": "float",
+          "description": "Floats are used to represent floating-point numbers. They can hold real numbers with decimal points."
+        },
+        {
+          "name": "char",
+          "description": "Chars represent individual characters. They are enclosed in single quotes."
+        },
+        {
+          "name": "boolean",
+          "description": "Booleans represent either true or false values. They are used for logical operations and conditional expressions."
+        },
+        {
+          "name": "String",
+          "description": "Strings represent sequences of characters. They are objects in Java and have various methods for manipulation."
+        },
+        {
+          "name": "Arrays",
+          "description": "Arrays are used to store multiple values of the same data type. They have a fixed size once created."
+        },
+        {
+          "name": "Class",
+          "description": "Classes are used to define object blueprints. They contain attributes (fields) and methods."
+        },
+        {
+          "name": "Object",
+          "description": "Objects are instances of classes. They encapsulate data and behavior."
+        }
+      ],
+      "Control Flow": [
+        {
+          "name": "if statement",
+          "description": "Conditional statements allow you to execute code based on conditions. Use the `if`, `else if`, and `else` keywords."
+        },
+        {
+          "name": "for loop",
+          "description": "A `for` loop is used for iterative execution. It iterates over a range of values or elements in an array."
+        },
+        {
+          "name": "while loop",
+          "description": "A `while` loop continues execution as long as a specified condition is true."
+        },
+        {
+          "name": "switch statement",
+          "description": "The `switch` statement allows you to perform different actions based on different conditions. It's useful for menu-driven programs."
+        }
+      ],
+      "Functions": "Methods in Java allow you to encapsulate and reuse code. Here's an example of a method that adds two integers:\n\n```java\npublic class Calculator {\n    public static int add(int a, int b) {\n        return a + b;\n    }\n}\n```",
+      "Arrays": "Arrays are commonly used in Java to store multiple values of the same data type. They are indexed from 0 to length-1.",
+      "Classes and Objects": "Java supports object-oriented programming with classes and objects. They allow you to create custom data types with attributes and methods.",
+      "Inheritance": "Inheritance in Java allows you to create a new class based on an existing class. The new class inherits the attributes and methods of the base class.",
+      "Interfaces": "Interfaces define a contract that classes must adhere to. They specify methods that implementing classes must provide.",
+      "File I/O": "Java provides file input and output operations using classes like `File`, `FileReader`, and `FileWriter`. This is essential for working with files.",
+      "Example Code": [
+        {
+          "description": "Example: Factorial using recursion",
+          "code": "public class Factorial {\n    public static int factorial(int n) {\n        if (n == 0) {\n            return 1;\n        } else {\n            return n * factorial(n - 1);\n        }\n    }\n\n    public static void main(String[] args) {\n        System.out.println(factorial(5));\n    }\n}"
+        },
+        {
+          "description": "Example: Creating and using an object",
+          "code": "public class Student {\n    String name;\n    int age;\n\n    public Student(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n\n    public static void main(String[] args) {\n        Student student = new Student(\"John\", 20);\n        System.out.println(\"Name: \" + student.name);\n        System.out.println(\"Age: \" + student.age);\n    }\n}"
+        },
+        {
+          "description": "Example: Using an array",
+          "code": "public class ArrayExample {\n    public static void main(String[] args) {\n        int[] numbers = { 1, 2, 3, 4, 5 };\n        for (int num : numbers) {\n            System.out.print(num + \" \");\n        }\n    }\n}"
+        }
+      ]
+    }
+  },{
+    "language": "JavaScript",
+    "icon":"https://ibb.co/y8yy1LP",
+    "introduction": "Welcome to the documentation for the JavaScript programming language! This guide will introduce you to the basics of JavaScript and provide you with examples to help you get started.",
+    "tableOfContents": [
+      "Introduction",
+      "Syntax",
+      "Data Types",
+      "Control Flow",
+      "Functions",
+      "Arrays",
+      "Objects",
+      "Classes (ES6)",
+      "Promises",
+      "Async/Await",
+      "Example Code"
+    ],
+    "sections": {
+      "Introduction": "JavaScript is a versatile scripting language used for web development. This documentation will help you understand the key concepts of JavaScript programming.",
+      "Syntax": "JavaScript syntax is designed to be lightweight and easy to understand. Here's a basic example of a JavaScript program:\n\n```javascript\n// Hello World example\nconsole.log('Hello, World!');\n```",
+      "Data Types": [
+        {
+          "name": "Number",
+          "description": "Numbers represent both integers and floating-point numbers."
+        },
+        {
+          "name": "String",
+          "description": "Strings represent sequences of characters. They can be enclosed in single or double quotes."
+        },
+        {
+          "name": "Boolean",
+          "description": "Booleans represent true or false values."
+        },
+        {
+          "name": "Array",
+          "description": "Arrays store multiple values of various data types. They are indexed starting from 0."
+        },
+        {
+          "name": "Object",
+          "description": "Objects store key-value pairs and represent more complex data structures."
+        }
+      ],
+      "Control Flow": [
+        {
+          "name": "if statement",
+          "description": "Conditional statements allow you to execute code based on conditions."
+        },
+        {
+          "name": "for loop",
+          "description": "A `for` loop is used for iterative execution. It iterates over a range of values or elements in an array."
+        },
+        {
+          "name": "while loop",
+          "description": "A `while` loop continues execution as long as a specified condition is true."
+        },
+        {
+          "name": "switch statement",
+          "description": "The `switch` statement allows you to perform different actions based on different conditions."
+        }
+      ],
+      "Functions": "Functions in JavaScript allow you to encapsulate and reuse code. Here's an example of a function that adds two numbers:\n\n```javascript\nfunction add(a, b) {\n    return a + b;\n}\n```",
+      "Arrays": "Arrays in JavaScript can hold a mixture of data types and can dynamically change in size.",
+      "Objects": "Objects are fundamental in JavaScript and store data as key-value pairs.",
+      "Classes (ES6)": "JavaScript supports classes for object-oriented programming. Here's an example of a class:\n\n```javascript\nclass Person {\n    constructor(name, age) {\n        this.name = name;\n        this.age = age;\n    }\n}\n```",
+      "Promises": "Promises are used for asynchronous programming. They represent a value that might be available now, in the future, or never.",
+      "Async/Await": "Async/await is a modern approach to handling asynchronous operations in a synchronous-looking style.",
+      "Example Code": [
+        {
+          "description": "Example: Fetching data from an API",
+          "code": "fetch('https://api.example.com/data')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.error(error));"
+        },
+        {
+          "description": "Example: Creating an object using a class",
+          "code": "class Car {\n    constructor(make, model) {\n        this.make = make;\n        this.model = model;\n    }\n}\nconst myCar = new Car('Toyota', 'Camry');\nconsole.log(myCar);"
+        }
+      ]
+    }
+  }  ,{
+    "language": "C++",
+    "icon":"https://ibb.co/88t7S8C",
+    "introduction": "Welcome to the documentation for the C++ programming language! This guide will introduce you to the basics of C++ and provide you with examples to help you get started.",
+    "tableOfContents": [
+      "Introduction",
+      "Syntax",
+      "Data Types",
+      "Control Flow",
+      "Functions",
+      "Arrays",
+      "Classes",
+      "Inheritance",
+      "Templates",
+      "STL Containers",
+      "Example Code"
+    ],
+    "sections": {
+      "Introduction": "C++ is an extension of the C programming language with additional features. This documentation will help you learn C++ from the ground up.",
+      "Syntax": "C++ syntax is similar to C but with added features. Here's a basic example of a C++ program:\n\n```cpp\n// Hello World example\n#include <iostream>\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}\n```",
+      "Data Types": [
+        {
+          "name": "int",
+          "description": "Integers are used to represent whole numbers. They can be positive or negative."
+        },
+        {
+          "name": "float",
+          "description": "Floats are used to represent floating-point numbers. They can hold real numbers with decimal points."
+        },
+        {
+          "name": "char",
+          "description": "Chars represent individual characters. They are enclosed in single quotes."
+        },
+        {
+          "name": "double",
+          "description": "Doubles are used to represent double-precision floating-point numbers. They provide higher precision than floats."
+        },
+        {
+          "name": "bool",
+          "description": "Booleans represent true or false values."
+        }
+      ],
+      "Control Flow": [
+        {
+          "name": "if statement",
+          "description": "Conditional statements allow you to execute code based on conditions."
+        },
+        {
+          "name": "for loop",
+          "description": "A `for` loop is used for iterative execution. It iterates over a range of values or elements in an array."
+        },
+        {
+          "name": "while loop",
+          "description": "A `while` loop continues execution as long as a specified condition is true."
+        },
+        {
+          "name": "switch statement",
+          "description": "The `switch` statement allows you to perform different actions based on different conditions."
+        }
+      ],
+      "Functions": "Functions in C++ allow you to encapsulate and reuse code. Here's an example of a function that adds two integers:\n\n```cpp\n#include <iostream>\nint add(int a, int b) {\n    return a + b;\n}\n```",
+      "Arrays": "Arrays in C++ can hold a collection of values of the same data type.",
+      "Classes": "C++ supports classes for object-oriented programming. Here's an example of a class:\n\n```cpp\nclass Rectangle {\npublic:\n    int width;\n    int height;\n};\n```",
+      "Inheritance": "C++ supports inheritance for creating derived classes from base classes.",
+      "Templates": "Templates allow you to write generic functions and classes that work with different data types.",
+      "STL Containers": "The Standard Template Library (STL) provides various container classes for managing collections of objects.",
+      "Example Code": [
+        {
+          "description": "Example: Using a class to create objects",
+          "code": "class Book {\npublic:\n    std::string title;\n    std::string author;\n};\n\nint main() {\n    Book myBook;\n    myBook.title = \"The Great Gatsby\";\n    myBook.author = \"F. Scott Fitzgerald\";\n    return 0;\n}"
+        },
+        {
+          "description": "Example: Using an array to store integers",
+          "code": "int numbers[] = { 1, 2, 3, 4, 5 };\nfor (int num : numbers) {\n    std::cout << num << \" \";\n}"
+        }
+      ]
+    }
+  },
+  {
+    "language": "Ruby",
+    "icon":"https://ibb.co/Ntdt8vr",
+    "introduction": "Welcome to the documentation for the Ruby programming language! This guide will introduce you to the basics of Ruby and provide you with examples to help you get started.",
+    "tableOfContents": [
+      "Introduction",
+      "Syntax",
+      "Data Types",
+      "Control Flow",
+      "Functions",
+      "Arrays",
+      "Hashes",
+      "Classes",
+      "Modules",
+      "Exception Handling",
+      "Example Code"
+    ],
+    "sections": {
+      "Introduction": "Ruby is an expressive and dynamic scripting language used for various applications. This documentation will help you understand the core concepts of Ruby programming.",
+      "Syntax": "Ruby syntax is designed to be elegant and easy to read. Here's a basic example of a Ruby program:\n\n```ruby\n# Hello World example\nputs 'Hello, World!'\n```",
+      "Data Types": [
+        {
+          "name": "Integer",
+          "description": "Integers represent whole numbers."
+        },
+        {
+          "name": "Float",
+          "description": "Floats represent floating-point numbers."
+        },
+        {
+          "name": "String",
+          "description": "Strings represent sequences of characters."
+        },
+        {
+          "name": "Boolean",
+          "description": "Booleans represent true or false values."
+        },
+        {
+          "name": "Symbol",
+          "description": "Symbols are lightweight identifiers often used as keys in hashes."
+        }
+      ],
+      "Control Flow": [
+        {
+          "name": "if statement",
+          "description": "Conditional statements allow you to execute code based on conditions."
+        },
+        {
+          "name": "for loop",
+          "description": "A `for` loop is used for iterative execution. It iterates over a range of values or elements in an array."
+        },
+        {
+          "name": "while loop",
+          "description": "A `while` loop continues execution as long as a specified condition is true."
+        },
+        {
+          "name": "case statement",
+          "description": "The `case` statement allows you to perform different actions based on different conditions."
+        }
+      ],
+      "Functions": "Functions in Ruby are called methods and allow you to encapsulate and reuse code. Here's an example of a method that adds two numbers:\n\n```ruby\ndef add(a, b)\n    return a + b\nend\n```",
+      "Arrays": "Arrays in Ruby can hold a collection of objects of any type.",
+      "Hashes": "Hashes are collections of key-value pairs used to store data.",
+      "Classes": "Ruby supports classes for object-oriented programming. Here's an example of a class:\n\n```ruby\nclass Person\n    attr_accessor :name, :age\n    def initialize(name, age)\n        @name = name\n        @age = age\n    end\nend\n```",
+      "Modules": "Modules allow you to group methods and constants and include them in classes.",
+      "Exception Handling": "Ruby provides built-in mechanisms to handle exceptions and errors.",
+      "Example Code": [
+        {
+          "description": "Example: Using a class to create objects",
+          "code": "class Book\n    attr_accessor :title, :author\nend\n\nmy_book = Book.new\nmy_book.title = 'The Great Gatsby'\nmy_book.author = 'F. Scott Fitzgerald'"
+        },
+        {
+          "description": "Example: Iterating through an array",
+          "code": "fruits = ['apple', 'banana', 'orange']\nfruits.each do |fruit|\n    puts fruit\nend"
+        }
+      ]
+    }
+  }
+  
+  ]
