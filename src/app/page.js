@@ -1,3 +1,4 @@
+import About from '@/components/About/About';
 import AboutNextjs from '@/components/AboutNextjs';
 import Banner from '@/components/Home/Banner/Banner';
 import ProductionGradeFoundation from '@/components/Home/ProductionGradeFoundation/ProductionGradeFoundation';
@@ -10,7 +11,7 @@ const HomePage=()=> {
       <AboutNextjs></AboutNextjs>
       <ProductionGradeFoundation/>
       <MiddleSection/>
-     
+     <About></About>
     </main>
      
   )
