@@ -1,5 +1,7 @@
+"use client"
+import GetStart from "@/app/GetStart/page";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FiBox } from "react-icons/fi";
 const getStart = [
   {
@@ -83,6 +85,25 @@ const api = [
     title: "Next.js CLI",
   },
 ];
+const routes = [
+  {
+    path: "/Routing",
+    title: "Routing",
+    subItems: [
+      "Pages and Layouts",
+      "Dynamic Routes",
+      "Linking and Navigating",
+      "Custom App",
+      "Custom Document",
+      "Custom Errors",
+      "API Routes",
+      "Internationalization",
+      "Authenticating",
+      "Middleware",
+    ]
+  },
+  // ... other routes ...
+];
 const architecture = [
   {
     path: "/Accessibility",
@@ -106,6 +127,12 @@ const architecture = [
   },
 ];
 const SideNav = () => {
+  const [activeSection, setActiveSection] = useState(null);
+
+  const toggleSection = (index) => {
+    setActiveSection(activeSection === index ? null : index);
+  };
+
 
   return (
     <div>
@@ -113,6 +140,7 @@ const SideNav = () => {
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
           {/* Page content here */}
+          <GetStart/>
           <label
             htmlFor="my-drawer-2"
             className="btn btn-primary my-36 drawer-button lg:hidden"
@@ -138,9 +166,9 @@ const SideNav = () => {
           <ul className="menu px-10 pt-8 w-80 h-[calc (100vh-121px)] sticky top-[121px] bg-white  text-base-content">
             {/* Sidebar content here */}
             <li>
-              <a href="/GetStart" className="text-lg text-semibold text-black">
+              <Link href="/GetStart" className="text-lg text-semibold text-black">
                 Getting Started
-              </a>
+              </Link>
             </li>
             {getStart.map(({ path, title }) => (
               <li key={path}>
@@ -157,31 +185,31 @@ const SideNav = () => {
                 Building Your Application
               </Link>
             </li>
-            <li>
-              <Link href="/Routing" className="text-medium text-semibold text-black">
-                Routing
-              </Link>
-
-              <ul>
-                <li>
-                  <Link
-                    href="/Routing/LinkingAndNavigating"
-                    className="text-medium text-gray-500"
-                  >
-                    Linking And Navigating
-
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/Routing/GroupRoutes"
-                    className="text-medium text-gray-500"
-                  >
-                    RouteGroups
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            {routes.map(({ path, title, subItems }, index) => (
+              <li key={path}>
+                <button
+                  className={`flex items-center justify-between w-full text-base text-semibold text-black ${activeSection === index ? 'active' : ''
+                    }`}
+                  onClick={() => toggleSection(index)}
+                >
+                  {title}
+                  <span className={`ml-2 transform transition-transform ${activeSection === index ? 'rotate-180' : 'rotate-0'}`}>
+                    ▼
+                  </span>
+                </button>
+                {activeSection === index && (
+                  <ul>
+                    {subItems.map((subItem, subIndex) => (
+                      <li key={subIndex}>
+                        <Link className="text-medium text-gray-500" href={`${path}/${subItem}`}>
+                          {subItem}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
 
             {application.map(({ path, title }) => (
               <li key={path}>
