@@ -1,5 +1,4 @@
 "use client";
-import { data } from "autoprefixer";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
@@ -7,13 +6,14 @@ const BlogPage = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("blog.json")
+    fetch("api/blogdetails")
       .then((res) => res.json())
       .then((data) => setBlogs(data))
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
   }, []);
+  console.log(blogs);
   return (
     <div>
       <h1 className="text-3xl font-bold pl-20 py-12 ">
@@ -21,9 +21,9 @@ const BlogPage = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-20 my-10 ">
         {blogs?.map(
-          ({ id, title, image, publish_date, author_name, category }) => (
+          ({ _id, title, image, publish_date, author_name, category }) => (
             <div
-              key={id}
+              key={_id}
               className="card w-96 my-2 rounded text-white bg-base-100 shadow-xl image-full"
             >
               <figure>
@@ -39,7 +39,7 @@ const BlogPage = () => {
                   <Link
                     // href=""
                     className="bg-white hover:bg-slate-200  text-center rounded-md text-black p-2"
-                    href={`/Blog/${id}`}
+                    href={`/Blog/${_id}`}
                   >
                     Read More
                   </Link>
