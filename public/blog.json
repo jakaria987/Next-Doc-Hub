@@ -1,165 +1,72 @@
 [
   {
     "id": 1,
-    "title": "Next.js App Router Update",
-    "description": "For the next release (and coming months) we're focused on the following areas:",
-    "date": "June 22nd, 2023",
-    "point": ["Performance", "Stability", "Developer Experience"],
-    "more1": "First, it's helpful to provide some context on how the App Router has been designed.Growing Beyond the Pages Router by Aligning with React As we saw increased adoption and larger scale applications being built with Next.js, we received feedback from the community and identified areas where we started to reach the limits of the Pages Router. Most notably, the Next.js Pages Router was not designed for streaming, a cornerstone primitive in modern React, that helps us address the limitations we were facing and realize our long-term vision for Next.js. Making streaming-friendly framework APIs for data fetching, asset loading, and page metadata, as well as taking advantage of React's newer primitives required large changes to the core architecture of Next.js. We took the opportunity to build on top of the latest React concurrent features, like Server Components, Suspense, and more, which have been designed for streaming architectures.",
-    "more2": "The Pages Router has been around for six years now. The release of the App Router meant the introduction of new APIs which are still young, with just six months of usage. We've come a long way in a short amount of time, but there are still opportunities to improve as we learn more from our community and how they're using it. We appreciate the community's willingness to eagerly adopt the App Router and provide feedback. There's been a number of bug reports we're investigating and we're thankful for the minimal reproductions you have created to help isolate issues and verify fixes. Since 13.4, we've already patched a number of high impact bugs around stability that are available in the latest patch release (13.4.7). We will be continuing to focus on performance and stability with high intensity.",
-    "more3": "We're thankful many of you have chosen to learn and build with Next.js.Our focus on performance, stability, and developer experience will be reflected in the upcoming releases of Next.js. We want using Next.js to be delightful—and to make you (and your team) more productive. As always, we greatly appreciate your feedback. If you are experiencing any issues with Next.js, please open an issue, or start a new discussion, and we will investigate."
+    "title": "Getting Started with JavaScript: A Beginner's Guide",
+    "image": "https://oracle-devrel.github.io/devo-image-repository/seo-thumbnails/JavaScript---Thumbnail-1200-x-630.jpg",
+    "category": "JavaScript",
+    "publish_date": "2023-09-01",
+    "author_name": "John Smith",
+    "author_image": "john_smith.jpg",
+    "description": "JavaScript is a versatile and widely-used programming language that plays a crucial role in modern web development. From enhancing the interactivity of websites to building complex web applications, JavaScript is a must-learn language for both beginners and experienced developers.\n\nThis beginner's guide is designed to provide you with a solid foundation in JavaScript. We'll start with the basics: variables, data types, and operators. You'll understand how to manipulate data and perform calculations, essential skills for any programmer.\n\nNext, we'll explore control structures such as if statements, loops, and switch statements. These concepts empower you to create dynamic and responsive programs. As you progress, we'll delve into functions, a fundamental building block in JavaScript. You'll learn how to create reusable code that improves efficiency and readability.\n\nOne of the highlights of JavaScript is its ability to interact with HTML and CSS through the Document Object Model (DOM). We'll guide you through DOM manipulation, enabling you to create interactive web pages. Additionally, you'll learn about event handling and how to respond to user actions.\n\nAs we advance, we'll introduce you to asynchronous programming using callbacks and promises. This is essential for handling operations that might take time, such as fetching data from APIs. We'll also touch on ES6 features like arrow functions, template literals, and classes, which make your code more concise and maintainable.\n\nBy the end of this guide, you'll have a strong grasp of JavaScript's core concepts and be ready to build your own projects. Whether you're developing a personal website, a web app, or diving into front-end frameworks like React or Vue.js, this guide will set you on the path to JavaScript mastery."
   },
   {
     "id": 2,
-    "title": "Next.js 13.4",
-    "description": "Next.js 13.4 is a foundational release, marking stability for the App Router:",
-    "date": "May 4th, 2023",
-    "point": [
-      "App Router (Stable)",
-      "Turbopack (Beta)",
-      "Server Actions (Alpha)"
-    ],
-    "more1": "npm i next@latest react@latest react-dom@latest eslint-config-next@latest",
-    "more2": "Next.js is now six years old. Our original design principles have remained—and as Next.js has been adopted by more developers and companies, we have been working on a foundational upgrade to the framework to better achieve these principles. We've been working on the next generation of Next.js, and today with 13.4, this next generation is stable and ready for adoption. This post will share more about our design decisions and choices for the App Router.",
-    "more3": "// Pages Router import React from 'react';export default () => <h1>About us</h1>;"
+    "title": "Java Mastery: Exploring Advanced Concepts",
+    "image": "https://contentstatic.techgig.com/photo/93000110/What-makes-Java-still-popular-among-developers.jpg",
+    "category": "Java",
+    "publish_date": "2023-09-05",
+    "author_name": "Emily Johnson",
+    "author_image": "emily_johnson.jpg",
+    "description": "Java, renowned for its portability, performance, and extensive ecosystem, is a programming language that continues to be a top choice for developers across various domains. In this blog post, we'll take you on a journey through Java's advanced concepts, equipping you with the skills needed to create robust and efficient applications.\n\nBuilding on your foundational knowledge of Java, we'll delve into multithreading, an essential topic for developing responsive applications. You'll learn how to create threads, synchronize them, and handle common multithreading challenges. This knowledge is crucial for applications that need to perform multiple tasks simultaneously.\n\nException handling is another critical aspect of writing reliable code. We'll guide you through try-catch blocks, checked and unchecked exceptions, and best practices for managing errors. Effective exception handling enhances the stability of your applications and helps you deliver a better user experience.\n\nAs we progress, we'll explore design patterns, which are proven solutions to recurring software design problems. You'll learn about patterns like Singleton, Factory, and Observer, and understand how to apply them in your projects. These patterns promote code reusability and maintainability.\n\nAdditionally, we'll touch on reflection and annotations, allowing you to inspect and modify code at runtime. This is especially useful for frameworks and libraries that require dynamic behavior. We'll also cover file handling, enabling your applications to read from and write to files efficiently.\n\nJava's vast standard library includes data structures like collections and maps. We'll explore these data structures and their use cases, helping you choose the right one for your project. By the end of this guide, you'll have a deep understanding of Java's advanced features and the confidence to tackle complex software development challenges. Whether you're creating desktop applications, web services, or Android apps, Java's versatility will be at your fingertips."
   },
   {
     "id": 3,
-    "title": "Next.js 13.3",
-    "description": "Next.js 13.3 adds popular community-requested features and is the last release before the App Router is stable, including:",
-    "date": "April 6th, 2023",
-    "point": [
-      "File-Based Metadata API",
-      "Dynamic Open Graph Images",
-      "Static Export for App Router",
-      "Parallel Routes and Interception"
-    ],
-    "more1": " We are closing in on marking App Router as stable in the next minor release and are shifting our focus to optimizing performance, enhancing behaviors, and fixing bugs.While we're still working on a few features like Mutations we don't expect these to impact the API surface of other App Router features. We're excited to see what you build with the App Router and look forward to your feedback.",
-    "more2": "In addition to config-based metadata, the Metadata API now supports new file conventions, allowing you to conveniently customize your pages for improved SEO and sharing on the web:",
-    "more3": [
-      "opengraph-image.(jpg|png|svg)",
-      "twitter-image.(jpg|png|svg)",
-      "favicon.ico",
-      "icon.(ico|jpg|png|svg)",
-      "sitemap.(xml|js|jsx|ts|tsx)",
-      "robots.(txt|js|jsx|ts|tsx)",
-      "manifest.(json|js|jsx|ts|tsx)"
-    ]
+    "title": "Mastering Python: Building Dynamic Applications",
+    "image": "https://www.shutterstock.com/shutterstock/videos/1097709827/thumb/8.jpg?ip=x480",
+    "category": "Python",
+    "publish_date": "2023-09-10",
+    "author_name": "Michael Williams",
+    "author_image": "michael_williams.jpg",
+    "description": "Python, known for its simplicity, readability, and versatility, has become a powerhouse in the world of programming. From web development to data analysis and machine learning, Python's extensive libraries and frameworks make it a go-to language for developers of all levels.\n\nThis blog post is your guide to mastering Python and building dynamic applications. We'll start by laying the groundwork with the basics: variables, data types, and control structures. Whether you're new to programming or transitioning from another language, these concepts will set you on the right path.\n\nAs you become more comfortable with Python's syntax, we'll delve into object-oriented programming (OOP). You'll learn how to create classes, encapsulate data, and define methods. This paradigm enhances code organization and modularity.\n\nPython's strength lies in its extensive ecosystem of libraries. We'll introduce you to NumPy and pandas, which are essential for data manipulation and analysis. You'll learn how to work with arrays, perform mathematical operations, and handle datasets effectively.\n\nIn the latter part of this guide, we'll explore web development using frameworks like Flask or Django. You'll discover how to build dynamic web applications, handle routing, and interact with databases. We'll also cover APIs and how to integrate external services into your projects.\n\nMoreover, we'll touch on the principles of machine learning and guide you through a simple project using a popular library like scikit-learn. This hands-on experience will showcase Python's capabilities in the realm of artificial intelligence.\n\nBy the end of this journey, you'll have a comprehensive skill set that allows you to create diverse applications. Whether you're building websites, analyzing data, or exploring machine learning, Python's versatility will empower you to turn your ideas into reality."
   },
   {
     "id": 4,
-    "title": "Next.js 13.2",
-    "description": "Next.js 13.2 includes major improvements to the App Router (app) in preparation for stability:",
-    "date": "February 23rd, 2023",
-    "point": [
-      "Built-in SEO Support",
-      "Route Handlers",
-      "MDX for Server Components",
-      "Rust MDX Parser",
-      "Improved Error Overlay",
-      "Statically Typed Links (Beta)",
-      "Turbopack Improvements (Alpha)",
-      "Next.js Cache (Beta)"
-    ],
-    "more1": "Next.js has been designed from the beginning to enable optimization for search engines. Serving pre-rendered HTML content not only helps improve indexing for search engines but also improves the performance of your application. While Next.js has provided a simple API for modifying metadata in your application (next/head) for many versions, we wanted to redesign and enhance how you optimize for search engines with the App Router (app).The new Metadata API allows you to define metadata (e.g. meta and link tags inside your HTML head element) with an explicit metadata configuration in any layout or page that is a Server Component.",
-    "more2": "import type { Metadata } from 'next'; export const metadata: Metadata = { title: 'Home',description: 'Welcome to Next.js',};",
-    "more3": "MDX is a superset of markdown that lets you write JSX directly in your markdown files. It is a powerful way to add dynamic interactivity and embed React components within your content.With 13.2, you can now use MDX entirely with React Server Components – meaning less client-side JavaScript for faster page loads, all while retaining the powerful capabilities of React for templating dynamic UI. You can sprinkle interactivity into your MDX content as needed."
+    "title": "The Power of C#: Building Windows Applications",
+    "image": "https://www.samarpaninfotech.com/wp-content/uploads/2020/03/paralle-foreach-loop-programming-in-C_Sharp.jpg",
+    "category": "C#",
+    "publish_date": "2023-09-15",
+    "author_name": "Jessica Thompson",
+    "author_image": "jessica_thompson.jpg",
+    "description": "C# is a versatile programming language developed by Microsoft, primarily known for its role in building Windows applications. In this blog post, we'll guide you through the journey of creating powerful and user-friendly desktop applications using C# and the .NET framework.\n\nWe'll start by introducing you to the basics of C# programming, covering topics like variables, data types, and control structures. You'll learn how to build a solid foundation that will support your journey into building Windows applications.\n\nAs you progress, we'll explore the Windows Presentation Foundation (WPF), a framework that empowers developers to create visually stunning and interactive user interfaces. You'll learn how to design layouts, use XAML for UI design, and implement event handling.\n\nData binding is a key concept in WPF, and we'll show you how to connect your application's data with its user interface, creating a seamless user experience. Additionally, we'll cover the Model-View-ViewModel (MVVM) architectural pattern, which promotes clean separation of concerns and maintainable code.\n\nYou'll also discover how to work with databases using ADO.NET and Entity Framework, enabling your application to store and retrieve data efficiently. Error handling, debugging, and deployment strategies are essential topics we'll cover to ensure your application is robust and ready for distribution.\n\nBy the end of this guide, you'll have a comprehensive understanding of C# and WPF, allowing you to create sophisticated Windows applications that cater to user needs and preferences. Whether you're developing productivity tools or entertainment applications, C# will be your tool of choice."
   },
   {
     "id": 5,
-    "title": "Next.js 13.1",
-    "description": "Next.js 13.1 includes improvements to both the pages and app directories:",
-    "date": "December 22nd, 2022",
-    "point": [
-      "app Directory (Beta) Improvements",
-      "Built-in Module Transpilation",
-      "Edge Runtime (Stable)",
-      "Turbopack Updates",
-      "Middleware Improvements",
-      "SWC Import Resolution"
-    ],
-    "more1": "In Next.js 13, we announced the new app directory (beta). This new routing and data fetching system can be incrementally adopted alongside your existing pages directory.The app directory provides many benefits, including enhanced layouts, co-location of components, tests, and styles, component-level data fetching, and more. Thanks to your feedback and early testing, we've made several improvements to the reliability of the app directory:",
-    "more2": [
-      "No Layout Divs: Previously, the app directory added additional <div> elements to scroll layouts into view when navigating. With 13.1, these extra elements are no longer created. The scrolling behavior is preserved.",
-      "TypeScript Plugin: We've built a new TypeScript plugin that provides suggestions for page and layout configuration options, brings documentation directly into your IDE, and provides helpful usage hints around Server and Client Components (such as preventing the use of useState in Server Components). Learn more.",
-      "Reliability Improvements: We've patched numerous bugs, including improved CSS modules support, correctly de-duplicating cache() and fetch() for layouts and pages, memory leaks, and more.",
-      "Less Client-Side JavaScript: The app directory now includes 9.3kB less client-side JavaScript than the pages directory. This baseline doesn't increase whether you add 1 or 1000 Server Components to your application. The React runtime is temporarily slightly larger, the increase is caused by the React Server Components runtime, which handles mechanics that Next.js previously handled. We are working to reduce this further."
-    ],
-    "more3": "And the contributions of: @aarnadlr, @aaronbrown-vercel, @aaronjy, @abayomi185, @ademilter, @adictonator, @adilansari, @adtc, @alantoa, @aleksa-codes, @alfred-mountfield, @alpha-xek, @andarist, @andykenward, @anujssstw, @artdevgame, @artechventure, @arturbien, @aziyatali, @bennettdams, @bertho-zero, @blue-devil1134, @bot08, @brkalow, @brvnonascimento, @chanceaclark, @chibicode, @chrisipanaque, @chunsch, @colinking, @craigwheeler, @ctjlewis, @cvolant, @danmindru, @davidnx, @delbaoliveira, @devvspaces, @dtinth, @ducanhgh, @duncanogle, @ethomson, @fantaasm, @feugy, @fomichroman, @gruz0, @haschikeks, @hughlilly, @idoob, @iiegor, @imranbarbhuiya, @ingovals, @inokawa, @ishaqibrahimbot, @ismaelrumzan, @jakemstar, @janicklas-ralph, @jaredpalmer, @jaykch, @jimcresswell, @joliss, @josephcsoti, @joshuaslate, @joulev, @jueungrace, @juliusmarminge, @karlhorky, @kikobeats, @kleintorres, @koenpunt, @koltong, @kosai106, @labyrinthitis, @lachlanjc, @laityned, @leerob, @leoortizz, @lorenzobloedow, @lucasassisrosa, @m7yue, @manovotny, @marcus-rise, @matthew-heath, @mattpr, @maxleiter, @maxproske, @meenie, @mmaaaaz, @mnajdova, @moetazaneta, @mrkldshv, @nathanhammond, @nekochantaiwan, @nfinished, @niedziolkamichal, @nocell, @notrab, @nuta, @nutlope, @obusk, @orionmiz, @peraltafederico, @reshmi-sriram, @reyrodrigez, @rightones, @rishabhpoddar, @saseungmin, @serkanbektas, @sferadev, @silvioprog, @sivtu, @soonoo, @sqve, @steven-tey, @sukkaw, @superbahbi, @teobler, @theevilhead, @thomasballinger, @timeyoutakeit, @valentinh, @ws-jm, @wxh06, @yasath, @yutsuten, and @zekicaneksi."
+    "title": "Go Beyond with Go (Golang): Concurrency and Efficiency",
+    "image": "https://www.scalefocus.com/wp-content/uploads/2022/08/SCF_golang_hero.jpg",
+    "category": "Go",
+    "publish_date": "2023-09-20",
+    "author_name": "Alex Rodriguez",
+    "author_image": "alex_rodriguez.jpg",
+    "description": "Go, often referred to as Golang, is a programming language known for its focus on simplicity, efficiency, and concurrency. In this blog post, we'll explore the unique features that set Go apart and empower you to create highly performant applications.\n\nWe'll start with an introduction to the basics of Go, covering variables, data types, and control structures. Go's straightforward syntax makes it easy to grasp for both beginners and experienced developers.\n\nOne of Go's standout features is its native support for concurrency. We'll delve into goroutines and channels, allowing you to write concurrent programs that execute tasks concurrently and communicate efficiently. This is particularly valuable for applications that need to handle numerous tasks simultaneously.\n\nYou'll also learn about Go's standard library, which offers powerful packages for tasks like networking, file I/O, and working with JSON. This reduces the need for third-party libraries and simplifies your development process.\n\nEfficiency is a core principle of Go, and we'll explore its lightweight and performant design. We'll discuss memory management, profiling, and optimization techniques to ensure your applications are fast and responsive.\n\nAs we advance, we'll touch on web development using the popular Go web framework, such as Gin or Echo. You'll learn how to create RESTful APIs and build web applications with ease.\n\nBy the end of this guide, you'll have a strong grasp of Go's features and capabilities, enabling you to develop efficient, concurrent, and high-performance applications. Whether you're building microservices, networking tools, or cloud applications, Go will be your go-to language."
   },
   {
     "id": 6,
-    "title": "Next.js 13",
-    "description": "As we announced at Next.js Conf, Next.js 13 (stable) lays the foundations to be dynamic without limits:",
-    "date": "October 25th, 2022",
-    "point": [
-      "app/ Directory (beta)",
-      ["Layouts", "React Server Components", "Streaming"],
-      "Turbopack (alpha)",
-      "New next/image (stable)",
-      "Improved next/link",
-      "New @next/font (beta)"
-    ],
-    "more1": "npm i next@latest react@latest react-dom@latest eslint-config-next@latest",
-    "more2": "The app/ directory introduces support for React's new Server Components architecture. Server and Client Components use the server and the client each for what they're best at - allowing you to build fast, highly-interactive apps with a single programming model that provides a great developer experience. With Server Components, we're laying the foundations to build complex interfaces while reducing the amount of JavaScript sent to the client, enabling faster initial page loads.When a route is loaded, the Next.js and React runtime will be loaded, which is cacheable and predictable in size. This runtime does not increase in size as your application grows. Further, the runtime is asynchronously loaded, enabling your HTML from the server to be progressively enhanced on the client.Learn more about Server Components or deploy an example to try it out. ",
-    "more3": "Six years ago, we released Next.js to the public. We set out to build a zero-configuration React framework that simplifies your developer experience. Looking back, it's incredible to see how the community has grown, and what we've been able to ship together. Let's keep going. Next.js is the result of the combined work of over 2,400 individual developers, industry partners like Google and Meta, and our core team. With over 3 million npm downloads per week and 94,000 GitHub stars, Next.js is one of the most popular ways of building the Web. Special thanks to the Aurora team at Google Chrome who helped with the foundational research and experiments that led to this release.This release was brought to you by the contributions of: @ijjk, @huozhi, @HaNdTriX, @iKethavel, @timneutkens, @shuding, @rishabhpoddar, @hanneslund, @balazsorban44, @devknoll, @anthonyshew, @TomerAberbach, @philippbosch, @styfle, @mauriciomutte, @hayitsdavid, @abdennor, @Kikobeats, @cjdunteman, @Mr-Afonso, @kdy1, @jaril, @abdallah-nour, @North15, @feedthejim, @brunocrosier, @Schniz, @sedlukha, @hashlash, @Ethan-Arrowood, @fireairforce, @migueloller, @leerob, @janicklas-ralph, @Trystanr, @atilafassina, @nramkissoon, @kasperadk, @valcosmos, @henriqueholtz, @nip10, @jesstelford, @lorensr, @AviAvinav, @SukkaW, @jaycedotbin, @saurabhburade, @notrab, @kwonoj, @sanruiz, @angeloashmore, @falsepopsky, @fmontes, @Gebov, @UltiRequiem, @p13lgst, @Simek, @mrkldshv, @thomasballinger, @kyliau, @AdarshKonchady, @endymion1818, @pedro757, @perkinsjr, @gnoff, @jridgewell, @silvioprog, @mabels, @nialexsan, @feugy, @jackromo888, @crazyurus, @EarlGeorge, @MariaSolOs, @lforst, @maximbaz, @maxam2017, @teobler, @Nutlope, @sunwoo0706, @WestonThayer, @Brooooooklyn, @Nsttt, @charlypoly, @aprendendofelipe, @sviridoff, @jackton1, @nuta, @Rpaudel379, @marcialca, @MarDi66, @ismaelrumzan, @javivelasco, @eltociear, and @hiro0218."
+    "title": "Swift: Crafting iOS and macOS Apps",
+    "image": "https://www.lewismedia.com/wp-content/uploads/2021/08/swift-programming-language.jpeg",
+    "category": "Swift",
+    "publish_date": "2023-09-25",
+    "author_name": "Sophia Lee",
+    "author_image": "sophia_lee.jpg",
+    "description": "Swift, developed by Apple, has quickly become the preferred language for building iOS and macOS applications. With its modern syntax and comprehensive standard library, Swift empowers developers to create elegant and high-performance apps.\n\nThis blog post is your gateway to becoming a proficient Swift developer. We'll begin by introducing you to the language's fundamentals: variables, constants, optionals, and basic control flow. Whether you're a beginner or coming from another programming language, you'll quickly adapt to Swift's syntax.\n\nNext, we'll explore Swift's powerful type system, which enforces strong typing and safety. You'll learn how to work with collections, tuples, and structs, and leverage Swift's functional programming features.\n\nAs we dive deeper, we'll guide you through building user interfaces using SwiftUI, Apple's declarative framework. You'll create interactive layouts, incorporate animations, and design user-friendly interfaces that adapt to various screen sizes.\n\nWe'll also cover the Model-View-Controller (MVC) design pattern, essential for organizing your app's architecture. You'll understand how to structure your code for maintainability and scalability.\n\nAdditionally, you'll learn about app deployment, including testing on simulators and physical devices, and submitting your app to the App Store. Error handling, debugging, and performance optimization strategies are also on the agenda.\n\nBy the end of this guide, you'll be equipped with the knowledge and skills to build iOS and macOS applications using Swift. Whether you're developing games, productivity apps, or utilities, Swift's intuitive syntax and powerful features will make your development journey rewarding and efficient."
   },
   {
     "id": 7,
-    "title": "Next.js 12.3",
-    "description": "We've shipped some quality-of-life improvements to Next.js with 12.3:",
-    "date": "September 8th, 2022",
-    "point": [
-      "Improved Fast Refresh",
-      "TypeScript Auto-Install",
-      "Image Component",
-      "SWC Minifier",
-      "New Router + Layouts Update"
-    ],
-    "more1": "The Image Optimization API requires a server to optimize images on demand as they’re requested. This works great when self-hosting with next start or deploying to platforms like Vercel. However, this won't work with next export because it doesn’t include a server to optimize images. Previously, you would need to configure a 3rd party Image Optimization provider using the loader prop, but now you can disable Image Optimization completely using next.config.js for all instances of next/image.This previously experimental option is now stable and can be used with the following configuration option:",
-    "more2": "New documentation on built-in accessibility features of Next.js.create-next-app templates now include dark mode support automatically using your system preference.src/ is now a default linting directory when using the integrated ESLint support.next.config.js now includes schema validation with ajv, helping prevent misuse of configuration options.next.config.js now has an experimental config flag fallbackNodePolyfills: false to prevent Next.js from polyfilling Node.js APIs for the browser (which leads to increased bundle sizes). This option will cause Next.js to show a build-time error showing where the unnecessary import comes from.",
-    "more3": "This release was brought to you by the contributions of: @pthomas931, @madmed88, @sanjaiyan-dev, @balazsorban44, @DonghyukJacobJang, @chaiwattsw, @styfle, @dunglas, @ahkhanjani, @promer94, @terrierscript, @shawncal, @insik-han, @QuiiBz, @ykzts, @JoshuaKGoldberg, @lucasassisrosa, @dikwickley, @Brooooooklyn, @sicarius97, @FourwingsY, @manovotny, @SukkaW, @pepoeverton, @jdeniau, @sumiren, @anthonyshew, @pekarja5, @huozhi, @leerob, @fediev, @atcastle, @shuding, @feugy, @jonohewitt, @zakiego, @Schniz, @timneutkens, @wyattjoh, @MaedahBatool, @X7Becka, @nnnnoel, @dcdev67, @alvinometric, @timothympace, @jeferson-sb, @ijjk, @theMosaad, @Yuddomack, @msquitieri, @andreizanik, @nix6839, @thomasballinger, @ziishaned, @xyeres, @nyedidikeke, @maxproske, @sokra, @titusdmoore, @thebergamo, @fikrikarim, @Kikobeats, @clearlyTHUYDOAN, @nasso, @qutek, @kdy1, @kyliau, @housseindjirdeh, @barissayil, @seveibar, @Jessidhia, @santidalmasso, @JohnDaly, @Nikhilnama18, @mduleone, @colinhacks, @ductnn, @josh, @hiro0218, @eltociear, @kwonoj, @valcosmos, @mihaic195, @stefanprobst, @KATT, @thiagomorales, @danielcavanagh, @steven-tey, @hellomhc, @trevor-fauna, @nguyenyou, @eminvergil, @lobsterkatie, @dorian-davis, @sambecker, @isaac-martin, @lfades, @amorimr, @javivelasco, @mongolyy, @Thisen, @zorrolisto, @ethomson, @padmaia, @thisisjofrank, @dominiksipowicz, @awareness481, @pakaponk, @apledger, @longzheng, @tknickman, @rbrcsk, @emersonlaurentino, @carstenlebek, @edusig, @riccardogiorato, @hanneslund, @ryanhaticus, @j-mendez, @armandabric, @WinmezzZ, @andershagbard, @dammy001, @MarDi66, @okmttdhr, @rishabhpoddar, @marjorg, @dustinsgoodman, and @zanechua."
-  },
-  {
-    "id": 8,
-    "title": "Next.js 12.2",
-    "description": "We're laying the foundation for the future of Next.js with 12.2:",
-    "date": "June 28th, 2022",
-    "point": [
-      "Middleware (Stable)",
-      "On-Demand ISR (Stable)",
-      "Edge API Routes (Experimental)",
-      "SWC Plugins (Experimental)",
-      "Improvements to next/image"
-    ],
-    "more1": "Support for Emotion transform in the Next.js Compiler. Most features of @emotion/babel-plugin are now supported, and unless you are using importMap, it can be removed. For more information, check out the documentation.Better support for the styled-components transform in the Next.js Compiler by allowing customization of the default options, including the cssProp option. For more information, check out the documentation.Better support for JavaScript ES Modules, so components like next/image and next/link can properly be imported.next/link no longer requires manually adding <a> as a child. You can now opt into this behavior in a backward-compatible way.We've added experimental support for shipping only modern JavaScript by modifying browsersList. You can opt-into this behavior by setting browsersListForSwc: true and legacyBrowsers: false in the experimental option of next.config.js.New @swc/helpers optimizations prevent duplication across bundles, reducing bundle size by around 2KB in a minimal configuration, and more on larger appsWe've significantly reduced the Next.js install size. We did this by moving our monorepo to pnpm, which allows us to remove duplicate packages while creating the pre-compiled versions that we use. This leads to a reduction in install size of 14MB.In our continued effort to improve self-hosting Next.js, we are stabilizing our experimental outputStandalone: true config to output: 'standalone'. This config reduces deployment sizes drastically by only including necessary files/assets, including removing the need for installing all of node_modules in the built deployment package. This config can be seen in action in our with-docker example.",
-    "more2": [
-      "Nested Layouts: Build complex applications with nested routes.",
-      "Designed for Server Components: Optimized for subtree navigation.",
-      "Improved Data Fetching: Fetch in layouts while avoiding waterfalls.",
-      "Using React 18 Features: Streaming, Transitions, and Suspense.",
-      "Client and Server Routing: Server-centric routing with SPA-like behavior.",
-      "100% incrementally adoptable: No breaking changes so you can adopt gradually.",
-      "Advanced Routing Conventions: Offscreen stashing, instant transitions, and more."
-    ],
-    "more3": "Next.js is the result of the combined work of over 2,000 individual developers, industry partners like Google Chrome and Meta, and our core team at Vercel.This release was brought to you by the contributions of: @huozhi, @ijjk, @kwonoj, @ViolanteCodes, @akrabdev, @timneutkens, @jpveilleux, @stigkj, @jgoping, @oof2win2, @Brooooooklyn, @CGamesPlay, @lfades, @molebox, @steven-tey, @SukkaW, @Kikobeats, @balazsorban44, @erikbrinkman, @therealmarzouq, @remcohaszing, @perkinsjr, @shuding, @hanneslund, @housseindjirdeh, @RobertKeyser, @styfle, @htunnicliff, @lukeshumard, @sagnik3, @pixelass, @JoshuaKGoldberg, @rishabhpoddar, @nguyenyou, @kdy1, @sidwebworks, @gnoff, @gaspar09, @feugy, @mfix-stripe, @javivelasco, @Chastrlove, @goncharov-vlad, @NaveenDA, @Firfi, @idkwhojamesis, @FLCN-16, @icyJoseph, @ElijahPepe, @elskwid, @irvile, @Munawwar, @ykolbin, @hulufei, @baruchadi, @imadatyatalah, @await-ovo, @menosprezzi, @gazs, @Exortions, @rubens-lopes, @woochul2, @stefee, @stmtk1, @jlarmstrongiv, @MaedahBatool, @jameshfisher, @fabienheureux, @TxHawks, @mattbrandlysonos, @iggyzap, @src200, @AkifumiSato, @hermanskurichin, @kamilogorek, @ben-xD, @dawsonbooth, @Josehower, @crutchcorn, @ericmatthys, @CharlesStover, @charlypoly, @apmatthews, @naingaungphyo, @alexandrutasica, @stefanprobst, @dc7290, @DilwoarH, @tommarshall, @stanhong, @leerob, @appsbytom, @sshyam-gupta, @saulloalmeida, @indicozy, @ArianHamdi, @Clariity, @sebastianbenz, @7iomka, @gr-qft, @Schniz, @dgagn, @sokra, @okbel, @tbvjaos510, @dmvjs, @PepijnSenders, @JohnPhamous, @kyliau, @eric-burel, @alabhyajindal, @jsjoeio, @vorcigernix, @clearlyTHUYDOAN, @splatterxl, @manovotny, @maxproske, @nvh95, @frankievalentine, @nuta, @bagpyp, @dfelsie, @qqpann, @atcastle, @jsimonrichard, @mass2527, @ekamkohli, @Yuddomack, @tonyspiro, @saurabhmehta1601, @banner4422, @falsepopsky, @jantimon, @henriqueholtz, @ilfa, @matteobruni, @ryscheng, @hoonoh, @ForsakenHarmony, @william-keller, @AleksaC, @Miikis, @zakiego, @radunemerenco, @AliYusuf95, and @dominiksipowicz."
-  },
-  {
-    "id": 9,
-    "title": "Layouts RFC",
-    "description": "This RFC outlines the biggest update to Next.js since it was introduced in 2016:",
-    "date": "May 23rd, 2022",
-    "point": [
-      "Nested Layouts: Build complex applications with nested routes.",
-      "Designed for Server Components: Optimized for subtree navigation.",
-      "Improved Data Fetching: Fetch in layouts while avoiding waterfalls.",
-      "Using React 18 Features: Streaming, Transitions, and Suspense.",
-      "Client and Server Routing: Server-centric routing with SPA-like behavior.",
-      "100% incrementally adoptable: No breaking changes so you can adopt gradually.",
-      "Advanced Routing Conventions: Offscreen stashing, instant transitions, and more."
-    ],
-    "more1": "We've been gathering community feedback from GitHub, Discord, Reddit, and our developer survey about the current limitations of routing in Next.js. We've found that:The developer experience of creating layouts can be improved. It should be easy to create layouts that can be nested, shared across routes, and have their state preserved on navigation.Many Next.js applications are dashboards or consoles, which would benefit from more advanced routing solutions.While the current routing system has worked well since the beginning of Next.js, we want to make it easier for developers to build more performant and feature-rich web applications.As framework maintainers, we also want to build a routing system that is backwards compatible and aligns with the future of React.",
-    "more2": "When navigating between sibling route segments, Next.js will only fetch and render from that segment down. It will not need to re-fetch or re-render anything above. This means in a page that shares a layout, the layout will be preserved when a user navigates between sibling pages, and Next.js will only fetch and render from that segment down.This is especially useful for React Server Components, as otherwise each navigation would cause the full page to re-render on the server instead of rendering only the changed part of the page on the server. This reduces the amount of data transfered and execution time, leading to improved performance.For example, if the user navigates between the /analytics and the /settings pages, React will re-render the page segments but preserve the layouts:",
-    "more3": "We're excited about the future of layouts, routing, and React 18 in Next.js. Implementation work has begun and we'll announce the features once they are available.Leave comments and join the conversation on GitHub Discussions."
+    "title": "Riding the Rails: Web Development with Ruby on Rails",
+    "image": "https://d32myzxfxyl12w.cloudfront.net/images/blog_images/be602627973000d99f6ba9a43aba117b82aa5e26.jpg?1649061518",
+    "category": "Ruby on Rails",
+    "publish_date": "2023-09-30",
+    "author_name": "David Miller",
+    "author_image": "david_miller.jpg",
+    "description": "Introduction In the fast-paced world of web development, choosing the right framework can make all the difference. Ruby on Rails, often simply referred to as Rails, has emerged as a powerful and popular choice for building dynamic web applications. Known for its elegance, simplicity, and convention over configuration philosophy, Rails has transformed the way developers create web applications. In this blog post, we'll dive into the world of Ruby on Rails and explore why it's a compelling option for web development.The Rails Advantage Ruby on Rails, an open-source framework written in Ruby, prioritizes developer productivity and follows the DRY (Don't Repeat Yourself) principle. This means that repetitive tasks are minimized, allowing developers to focus on creating unique and valuable features for their applications. One of Rails' key strengths lies in its ability to generate boilerplate code, reducing the need for manual configuration and speeding up the development process. Convention over Configuration Rails is built on the principle of convention over configuration, which means that the framework makes assumptions about how an application should be structured. This eliminates the need for developers to spend excessive time configuring files and settings. By adhering to these conventions, Rails ensures consistency across projects and makes it easier for developers to jump into different projects without a steep learning curve. ActiveRecord: The ORM Champion Rails comes with ActiveRecord, an Object-Relational Mapping (ORM) library that simplifies database management. ActiveRecord allows developers to interact with databases using Ruby classes, making database operations more intuitive and less error-prone. With features like migrations, validations, and associations, developers can efficiently design and manage complex database schemas."
   }
 ]
