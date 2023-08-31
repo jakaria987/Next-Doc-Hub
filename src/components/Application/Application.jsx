@@ -2,7 +2,7 @@ import React from 'react';
 
 const Apply = () => {
     return (
-        <div className=' max-w-7xl mx-auto ms-6 me-6'>
+        <div className=' max-w-7xl mx-auto '>
            <h1 className='text-4xl font-semibold my-8'>Building Your Application</h1> 
            <p className='my-3'>Next.js provides the building blocks to create flexible, full-stack web applications. The guides in <span className='font-bold'>Building Your Application</span> explain how to use these features and how to customize your application's behavior.</p>
           

@@ -39,6 +39,10 @@ const Links = [
     path: "/enterprise",
     title: "Enterprise",
   },
+  {
+    path: "/DefiningRoutes",
+    title: "DefiningRoutes",
+  }
 ];
 
 const Navbar = () => {
