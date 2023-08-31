@@ -9,8 +9,8 @@ import AuthProvider from "@/components/Provider/AuthProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Next Docs Hub",
-  description: "Next Docs Hub",
+  title: "ProgNexus",
+  description: "ProgNexus",
 };
 
 export default function RootLayout({ children }) {
