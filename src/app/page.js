@@ -6,7 +6,8 @@ const HomePage=()=> {
   return (
     <main>
       <Banner></Banner>
-      <ProductionGradeFoundation/>
+      <ProrammingPage/>
+      <About/>
     </main>
      
   )
