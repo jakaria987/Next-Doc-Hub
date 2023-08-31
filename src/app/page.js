@@ -6,7 +6,7 @@ const HomePage=()=> {
   return (
     <main>
       <Banner></Banner>
-      <About></About>
+      {/* <About></About> */}
       <ProrammingPage/>
       <About/>
     </main>
