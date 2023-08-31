@@ -7,6 +7,7 @@ const HomePage=()=> {
     <main>
       <Banner></Banner>
       <ProductionGradeFoundation/>
+      <About></About>
     </main>
      
   )
