@@ -1,54 +1,38 @@
-'use client';
 import React from 'react';
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
-
 
 const Banner = () => {
-    const [text] = useTypewriter({
-        words: [
-            "Your one-stop guide to building modern web applications with Next.js.",
-            "Whether you're a beginner or an experienced developer",
-            "we have everything you need to get started and take your projects to the next level."
+    const colors = ['text-red-500', 'text-blue-500', 'text-green-500', 'text-purple-500', 'text-yellow-500', 'text-pink-500'];
 
-        ],
-        loop: true,
-        typeSpeed: 30,
-        deleteSpeed: 10,
-        delaySpeed: 2000,
-
-    });
     return (
-        <div className="py-32  h-96 bg-white text-center">
-            <div className="max-w-6xl mx-auto  px-4">
-                <div className="">
-                    <div className=''>
-                        <h2 className="text-5xl font-bold text-gray-800 mb-2">Welcome to NextDocs Hub !</h2>
-                        <p className="text-lg text-gray-600 mt-4">{text}
-                            <Cursor cursorBlinking cursorStyle='' cursorColor='#ffaa17' /> </p>
-                    </div>
-                    <div className=' mt-4 lg:mt-10 flex justify-center gap-5 '>
-                        <a
-                            href="/docs"
-                            className="bg-black  text-white hover:bg-gray-800 py-3 px-3 rounded-md transition duration-300"
-                        >
-                            Get Started
-                        </a>
-                        <a
-                            href="/docs"
+        <div>
+            <div
+                className="relative h-[550px] bg-cover w-full bg-no-repeat bg-center flex items-center justify-center"
+                style={{ backgroundImage: 'url("https://i.ibb.co/9cyTpqC/h.jpg")' }}
+            >
+                <div className="absolute bg-black opacity-40 inset-0"></div>
+                <div className="relative z-10 text-white text-center">
+                    <h1 className="text-4xl font-semibold uppercase  mb-6"><span className='uppercase'>Learn </span>
+                        <span className={colors[0]}> c</span> 
+                        <span className={colors[1]}>o</span>
+                        <span className={colors[2]}>d</span>
+                        <span className={colors[3]}>i</span>
+                        <span className={colors[4]}>n</span>
+                        <span className={colors[5]}>g</span></h1> 
+                        
+                        <p className="text-lg ">Explore a variety of programming languages and enhance your skills.</p>
+                        <p className="text-lg">Interactive learning environment</p>
 
-                            className="bg-white text-black hover:bg-gray-200 py-3 px-3 rounded-md border transition duration-300">
 
-                            Learn Next.js
-                        </a>
-                    </div>
+                        <div className="mt-10">
+                            <button href="#" className="btn btn-primary text-green-500 mr-4 x">Try Now
+                            </button>
+                            <button href="#" className="btn btn-primary-daisy">Remind Me </button>
+
+                        </div>
                 </div>
             </div>
         </div>
-
-
     );
 };
-
-
 
 export default Banner;
