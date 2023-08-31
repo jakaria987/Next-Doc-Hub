@@ -15,16 +15,16 @@ const BlogPage = () => {
   }, []);
   console.log(blogs);
   return (
-    <div>
-      <h1 className="text-3xl font-bold pl-20 py-12 ">
-        {/* The Latest Next.js News */}
+    <div className="px-5 lg:px-20">
+      <h1 className="text-3xl font-semibold  pt-10 ">
+        Deep Dive into the World of Programming-
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-20 my-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  my-16 ">
         {blogs?.map(
           ({ _id, title, image, publish_date, author_name, category }) => (
             <div
               key={_id}
-              className="card w-96 my-2 rounded text-white bg-base-100 shadow-xl image-full"
+              className="card w-full lg:w-96 rounded text-white bg-base-100 shadow-xl image-full"
             >
               <figure>
                 <img src={image} alt="Shoes" />
