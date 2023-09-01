@@ -101,7 +101,7 @@ const Team = () => {
           <figure>
             <div className="avatar">
               <div className="w-64 rounded-full">
-                <img src="" />
+                <img src="https://i.ibb.co/rmh31P7/Capture.png" />
               </div>
             </div>
           </figure>
