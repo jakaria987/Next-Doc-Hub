@@ -1,13 +1,18 @@
-"use client"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import { FaFacebook, FaGithubAlt, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithubAlt,
+  FaLinkedin,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const Team = () => {
-    useEffect(() => {
-        AOS.init(); 
-    }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       className="max-w-7xl mx-auto py-12  my-2"
@@ -18,7 +23,11 @@ const Team = () => {
       </h1>
       <hr />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-12">
-        <div data-aos="zoom-in" data-aos-duration="1000" className="card card-compact w-full  bg-base-300 shadow-xl">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="card card-compact w-full  bg-base-300 shadow-xl"
+        >
           <figure>
             <div className="avatar">
               <div className="w-64 rounded-full">
@@ -36,22 +45,24 @@ const Team = () => {
             <p className="text-center font-bold">Team leader</p>
             <div className=" text-center w-16 mx-auto my-2">
               <div className="flex gap-4 items-center justify-center">
-                <div >
+                <div>
                   <FaFacebook className="text-blue-800 w-6 h-6"></FaFacebook>
                 </div>
                 <div>
-                  <FaLinkedin  className="text-blue-800 w-6 h-6"></FaLinkedin>
+                  <FaLinkedin className="text-blue-800 w-6 h-6"></FaLinkedin>
                 </div>
                 <div>
-                  <FaGithubAlt  className=" w-7 h-7"></FaGithubAlt>
+                  <FaGithubAlt className=" w-7 h-7"></FaGithubAlt>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" className="card card-compact w-full bg-base-100 shadow-xl">
-            
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="card card-compact w-full bg-base-100 shadow-xl"
+        >
           <figure>
             <div className="avatar">
               <div className="w-64 rounded-full">
@@ -69,20 +80,24 @@ const Team = () => {
             <p className="text-center font-bold">Team manager</p>
             <div className=" text-center w-16 mx-auto my-2">
               <div className="flex gap-4 items-center justify-center">
-                <div >
+                <div>
                   <FaFacebook className="text-blue-800 w-6 h-6"></FaFacebook>
                 </div>
                 <div>
-                  <FaLinkedin  className="text-blue-800 w-6 h-6"></FaLinkedin>
+                  <FaLinkedin className="text-blue-800 w-6 h-6"></FaLinkedin>
                 </div>
                 <div>
-                  <FaGithubAlt  className=" w-7 h-7"></FaGithubAlt>
+                  <FaGithubAlt className=" w-7 h-7"></FaGithubAlt>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" className="card card-compact w-full bg-base-100 shadow-xl">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="card card-compact w-full bg-base-100 shadow-xl"
+        >
           <figure>
             <div className="avatar">
               <div className="w-64 rounded-full">
@@ -100,20 +115,24 @@ const Team = () => {
             <p className="text-center font-bold">Co-Manager</p>
             <div className=" text-center w-16 mx-auto my-2">
               <div className="flex gap-4 items-center justify-center">
-                <div >
+                <div>
                   <FaFacebook className="text-blue-800 w-6 h-6"></FaFacebook>
                 </div>
                 <div>
-                  <FaLinkedin  className="text-blue-800 w-6 h-6"></FaLinkedin>
+                  <FaLinkedin className="text-blue-800 w-6 h-6"></FaLinkedin>
                 </div>
                 <div>
-                  <FaGithubAlt  className=" w-7 h-7"></FaGithubAlt>
+                  <FaGithubAlt className=" w-7 h-7"></FaGithubAlt>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" className="card card-compact w-full bg-base-100 shadow-xl">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="card card-compact w-full bg-base-100 shadow-xl"
+        >
           <figure>
             <div className="avatar">
               <div className="w-64 rounded-full">
@@ -131,20 +150,24 @@ const Team = () => {
             <p className="text-center font-bold">Co-leader</p>
             <div className=" text-center w-16 mx-auto my-2">
               <div className="flex gap-4 items-center justify-center">
-                <div >
+                <div>
                   <FaFacebook className="text-blue-800 w-6 h-6"></FaFacebook>
                 </div>
                 <div>
-                  <FaLinkedin  className="text-blue-800 w-6 h-6"></FaLinkedin>
+                  <FaLinkedin className="text-blue-800 w-6 h-6"></FaLinkedin>
                 </div>
                 <div>
-                  <FaGithubAlt  className=" w-7 h-7"></FaGithubAlt>
+                  <FaGithubAlt className=" w-7 h-7"></FaGithubAlt>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" className="card card-compact w-full bg-base-100 shadow-xl">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="card card-compact w-full bg-base-100 shadow-xl"
+        >
           <figure>
             <div className="avatar">
               <div className="w-64 rounded-full">
@@ -162,20 +185,24 @@ const Team = () => {
             <p className="text-center font-bold">Team assistant</p>
             <div className=" text-center w-16 mx-auto my-2">
               <div className="flex gap-4 items-center justify-center">
-                <div >
+                <div>
                   <FaFacebook className="text-blue-800 w-6 h-6"></FaFacebook>
                 </div>
                 <div>
-                  <FaLinkedin  className="text-blue-800 w-6 h-6"></FaLinkedin>
+                  <FaLinkedin className="text-blue-800 w-6 h-6"></FaLinkedin>
                 </div>
                 <div>
-                  <FaGithubAlt  className=" w-7 h-7"></FaGithubAlt>
+                  <FaGithubAlt className=" w-7 h-7"></FaGithubAlt>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1000" className="card card-compact w-full bg-base-100 shadow-xl">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="card card-compact w-full bg-base-100 shadow-xl"
+        >
           <figure>
             <div className="avatar">
               <div className="w-64 rounded-full">
@@ -193,14 +220,14 @@ const Team = () => {
             <p className="text-center font-bold">Team assistant</p>
             <div className=" text-center w-16 mx-auto my-2">
               <div className="flex gap-4 items-center justify-center">
-                <div >
+                <div>
                   <FaFacebook className="text-blue-800 w-6 h-6"></FaFacebook>
                 </div>
                 <div>
-                  <FaLinkedin  className="text-blue-800 w-6 h-6"></FaLinkedin>
+                  <FaLinkedin className="text-blue-800 w-6 h-6"></FaLinkedin>
                 </div>
                 <div>
-                  <FaGithubAlt  className=" w-7 h-7"></FaGithubAlt>
+                  <FaGithubAlt className=" w-7 h-7"></FaGithubAlt>
                 </div>
               </div>
             </div>
@@ -208,21 +235,35 @@ const Team = () => {
         </div>
       </div>
 
-
-      <div data-aos="zoom-in" data-aos-duration="1000" className="hero  max-w-5xl md:h-[450px] h-screen mx-auto " style={{backgroundImage: 'url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHx8fDE2OTM0NDgwNzh8MA&ixlib=rb-4.0.3)'}}>
-  <div className="hero-overlay bg-opacity-60"></div>
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md text-white ">
-      <h1 className="mb-5 text-5xl font-bold font-serif">Creative & progressive Team</h1>
-      <p className="mb-5">A Web developer is proficient in both front-end and back-end development. They have the skills to work on all aspects of web development, from designing user interfaces to building server-side logic. Full-stack developers are capable of creating entire web applications on their own or contributing to different parts of a project.</p>
-      <button className="btn bg-white text-black border-0">Get Started</button>
-    </div>
-  </div>
-</div>
-
-
-
-    
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="hero  max-w-5xl md:h-[450px] h-screen mx-auto "
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHx8fDE2OTM0NDgwNzh8MA&ixlib=rb-4.0.3)",
+        }}
+      >
+        <div className="hero-overlay bg-black bg-opacity-40"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md text-white ">
+            <h1 className="mb-5 text-5xl font-bold font-serif">
+              Creative & progressive Team
+            </h1>
+            <p className="mb-5 font-medium">
+              A Web developer is proficient in both front-end and back-end
+              development. They have the skills to work on all aspects of web
+              development, from designing user interfaces to building
+              server-side logic. Full-stack developers are capable of creating
+              entire web applications on their own or contributing to different
+              parts of a project.
+            </p>
+            <button className="btn bg-white text-black border-0">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
