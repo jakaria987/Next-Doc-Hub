@@ -1,54 +1,34 @@
-'use client';
 import React from 'react';
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
-
 
 const Banner = () => {
-    const [text] = useTypewriter({
-        words: [
-            "Your one-stop guide to building modern web applications with Next.js.",
-            "Whether you're a beginner or an experienced developer",
-            "we have everything you need to get started and take your projects to the next level."
+    const colors = ['text-red-500', 'text-blue-500', 'text-green-500', 'text-purple-500', 'text-yellow-500', 'text-pink-500'];
 
-        ],
-        loop: true,
-        typeSpeed: 30,
-        deleteSpeed: 10,
-        delaySpeed: 2000,
-
-    });
     return (
-        <div className="py-32  h-96 bg-white text-center">
-            <div className="max-w-6xl mx-auto  px-4">
-                <div className="">
-                    <div className=''>
-                        <h2 className="text-5xl font-bold text-gray-800 mb-2">Welcome to NextDocs Hub !</h2>
-                        <p className="text-lg text-gray-600 mt-4">{text}
-                            <Cursor cursorBlinking cursorStyle='' cursorColor='#ffaa17' /> </p>
-                    </div>
-                    <div className=' mt-4 lg:mt-10 flex justify-center gap-5 '>
-                        <a
-                            href="/docs"
-                            className="bg-black  text-white hover:bg-gray-800 py-3 px-3 rounded-md transition duration-300"
-                        >
-                            Get Started
-                        </a>
-                        <a
-                            href="/docs"
-
-                            className="bg-white text-black hover:bg-gray-200 py-3 px-3 rounded-md border transition duration-300">
-
-                            Learn Next.js
-                        </a>
-                    </div>
+        <div className="relative h-[550px] overflow-hidden">
+            <div
+                className="absolute inset-0 z-0 bg-cover bg-center filter brightness-75"
+                style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1503252947848-7338d3f92f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80")' }}
+            ></div>
+            <div className="absolute inset-0 bg-black opacity-60 z-1"></div>
+            <div className="absolute z-2 inset-0 flex flex-col items-center justify-center text-white">
+                <h1 className="text-4xl font-semibold uppercase mb-4">
+                    <span className='uppercase'>Learn </span>
+                    <span className={colors[0]}> c</span> 
+                        <span className={colors[1]}>o</span>
+                        <span className={colors[2]}>d</span>
+                        <span className={colors[3]}>i</span>
+                        <span className={colors[4]}>n</span>
+                        <span className={colors[5]}>g</span>
+                </h1>
+                <p className="text-lg mb-4">Explore a variety of programming languages and enhance your skills.</p>
+                <p className="text-lg mb-6">Interactive learning environment</p>
+                <div className="flex space-x-4">
+                    <button href="#" className="btn btn-primary text-green-500">Try Now</button>
+                    <button href="#" className="btn btn-primary-daisy hover:bg-gray-500">Remind Me</button>
                 </div>
             </div>
         </div>
-
-
     );
 };
-
-
 
 export default Banner;

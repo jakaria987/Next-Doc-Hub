@@ -39,6 +39,11 @@ const Links = [
     path: "/enterprise",
     title: "Enterprise",
   },
+  {
+    path: "/Team",
+    title: "Team",
+  },
+  
 ];
 
 const Navbar = () => {
