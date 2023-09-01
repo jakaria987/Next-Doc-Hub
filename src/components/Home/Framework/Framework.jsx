@@ -19,7 +19,7 @@ const Framework = () => {
           </p>
         </div>
 
-        <div className="relative md:mt-10 md:w-full w-56 mb-10 ">
+        <div className="relative md:mt-10 md:w-full w-56 pb-10 ">
           <div>
             {/* <img
               className="w-[320px] h-50 -rotate-[3deg]"
