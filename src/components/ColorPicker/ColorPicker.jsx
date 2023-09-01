@@ -4,9 +4,8 @@ import { SketchPicker } from 'react-color';
 
 const ColorPicker = () => {
     return (
-        <div>
+        <div className=''>
             <SketchPicker></SketchPicker>
-            tanim
            
         </div>
     );
