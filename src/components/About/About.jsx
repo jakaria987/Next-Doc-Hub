@@ -9,7 +9,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg-zinc-200 mt-32 mb-12">
+    <div className="bg-zinc-200 mt-20 mb-12">
       <div
         className="hero h-[250px] bg-opacity-80"
         data-aos="zoom-in"
