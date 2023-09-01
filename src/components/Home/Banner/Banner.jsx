@@ -20,7 +20,7 @@ const Banner = () => {
                         <span className={colors[4]}>n</span>
                         <span className={colors[5]}>g</span>
                 </h1>
-                <p className="text-lg mb-4">Explore a variety of programming languages and enhance your skills.</p>
+                <p className="text-lg mb-4 text-center">Explore a variety of programming languages and enhance your skills.</p>
                 <p className="text-lg mb-6">Interactive learning environment</p>
                 <div className="flex space-x-4">
                     <button href="#" className="btn btn-primary text-green-500">Try Now</button>
