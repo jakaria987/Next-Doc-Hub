@@ -24,8 +24,8 @@ const Links = [
     title: "Blog",
   },
   {
-    path: "/about",
-    title: "About",
+    path: "/Dashboard",
+    title: "Dashboard",
   },
   {
     path: "/CodeEditor",
@@ -43,6 +43,10 @@ const Links = [
     path: "/Team",
     title: "Team",
   },
+  {
+    path: "/ColorPicker",
+    title: "Pick Color",
+  },
   
 ];
 
@@ -56,7 +60,7 @@ const Navbar = () => {
         <div className="navbar-start">
           {navbar ? (
             <>
-              <Image src={logo} className="w-1/2 lg:w-1/4" />
+              <Image src={logo} className="w-10 rounded-full" />
               <Link href="/" className="md:text-2xl lg:text-3xl font-medium">
                 ProgNexus
               </Link>

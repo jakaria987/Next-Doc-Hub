@@ -4,94 +4,40 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="p-6 bg-white shadow-sm text-sm border-t-2 text-gray-600 w-full">
-      <div className="container mx-auto grid grid-cols-2 md:grid-cols-6  gap-6">
+    <footer className="pt-6 bg-white shadow-sm text-sm border-t-2 text-gray-600 w-full">
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-10">
         <div className="flex flex-col space-y-2">
-          <Image src={footerLogo} alt="Footer Logo" width={70} height={70} />
+          <Image src={footerLogo} alt="Footer Logo" width={40} height={40} className="rounded-full" />
           <Link href="/" className=" font-bold text-3xl">
-            Next<span className="text-xs">-Docs Hub</span>
+            Prog<span className="">Nexus</span>
           </Link>
         </div>
-        <div className="flex flex-col space-y-2">
-          <span className=" font-bold">Resources</span>
-          <Link href="/docs" className="link link-hover">
-            Docs
-          </Link>
-          <Link href="/learn" className="link link-hover">
-            Learn
-          </Link>
+        <div className="flex flex-col space-y-2 font-semibold">
+          <span className=" font-bold text-lg">Main</span>
           <Link href="/showcase" className="link link-hover">
             Showcase
+          </Link>
+          <Link href="/docs" className="link link-hover">
+            Docs
           </Link>
           <Link href="/blog" className="link link-hover">
             Blog
           </Link>
-          <Link href="/analytics" className="link link-hover">
-            Analytics
+        </div>
+        <div className="flex flex-col space-y-2 font-semibold">
+          <span className="text-lg font-bold">More</span>
+          <Link href="/Dashboard" className="link link-hover">
+            Dashboard
           </Link>
-          <Link href="/conf" className="link link-hover">
-            Next.js Conf
+          <Link href="/Team" className="link link-hover">
+            Team
           </Link>
-          <Link href="/previews" className="link link-hover">
-            Previews
+          <Link href="/ColorPicker" className="link link-hover">
+            Pick Color
           </Link>
         </div>
         <div className="flex flex-col space-y-2">
-          <span className=" font-bold">More</span>
-          <Link href="/commerce" className="link link-hover">
-            Commerce
-          </Link>
-          <Link href="/contact-sales" className="link link-hover">
-            Contact Sales
-          </Link>
-          <a href="https://github.com" className="link link-hover">
-            GitHub
-          </a>
-          <Link href="/releases" className="link link-hover">
-            Releases
-          </Link>
-          <Link href="/telemetry" className="link link-hover">
-            Telemetry
-          </Link>
-          <Link href="/about-vercel" className="link link-hover">
-            About Vercel
-          </Link>
-          <Link href="/nextjs-vercel" className="link link-hover">
-            Next.js + Vercel
-          </Link>
-          <Link href="/open-source-software" className="link link-hover">
-            Open Source Software
-          </Link>
-        </div>
-        <div className="flex flex-col space-y-2">
-          <span className=" font-bold">Stay Connected</span>
-          <Link href="/about-vercel" className="link link-hover">
-            About Vercel
-          </Link>
-          <Link href="/nextjs-vercel" className="link link-hover">
-            Next.js + Vercel
-          </Link>
-          <Link href="/open-source-software" className="link link-hover">
-            Open Source Software
-          </Link>
-          <a href="https://github.com" className="link link-hover">
-            GitHub
-          </a>
-          <a href="https://twitter.com" className="link link-hover">
-            Twitter
-          </a>
-        </div>
-        <div className="flex flex-col space-y-2">
-          <span className=" font-bold">Legal</span>
-          <Link href="/privacy-policy" className="link link-hover">
-            Privacy Policy
-          </Link>
-          <Link href="/cookie-preferences" className="link link-hover">
-            Cookie Preferences
-          </Link>
-        </div>
-        <div className="flex flex-col space-y-2">
-          <span className=" font-bold">Subscribe to our newsletter</span>
+          <span className="text-lg font-bold">Subscribe to our newsletter</span>
           <p className="text-xs">
             Stay updated on new releases and features, guides, and case studies.
           </p>
