@@ -36,41 +36,6 @@ const About = () => {
                 </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="mt-12 md:flex justify-between pb-12 px-20 gap-12 ">
-        <div className="ms-12 pb-6" data-aos="zoom-in" data-aos-duration="1000">
-          <h1 className="text-2xl font-bold text-slate-700 pb-3 hover:text-blue-500 hover:underline underline-offset-2">
-            Introduction
-          </h1>
-          <p>
-            ProgNexus is an innovative online platform designed to teach
-            programming languages to individuals of all backgrounds. With a
-            user-friendly interface and comprehensive curriculum.
-          </p>
-        </div>
-        <div className="ms-12 pb-6" data-aos="zoom-in" data-aos-duration="1000">
-          <h1 className="text-2xl font-bold text-slate-700 pb-3 hover:text-blue-500 hover:underline underline-offset-2">
-            The mission & vision
-          </h1>
-          <p>
-            ProgNexus aims to bridge the gap between aspiring programmers and
-            their coding ambitions. This report outlines the structure, purpose,
-            and features of the ProgNexus website.
-          </p>
-        </div>
-        <div className="ms-12 pb-6" data-aos="zoom-in" data-aos-duration="1000">
-          <h1 className="text-2xl font-bold text-slate-700 pb-3 hover:text-blue-500 hover:underline underline-offset-2">
-            Uniqueness
-          </h1>
-          <p>
-            Interactive learning process where users can code in real time.
-            Community interaction helps users for asking and sharing their
-            progress. Users can choose diverse learning paths.
-          </p>
-        </div>
-      </div>
-    </div>
   );
 };
 
