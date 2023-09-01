@@ -43,6 +43,10 @@ const Links = [
     path: "/Team",
     title: "Team",
   },
+  {
+    path: "/ColorPicker",
+    title: "Pick Color",
+  },
   
 ];
 
