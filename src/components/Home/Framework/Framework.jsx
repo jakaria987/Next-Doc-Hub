@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const ExtraSection = () => {
+const Framework = () => {
   return (
     <div className="mt-20 mb-28">
       <h1 className="text-3xl font-bold text-center my-5">
@@ -44,4 +44,4 @@ const ExtraSection = () => {
   );
 };
 
-export default ExtraSection;
+export default Framework;

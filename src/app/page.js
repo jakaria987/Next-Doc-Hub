@@ -1,14 +1,13 @@
 import About from "@/components/About/About";
 import Banner from "@/components/Home/Banner/Banner";
-import Image from "next/image";
 import ProrammingPage from "./programmingDocs/page";
-import ExtraSection from "@/components/Home/ExtraSection/ExtraSection";
+import Framework from "@/components/Showcase/FrameWork/Framework";
 const HomePage = () => {
   return (
     <main>
       <Banner></Banner>
       <ProrammingPage />
-      <ExtraSection />
+      <Framework />
       <About />
     </main>
   );
