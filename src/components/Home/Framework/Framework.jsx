@@ -6,7 +6,7 @@ const Framework = () => {
       <h1 className="text-3xl font-bold text-center my-5">
         Popular CSS Framework
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2  mx-3 md:gap-60 md:px-20 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mx-3 md:gap-60 md:px-20 ">
         <div>
           <p className="text-slate-500 text-lg mt-5">
             A CSS framework is a pre-built set of CSS files and components that
