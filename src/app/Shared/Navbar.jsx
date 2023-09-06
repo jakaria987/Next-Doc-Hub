@@ -28,8 +28,8 @@ const Links = [
     title: "Dashboard",
   },
   {
-    path: "/analytics",
-    title: "Analytics",
+    path: "/CodeEditor",
+    title: "CodeEditor",
   },
   {
     path: "/templates",

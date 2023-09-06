@@ -1,7 +1,8 @@
-import About from "@/components/About/About";
 import Banner from "@/components/Home/Banner/Banner";
 import ProrammingPage from "./programmingDocs/page";
 import Framework from "@/components/Home/Framework/Framework";
+import JoinCommunity from "@/components/Home/Banner/JoinComunity/JoinComunity";
+import About from "@/components/Home/About/About";
 
 const HomePage = () => {
   return (
@@ -9,7 +10,8 @@ const HomePage = () => {
       <Banner></Banner>
       <ProrammingPage />
       <Framework />
-      <About />
+      <JoinCommunity/>
+      <About/>
     </main>
   );
 };
