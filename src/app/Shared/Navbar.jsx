@@ -1,20 +1,20 @@
 "use client";
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import logo from "./logo.png";
 import { Authcontext } from "@/components/Provider/AuthProvider";
-import { FaUserPlus } from "react-icons/fa";
+import { FaUserPlus, FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 
 const Links = [
-  {
-    path: "/Showcase",
-    title: "Showcase",
-  },
+  // {
+  //   path: "/Showcase",
+  //   title: "Showcase",
+  // },
   {
     path: "/Docs",
     title: "Docs",
@@ -31,14 +31,14 @@ const Links = [
     path: "/CodeEditor",
     title: "CodeEditor",
   },
-  {
-    path: "/templates",
-    title: "Templates",
-  },
-  {
-    path: "/enterprise",
-    title: "Enterprise",
-  },
+  // {
+  //   path: "/templates",
+  //   title: "Templates",
+  // },
+  // {
+  //   path: "/enterprise",
+  //   title: "Enterprise",
+  // },
   {
     path: "/Team",
     title: "Team",
@@ -47,13 +47,28 @@ const Links = [
     path: "/ColorPicker",
     title: "Pick Color",
   },
-  
 ];
 
 const Navbar = () => {
   const { currentUser, logout } = useContext(Authcontext);
   const [navbar, setNavbar] = useState(true);
-
+  const [pro, setPro] = useState([]);
+  const [activeSearch, setActiveSearch] = useState([]);
+  // useEffect(() => {
+  //   fetch("api/programming")
+  //     .then((res) => res.json())
+  //     .then((data) => setPro(data));
+  // }, []);
+  const handleSearch = (e) => {
+    fetch("api/programming")
+      .then((res) => res.json())
+      .then((data) => setPro(data));
+    // if (e.target.value == "") {
+    //   setActiveSearch([]);
+    //   return false;
+    // }
+    // setActiveSearch(pro.filter((code) => code.includes(e.target.value)));
+  };
   return (
     <nav className="w-full md:h-full">
       <div className="navbar bg-white shadow-sm">
@@ -68,65 +83,6 @@ const Navbar = () => {
           ) : (
             <></>
           )}
-
-          <div className="dropdown ">
-            {/* <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-10 pr-4 py-7 z-[5] shadow bg-white rounded-box"
-            >
-              <li>
-                <Link href="/learn">Learn</Link>
-                <Link href="/Login">Login</Link>
-              </li>
-              {Links.map(({ path, title }) => (
-                <li key={path}>
-                  <Link className="text-[15px]" href={path}>
-                    {title}
-                  </Link>
-                </li>
-              ))}
-            </ul> */}
-            {/* <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label> */}
-            {/* <div className="md:hidden items-end">
-            <button onClick={()=> setNavbar(!navbar)} className="">
-              {
-                navbar ? <><GiHamburgerMenu  className="w-6 h-6"></GiHamburgerMenu>
-
-                </> : <> <RxCross2  className="w-6 h-6"></RxCross2> <div className=""><ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-10  z-[5] shadow bg-white w-screen h-screen"
-            >
-              <li>
-                <Link href="/learn">Learn</Link>
-                <Link href="/Login">Login</Link>
-              </li>
-              {Links.map(({ path, title }) => (
-                <li key={path}>
-                  <Link className="text-[15px]" href={path}>
-                    {title}
-                  </Link>
-                </li>
-              ))}
-            </ul></div> </>
-              }
-            </button>
-            </div> */}
-          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -137,15 +93,27 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <input
-          type="text"
-          placeholder="Search Documentation..."
-          className="input input-sm invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
-        />
 
+        <form>
+          <div className="">
+            <input
+              type="text"
+              onChange={(e) => setActiveSearch(e.target.value)}
+              placeholder="Search Documentation..."
+              className="input input-sm invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
+            />
+            {/* <button
+              onClick={handleSearch}
+              className="absolute bg-black right-1 top-1/2 -translate-y-1/2 p-4 text-white rounded-full "
+            >
+              <FaSearch />
+            </button> */}
+          </div>
+          {/* {activeSearch.length > 0 && <div className="text-black mt-20"> </div>} */}
+        </form>
         <div className="invisible lg:visible navbar-end ">
           <div className="hidden md:flex items-center ml-auto">
-            <div>
+            {/* <div>
               {currentUser && (
                 <img
                   src={currentUser.photoURL || ""}
@@ -153,7 +121,7 @@ const Navbar = () => {
                   title={currentUser.displayName || ""}
                 />
               )}
-            </div>
+            </div> */}
             <div className="mr-5">
               {currentUser ? (
                 <button
@@ -197,7 +165,7 @@ const Navbar = () => {
                         <div className="flex">
                           <Image src={logo} className="w-36" />
                           <Link href="/" className="font-medium text-2xl">
-                            Next<span className="text-sm">-Docs Hub</span>
+                            ProgNexus
                           </Link>
                         </div>
                       </li>

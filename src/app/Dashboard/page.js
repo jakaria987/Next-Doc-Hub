@@ -1,11 +1,13 @@
-import Dashboard from "@/components/Dashboard/Dashboard";
+import DashboardLayout from "@/components/Dashboard/Dashboard";
+import React from "react";
 
-const page = () => {
-    return (
-        <div>
-            <Dashboard></Dashboard>
-        </div>
-    );
+const Dashboard = ({ children }) => {
+  return (
+    <div className="flex container mx-auto">
+      <DashboardLayout />
+      {children}
+    </div>
+  );
 };
 
-export default page;
+export default Dashboard;
