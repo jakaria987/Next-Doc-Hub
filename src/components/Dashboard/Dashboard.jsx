@@ -2,18 +2,7 @@ import Link from "next/link";
 import ManageUser from "../../app/ManageUser/page";
 import { FaHome, FaUsers } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
-const Links = [
-  {
-    to: "/ManageUser",
-    title: "Manage User",
-    icon: <FaUsers></FaUsers>,
-  },
-  {
-    path: "/Course",
-    title: "Course Creation",
-    icon: <MdCreateNewFolder></MdCreateNewFolder>,
-  },
-];
+
 const DashboardLayout = () => {
   return (
     <>
@@ -32,11 +21,16 @@ const DashboardLayout = () => {
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu px-8 w-64 pt-24 min-h-full bg-base-200 text-base font-medium  ">
             {/* Sidebar content here */}
-            {Links.map(({ to, title }) => (
-              <li className="" key={to}>
-                <a href={to}>{title}</a>
-              </li>
-            ))}
+            <li>
+              <Link href="/ManageUser">
+                <FaUsers></FaUsers>ManageUser
+              </Link>
+            </li>
+            <li>
+              <Link href="/Course">
+                <MdCreateNewFolder></MdCreateNewFolder>Course Creation
+              </Link>
+            </li>
             <li>
               <Link href="/">
                 <FaHome></FaHome>Home
