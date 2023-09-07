@@ -52,23 +52,7 @@ const Links = [
 const Navbar = () => {
   const { currentUser, logout } = useContext(Authcontext);
   const [navbar, setNavbar] = useState(true);
-  const [pro, setPro] = useState([]);
-  const [activeSearch, setActiveSearch] = useState([]);
-  // useEffect(() => {
-  //   fetch("api/programming")
-  //     .then((res) => res.json())
-  //     .then((data) => setPro(data));
-  // }, []);
-  const handleSearch = (e) => {
-    fetch("api/programming")
-      .then((res) => res.json())
-      .then((data) => setPro(data));
-    // if (e.target.value == "") {
-    //   setActiveSearch([]);
-    //   return false;
-    // }
-    // setActiveSearch(pro.filter((code) => code.includes(e.target.value)));
-  };
+
   return (
     <nav className="w-full md:h-full">
       <div className="navbar bg-white shadow-sm">
@@ -94,23 +78,12 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* <form>
-          <div className=""> */}
         <input
           type="text"
-          onChange={(e) => setActiveSearch(e.target.value)}
           placeholder="Search Documentation..."
           className="input input-sm invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
         />
-        {/* <button
-              onClick={handleSearch}
-              className="absolute bg-black right-1 top-1/2 -translate-y-1/2 p-4 text-white rounded-full "
-            >
-              <FaSearch />
-            </button> */}
-        {/* </div> */}
-        {/* {activeSearch.length > 0 && <div className="text-black mt-20"> </div>} */}
-        {/* </form> */}
+
         <div className="invisible lg:visible navbar-end ">
           <div className="hidden md:flex items-center ml-auto">
             {/* <div>
