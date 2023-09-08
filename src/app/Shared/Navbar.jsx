@@ -28,7 +28,7 @@ const Links = [
     title: "Dashboard",
   },
   {
-    path: "/CodeEditor",
+    path: "/Code-Editor",
     title: "CodeEditor",
   },
   // {
