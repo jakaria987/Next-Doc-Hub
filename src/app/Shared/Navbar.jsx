@@ -55,13 +55,7 @@ const Links = [
 const Navbar = () => {
   const { currentUser, logout } = useContext(Authcontext);
   const [navbar, setNavbar] = useState(true);
-<<<<<<< HEAD
-
   
-
-=======
-  
->>>>>>> 6e93af213717868b3406f1767d554fbd23f6ce64
   return (
     <nav className="w-full md:h-full">
       <div className="navbar bg-white shadow-sm">
@@ -86,17 +80,13 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-<<<<<<< HEAD
-        {/* <input
-=======
 
         <input
->>>>>>> de4d4f17aaba4f27dc8cfa37eefe8c412f756693
           type="text"
           placeholder="Search Documentation..."
           onChange={(e) => handleSearch(e.target.value)}
           className="input input-sm invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
-        /> */}
+        /> 
         <Search></Search>
 
 
