@@ -4,13 +4,13 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 const Page = ({ params }) => {
     const id = params.id;
     const [proDocs, setProDocs] = useState([]);
+
     useEffect(() => {
         fetch("/api/programming")
             .then(res => res.json())
             .then(data => setProDocs(data))
             .catch(error => console.error("Error fetching data:", error));
     }, []);
-
     const languageData = proDocs.find(prodoc => prodoc._id === id);
     const sections = languageData?.sections || {};
     console.log(sections)
