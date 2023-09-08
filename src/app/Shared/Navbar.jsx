@@ -9,6 +9,7 @@ import { Authcontext } from "@/components/Provider/AuthProvider";
 import { FaUserPlus } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import Search from "@/components/Search/Search";
 
 const Links = [
   {
@@ -49,7 +50,7 @@ const Links = [
 const Navbar = () => {
   const { currentUser, logout } = useContext(Authcontext);
   const [navbar, setNavbar] = useState(true);
-
+  
   return (
     <nav className="w-full md:h-full">
       <div className="navbar bg-white shadow-sm">
@@ -133,11 +134,13 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <input
+        {/* <input
           type="text"
           placeholder="Search Documentation..."
           className="input input-sm invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
-        />
+        /> */}
+        <Search></Search>
+
 
         <div className="invisible lg:visible navbar-end ">
           <div className="hidden md:flex items-center ml-auto">
