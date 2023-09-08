@@ -11,9 +11,9 @@ const ProrammingPage = () => {
             .then(data => setPro(data))
     }, [])
     return (
-        <div className=' px-16 '>
-            <h1 className=' font-serif text-3xl font-bold text-center mb-8 bg-gradient-to-r from-gray-500 via-gray-700 to-black bg-clip-text text-transparent'>  Explore Basic Programming Documentation on Programming Languages </h1>
-            <div className="grid grid-cols-3 items-center">
+        <div className=' md:px-16 mt-10'>
+            <h1 className=' font-serif md:text-3xl text-2xl font-bold text-center mb-8 bg-gradient-to-r from-gray-500 via-gray-700 to-black bg-clip-text text-transparent'>Explore Basic Programming Documentation on Programming Languages </h1>
+            <div className="md:grid grid-cols-3 items-center">
                 {pro.map(languages => (
                     <div className='w-50' key={languages._id}>
                         <Link href={`/programmingDocs/${languages._id}`}>

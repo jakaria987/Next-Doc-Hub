@@ -1,4 +1,4 @@
-"use client"
+ "use client"
 import { createContext, useEffect, useState } from 'react';
 import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup, updateProfile, GithubAuthProvider } from 'firebase/auth';
 import { app } from '@/Firebase/Firebase'; // Import your Firebase configuration here
