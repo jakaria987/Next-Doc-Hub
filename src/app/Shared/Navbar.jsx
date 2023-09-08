@@ -87,7 +87,7 @@ const Navbar = () => {
           onChange={(e) => handleSearch(e.target.value)}
           className="input input-sm invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
         /> 
-        <Search></Search>
+        {/* <Search></Search> */}
 
 
         <div className="invisible lg:visible navbar-end ">
