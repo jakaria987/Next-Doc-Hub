@@ -18,7 +18,7 @@ const Layout = () => {
         <div className="drawer-side bg-violet-950  shadow-xl text-white">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <h1 className="text-2xl pt-20 px-8 font-semibold">Admin Dashboard</h1>
-          <ul className="menu px-8 w-64 pt-5 min-h-full bg-base-200 text-base font-medium  ">
+          <ul className="menu px-8 w-64 pt-5 min-h-full  text-base font-medium  ">
             {/* Sidebar content here */}
             <li>
               <Link href="/ManageUser">

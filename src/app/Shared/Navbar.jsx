@@ -9,7 +9,7 @@ import { Authcontext } from "@/components/Provider/AuthProvider";
 import { FaUserPlus, FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import Search from "@/components/Search/Search";
+import Darkreader from "react-darkreader";
 
 const Links = [
   // {
@@ -50,12 +50,10 @@ const Links = [
   },
 ];
 
-
-
 const Navbar = () => {
   const { currentUser, logout } = useContext(Authcontext);
   const [navbar, setNavbar] = useState(true);
-  
+
   return (
     <nav className="w-full md:h-full">
       <div className="navbar bg-white shadow-sm">
@@ -85,13 +83,13 @@ const Navbar = () => {
           type="text"
           placeholder="Search Documentation..."
           onChange={(e) => handleSearch(e.target.value)}
-          className="input input-sm invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
-        /> 
+          className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
+        />
         {/* <Search></Search> */}
-
+        <Darkreader />
 
         <div className="invisible lg:visible navbar-end ">
-          <div className="hidden md:flex items-center ml-auto">
+          <div className="hidden md:flex items-center">
             {/* <div>
               {currentUser && (
                 <img
@@ -101,7 +99,7 @@ const Navbar = () => {
                 />
               )}
             </div> */}
-            <div className="mr-5">
+            <div className="mr-3">
               {currentUser ? (
                 <button
                   className="bg-red-600 font-extrabold text-white rounded-md py-2 px-2 mr-3"

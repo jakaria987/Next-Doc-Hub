@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-
 import { Container } from "postcss";
 import Navbar from "./Shared/Navbar";
 import Footer from "./Shared/Footer";
