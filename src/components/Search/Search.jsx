@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [pro, setPro] = useState([]);
-  const [searchResults, setSearchResults] = useState([]);
-  const router = useRouter();
-
   useEffect(() => {
     // Fetch programming data when the component mounts
     fetch("/api/programming")
