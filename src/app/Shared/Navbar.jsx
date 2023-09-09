@@ -60,7 +60,7 @@ const Navbar = () => {
         <div className="navbar-start">
           {navbar ? (
             <>
-              <Image src={logo} className="w-10 rounded-full" />
+              <Image src={logo} className="w-10 mr-2 rounded-full" />
               <Link href="/" className="md:text-2xl lg:text-3xl font-medium">
                 ProgNexus
               </Link>
