@@ -1,0 +1,291 @@
+[
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwestern-union.a0b1e645.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Western Union",
+    "category": "Finance",
+    "link": "https://www.westernunion.com/bd/en/home.html"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsupervielle.cd49aaa4.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Supervielle",
+    "category": "Finance",
+    "link": "https://www.supervielle.com.ar/personas"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgivecrypto.36006123.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "GiveCrypto",
+    "category": "Finance",
+    "link": "https://givecrypto.org/"
+  },
+
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnubank.6f9ed87e.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Nubank",
+    "category": "Finance",
+    "link": "https://nubank.com.br/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsumup.0f966ce1.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Sumup",
+    "category": "Finance",
+    "link": "https://www.sumup.com/en-us/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fverge.bb7e895e.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Verge",
+    "category": "Finance",
+    "link": "https://vergecurrency.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnvidia.65499745.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Nvidia",
+    "category": "Tech",
+    "link": "https://catalog.ngc.nvidia.com/?filters=&orderBy=weightPopularDESC&query="
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fauth0.c1c2d37c.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "AuthO",
+    "category": "Tech",
+    "link": "https://auth0.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhostgator.69c33447.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "HostGator",
+    "category": "Tech",
+    "link": "https://www.hostgator.com/help"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnotion.dbacb6a8.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Notion",
+    "category": "Tech",
+    "link": "https://www.notion.so/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftypeform.1475fa23.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Typeform",
+    "category": "Tech",
+    "link": "https://www.typeform.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshowcases-16.a5624a55.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Invision",
+    "category": "Tech",
+    "link": "https://www.invisionapp.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftencentnews.6ecd300c.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Tencent News",
+    "category": "News",
+    "link": "https://xw.qq.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftoday.2ffc7fda.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Today",
+    "category": "News",
+    "link": "https://www.today.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffriday-digital.bd04110f.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Friday Digital",
+    "category": "News",
+    "link": "https://friday.kodansha.co.jp/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproducthunt.2074685d.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Product Hunt",
+    "category": "News",
+    "link": "https://www.invisionapp.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvice.4bc8df38.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Vice",
+    "category": "News",
+    "link": "https://www.invisionapp.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffuturism.545179ff.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Futurism",
+    "category": "News",
+    "link": "https://www.invisionapp.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdoordash.1d855707.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "DoorDash",
+    "category": "Ecommerce",
+    "link": "https://www.doordash.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvodafone.ffc0f5fb.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Vodafone",
+    "category": "Ecommerce",
+    "link": "https://www.vodafone.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftruecar.7381de6d.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "TrueCar",
+    "category": "Ecommerce",
+    "link": "https://www.truecar.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fatt.1f25011a.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "AT&T",
+    "category": "Ecommerce",
+    "link": "https://www.att.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnike.509ec268.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Nike",
+    "category": "Ecommerce",
+    "link": "https://www.nike.com/help"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftarget.3eb1fcb3.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Target",
+    "category": "Ecommerce",
+    "link": "https://www.target.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Funited.a124ba4a.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "United Airlines",
+    "category": "Travel",
+    "link": "https://packages.united.com/vacationpackages/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftheculturetrip.9f648e65.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Culture Trip",
+    "category": "Travel",
+    "link": "https://theculturetrip.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgopro.cdb3955d.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Gopro",
+    "category": "Travel",
+    "link": "https://gopro.com/en/bd/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fticketmaster-1.35a7feb7.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Ticketmaster",
+    "category": "Travel",
+    "link": "https://www.ticketmaster.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhilton.02fdf686.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Hilton",
+    "category": "Travel",
+    "link": "https://www.hilton.com/en/brands/hilton-hotels/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftrip.85b580ff.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Trip.com",
+    "category": "Travel",
+    "link": "https://www.trip.com/travel-guide"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fplotly.0dfb0503.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Plotly",
+    "category": "Creative",
+    "link": "https://plotly.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshowcases-13.d1c1bc98.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Expo",
+    "category": "Creative",
+    "link": "https://expo.dev/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbritish-council.1ebfcba5.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "British Council",
+    "category": "Creative",
+    "link": "https://film.britishcouncil.org/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftiktok.75c37b0b.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "TikTok",
+    "category": "Creative",
+    "link": "https://www.tiktok.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnotion.dbacb6a8.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Notion",
+    "category": "Creative",
+    "link": "https://www.notion.so/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftypeform.1475fa23.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Typeform",
+    "category": "Creative",
+    "link": "https://www.typeform.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhulu.138888a5.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Hulu",
+    "category": "Entertainment",
+    "link": "https://www.hulu.com/welcome"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhbomax.72d4d4ad.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "HBO MAX",
+    "category": "Entertainment",
+    "link": "https://www.hbomax.com/geo-availability"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fign.5da9900b.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "IGN",
+    "category": "Entertainment",
+    "link": "https://www.ign.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshowcases-02.983de4fa.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Netflix Jobs",
+    "category": "Entertainment",
+    "link": "https://jobs.netflix.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftwitch.5e75fd8c.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Twitch",
+    "category": "Entertainment",
+    "link": "https://m.twitch.tv/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftiktok.75c37b0b.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "TikTok",
+    "category": "Entertainment",
+    "link": "https://www.tiktok.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstaples.d885b853.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Staples",
+    "category": "Marketing",
+    "link": "https://www.staples.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fporsche.e350ad13.png&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Porsche",
+    "category": "Marketing",
+    "link": "https://finder.porsche.com/in/en-IN"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleafly.c0ad9106.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Leafly",
+    "category": "Marketing",
+    "link": "https://www.leafly.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdeliveroo.4e674647.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Deliveroo",
+    "category": "Marketing",
+    "link": "https://deliveroo.co.uk/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frealself.589ce6dc.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "RealSelf",
+    "category": "Marketing",
+    "link": "https://www.realself.com/"
+  },
+  {
+    "image_url": "https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Feurostar.dda57d2e.jpg&w=640&q=55&dpl=dpl_3pYRcgrGLHjNnyQQ7rQNqUxur1Bg",
+    "title": "Eurostar",
+    "category": "Marketing",
+    "link": "https://www.eurostar.com/rw-en"
+  }
+]
