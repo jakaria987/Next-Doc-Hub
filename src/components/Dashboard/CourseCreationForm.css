@@ -1,0 +1,59 @@
+/* Styling for the form container */
+.course-creation-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Styling for the form */
+  .course-creation-form {
+    background-color: #3d1352;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Set the width to 80% of the container width */
+  max-width: 600px; /* Set a maximum width to prevent the form from becoming too wide on larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  /* Styling for form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for labels */
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:white
+  }
+  
+  /* Styling for inputs and textarea */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styling for submit button */
+  .submit-button {
+    background-color: #efaef6;
+    color: #111111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .submit-button:hover {
+    background-color: #36032d;
+    color: #eadcdc;
+  }
+  

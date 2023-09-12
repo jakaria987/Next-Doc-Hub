@@ -146,7 +146,7 @@ const Navbar = () => {
                         </div>
                       </li>
                       <li className="">
-                        <Link href="/learn">Learn</Link>{" "}
+                        <Link href="/learn"></Link>{" "}
                       </li>
                       <li className="">
                         {" "}

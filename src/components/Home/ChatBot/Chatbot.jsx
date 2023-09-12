@@ -277,15 +277,17 @@ const Chatbot = () => {
 
   return (
     <>
-      <div className="md:flex justify-center py-8 bg-slate-100">
-        <button className="btn btn-outline btn-info mr-10" onClick={toggleChatbot}>
-          {isOpen ? "Close" : "Open"} Chatbot
+      <div className="text-center mt-4 bg-slate-200 pt-7 pb-3">
+        <button className="btn btn-outline btn-info mr-10 mb-3" onClick={toggleChatbot}>
+          {isOpen ? "Close" : "Open"} Chatbox
         </button>
         {isOpen && (
-          <ChatBot
+          <div className="flex justify-center">
+            <ChatBot
             steps={steps}
             opened={isOpen} 
           />
+          </div>
         )}
       </div>
     </>
