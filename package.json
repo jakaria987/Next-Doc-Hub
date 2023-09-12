@@ -39,6 +39,10 @@
     "sweetalert2": "^11.7.23",
     "swiper": "^10.2.0",
     "tailwind": "^4.0.0"
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 00143d7b84f38f17edba57970f735072b3124d3b
   },
   "devDependencies": {
     "@types/node": "^20.5.9",
