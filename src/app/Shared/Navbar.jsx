@@ -111,15 +111,11 @@ const Navbar = () => {
             </div>
 
             {/* <Link
-              href="/learn"
-              className=" border-2 px-4 py-1 border-black rounded-md hover:bg-gray-300 mr-4"
-            >
               Learn
             </Link> */}
           </div>
         </div>
         <div className="">
-          <div className="lg:hidden items-end ">
             <button onClick={() => setNavbar(!navbar)} className="">
               {navbar ? (
                 <>
@@ -167,7 +163,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-      </div>
+     
     </nav>
   );
 };
