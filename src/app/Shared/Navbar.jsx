@@ -9,6 +9,7 @@ import { Authcontext } from "@/components/Provider/AuthProvider";
 import { FaUserPlus, FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+<<<<<<< HEAD
 import Darkreader from "react-darkreader";
 
 const Links = [
@@ -16,6 +17,15 @@ const Links = [
     path: "/",
     title: "Home",
   },
+=======
+// import Darkreader from "react-darkreader";
+
+const Links = [
+  // {
+  //   path: "/Showcase",
+  //   title: "Showcase",
+  // },
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
   {
     path: "/Docs",
     title: "Docs",
@@ -24,11 +34,19 @@ const Links = [
     path: "/Blog",
     title: "Blog",
   },
+<<<<<<< HEAD
   
+=======
+  {
+    path: "/Dashboard",
+    title: "Dashboard",
+  },
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
   {
     path: "/Code-Editor",
     title: "CodeEditor",
   },
+<<<<<<< HEAD
   // {
   //   path: "/templates",
   //   title: "Templates",
@@ -37,6 +55,9 @@ const Links = [
     path: "/TypingTest",
     title: "Typing Test",
   },
+=======
+
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
   {
     path: "/Team",
     title: "Team",
@@ -45,10 +66,13 @@ const Links = [
     path: "/ColorPicker",
     title: "Pick Color",
   },
+<<<<<<< HEAD
   {
     path: "/Dashboard",
     title: "Dashboard",
   },
+=======
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
 ];
 
 const Navbar = () => {
@@ -71,7 +95,11 @@ const Navbar = () => {
           )}
         </div>
         <div className="navbar-center hidden lg:flex">
+<<<<<<< HEAD
           <ul className="menu menu-horizontal px-1">
+=======
+          <ul className="menu menu-horizontal px-2">
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
             {Links.map(({ path, title }) => (
               <li key={path}>
                 <Link href={path}>{title}</Link>
@@ -86,8 +114,13 @@ const Navbar = () => {
           onChange={(e) => handleSearch(e.target.value)}
           className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
         />
+<<<<<<< HEAD
         {/* <Search></Search> */}
         <Darkreader />
+=======
+
+        {/* <Darkreader /> */}
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
         <div className="invisible lg:visible navbar-end ">
           <div className="hidden md:flex items-center">
             {/* <div>
@@ -102,19 +135,36 @@ const Navbar = () => {
             <div className="mr-3">
               {currentUser ? (
                 <button
+<<<<<<< HEAD
                   className="bg-red-600 font-extrabold text-white rounded-md py-2 px-2 mr-3"
+=======
+                  className="bg-red-600 font-extrabold text-white rounded-md py-2 px-2 "
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
                   onClick={logout}
                 >
                   <FontAwesomeIcon icon={faSignOutAlt} />
                 </button>
               ) : (
                 <Link href="/Login">
+<<<<<<< HEAD
                   <FaUserPlus className=" text-3xl mr-5" />
+=======
+                  <FaUserPlus className=" text-3xl " />
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
                 </Link>
               )}
             </div>
 
+<<<<<<< HEAD
            
+=======
+            {/* <Link
+              href="/learn"
+              className=" border-2 px-4 py-1 border-black rounded-md hover:bg-gray-300 mr-4"
+            >
+              Learn
+            </Link> */}
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
           </div>
         </div>
         <div className="">
@@ -141,7 +191,16 @@ const Navbar = () => {
                           </Link>
                         </div>
                       </li>
+<<<<<<< HEAD
                      
+=======
+                      {/* <li className="">
+                        <Link href="/learn">Learn</Link>{" "}
+                      </li> */}
+                      <li className="">
+                        <Link href="/learn"></Link>{" "}
+                      </li>
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
                       <li className="">
                         {" "}
                         <Link href="/Login">Login</Link>{" "}

@@ -6,6 +6,10 @@ import { RxCross2 } from "react-icons/rx";
 import { FaHome, FaUsers } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
 import Link from "next/link";
+<<<<<<< HEAD
+=======
+import Course_creation_form from "@/components/Dashboard/Course_creation_form";
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
 const Course = () => {
   const [sideNav, setSideNav] = useState(true);
   return (
@@ -52,9 +56,22 @@ const Course = () => {
           </button>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="invisible lg:visible flex">
         <Layout></Layout>
         <h5 className="text-xl w-full">Create Your Course:</h5>
+=======
+      <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="lg:col-span-1">
+          <Layout></Layout>
+        </div>
+        <div className="lg:col-span-2 ">
+          <div>
+            <h5 className="text-3xl font-semibold text-center">Create Your Course</h5> <br />
+            <Course_creation_form></Course_creation_form>
+          </div>
+        </div>
+>>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
       </div>
     </>
   );
