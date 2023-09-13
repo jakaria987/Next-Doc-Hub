@@ -5,8 +5,8 @@ import Framework from "@/components/Home/Framework/Framework";
 
 import JoinCommunity from "@/components/Home/Banner/JoinComunity/JoinComunity";
 import About from "@/components/Home/About/About";
+import Chatbot from "@/components/Home/ChatBot/Chatbot";
 
-import ChatBot from "@/components/Home/ChatBot/Chatbot";
 
 const HomePage = () => {
   return (
@@ -15,8 +15,8 @@ const HomePage = () => {
       <ProrammingPage />
       <Framework />
       <JoinCommunity/>
-      <ChatBot></ChatBot>
       <About />
+      <Chatbot></Chatbot>
     </main>
   );
 };

@@ -138,9 +138,15 @@ const Navbar = () => {
                           </Link>
                         </div>
                       </li>
+<<<<<<< HEAD
                       {/* <li className="">
                         <Link href="/learn">Learn</Link>{" "}
                       </li> */}
+=======
+                      <li className="">
+                        <Link href="/learn"></Link>{" "}
+                      </li>
+>>>>>>> 044b782a07b7d8abfde472e7cb8124a06ea1db52
                       <li className="">
                         {" "}
                         <Link href="/Login">Login</Link>{" "}
