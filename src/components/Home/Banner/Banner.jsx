@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -35,13 +36,18 @@ const Banner = () => {
         </p>
         <p className="text-lg mb-6">Interactive learning environment--</p>
         <div className="flex space-x-4">
-          <button href="#" className="btn btn-primary text-green-500">
-            Try Now
-          </button>
-
-          <button href="#" className="btn btn-primary-daisy hover:bg-gray-500">
-            Remind Me
-          </button>
+          <Link
+            href="/Docs"
+            className="btn btn-primary text-green-500 hover:text-white"
+          >
+            Read More
+          </Link>
+          <Link
+            href="/Login"
+            className="btn btn-primary-daisy hover:bg-gray-500"
+          >
+            Login
+          </Link>
         </div>
       </div>
     </div>

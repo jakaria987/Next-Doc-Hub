@@ -32,14 +32,7 @@ const Links = [
     path: "/Code-Editor",
     title: "CodeEditor",
   },
-  // {
-  //   path: "/templates",
-  //   title: "Templates",
-  // },
-  // {
-  //   path: "/enterprise",
-  //   title: "Enterprise",
-  // },
+
   {
     path: "/Team",
     title: "Team",
@@ -70,7 +63,7 @@ const Navbar = () => {
           )}
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-2">
             {Links.map(({ path, title }) => (
               <li key={path}>
                 <Link href={path}>{title}</Link>
@@ -85,7 +78,7 @@ const Navbar = () => {
           onChange={(e) => handleSearch(e.target.value)}
           className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
         />
-        {/* <Search></Search> */}
+
         <Darkreader />
         <div className="invisible lg:visible navbar-end ">
           <div className="hidden md:flex items-center">
@@ -101,24 +94,24 @@ const Navbar = () => {
             <div className="mr-3">
               {currentUser ? (
                 <button
-                  className="bg-red-600 font-extrabold text-white rounded-md py-2 px-2 mr-3"
+                  className="bg-red-600 font-extrabold text-white rounded-md py-2 px-2 "
                   onClick={logout}
                 >
                   <FontAwesomeIcon icon={faSignOutAlt} />
                 </button>
               ) : (
                 <Link href="/Login">
-                  <FaUserPlus className=" text-3xl mr-5" />
+                  <FaUserPlus className=" text-3xl " />
                 </Link>
               )}
             </div>
 
-            <Link
+            {/* <Link
               href="/learn"
               className=" border-2 px-4 py-1 border-black rounded-md hover:bg-gray-300 mr-4"
             >
               Learn
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="">
@@ -145,9 +138,9 @@ const Navbar = () => {
                           </Link>
                         </div>
                       </li>
-                      <li className="">
+                      {/* <li className="">
                         <Link href="/learn">Learn</Link>{" "}
-                      </li>
+                      </li> */}
                       <li className="">
                         {" "}
                         <Link href="/Login">Login</Link>{" "}
