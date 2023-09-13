@@ -12,10 +12,10 @@ import { RxCross2 } from "react-icons/rx";
 // import Darkreader from "react-darkreader";
 
 const Links = [
-  // {
-  //   path: "/Showcase",
-  //   title: "Showcase",
-  // },
+  {
+    path: "/",
+    title: "Home",
+  },
   {
     path: "/Docs",
     title: "Docs",
@@ -24,10 +24,7 @@ const Links = [
     path: "/Blog",
     title: "Blog",
   },
-  {
-    path: "/Dashboard",
-    title: "Dashboard",
-  },
+  
   {
     path: "/Code-Editor",
     title: "CodeEditor",
@@ -39,6 +36,14 @@ const Links = [
   {
     path: "/ColorPicker",
     title: "Pick Color",
+  },
+  {
+    path: "/TypingTest",
+    title: "Typing Test",
+  },
+  {
+    path: "/Dashboard",
+    title: "Dashboard",
   },
 ];
 
