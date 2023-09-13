@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import Link from "next/link";
->>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
 import React from "react";
 
 const Banner = () => {
@@ -39,15 +36,6 @@ const Banner = () => {
         </p>
         <p className="text-lg mb-6">Interactive learning environment--</p>
         <div className="flex space-x-4">
-<<<<<<< HEAD
-          <button href="#" className="btn btn-primary text-green-500">
-            Try Now
-          </button>
-
-          <button href="#" className="btn btn-primary-daisy hover:bg-gray-500">
-            Remind Me
-          </button>
-=======
           <Link
             href="/Docs"
             className="btn btn-primary text-green-500 hover:text-white"
@@ -60,7 +48,6 @@ const Banner = () => {
           >
             Login
           </Link>
->>>>>>> 3ef3b085774baab8f0b55defaebb0155954c0fc6
         </div>
       </div>
     </div>
