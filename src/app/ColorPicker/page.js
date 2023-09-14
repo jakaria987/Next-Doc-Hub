@@ -1,4 +1,4 @@
-import ColorPicker from "@/components/ColorPicker/ColorPicker";
+import ColorPicker from "../ColorPicker/ColorPicker";
 
 const page = () => {
     return (

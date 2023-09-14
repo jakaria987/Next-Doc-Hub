@@ -1,12 +1,12 @@
 "use client";
-import Layout from "@/components/Dashboard/Layout";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { FaHome, FaUsers } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
 import Link from "next/link";
-import Course_creation_form from "@/components/Dashboard/Course_creation_form";
+import Layout from "../../components/";
+
 const Course = () => {
   const [sideNav, setSideNav] = useState(true);
   return (
