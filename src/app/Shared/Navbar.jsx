@@ -5,17 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import logo from "./logo.png";
-import { Authcontext } from "@/components/Provider/AuthProvider";
+import { Authcontext } from "../../components/Provider/AuthProvider";
 import { FaUserPlus, FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 // import Darkreader from "react-darkreader";
 
 const Links = [
-  // {
-  //   path: "/Showcase",
-  //   title: "Showcase",
-  // },
+  {
+    path: "/",
+    title: "Home",
+  },
   {
     path: "/Docs",
     title: "Docs",
@@ -28,6 +28,7 @@ const Links = [
     path: "/Blog",
     title: "Blog",
   },
+
   {
     path: "/Code-Editor",
     title: "CodeEditor",
@@ -44,6 +45,14 @@ const Links = [
   {
     path: "/ColorPicker",
     title: "Pick Color",
+  },
+  {
+    path: "/TypingTest",
+    title: "Typing Test",
+  },
+  {
+    path: "/Dashboard",
+    title: "Dashboard",
   },
 ];
 
@@ -110,61 +119,56 @@ const Navbar = () => {
             </div>
 
             {/* <Link
-              href="/learn"
-              className=" border-2 px-4 py-1 border-black rounded-md hover:bg-gray-300 mr-4"
-            >
               Learn
             </Link> */}
           </div>
         </div>
         <div className="">
-          <div className="lg:hidden items-end ">
-            <button onClick={() => setNavbar(!navbar)} className="">
-              {navbar ? (
-                <>
-                  <GiHamburgerMenu className="w-6 h-6"></GiHamburgerMenu>
-                </>
-              ) : (
-                <>
-                  {" "}
-                  <RxCross2 className="w-6 h-6"></RxCross2>{" "}
-                  <div className="">
-                    <ul
-                      tabIndex={0}
-                      className="menu m-0 dropdown-content mt-10 shadow bg-white w-screen h-screen  gap-3 "
-                    >
-                      <li>
-                        <div className="flex">
-                          <Image src={logo} className="w-36" />
-                          <Link href="/" className="font-medium text-2xl">
-                            ProgNexus
-                          </Link>
-                        </div>
-                      </li>
-                      {/* <li className="">
+          <button onClick={() => setNavbar(!navbar)} className="">
+            {navbar ? (
+              <>
+                <GiHamburgerMenu className="w-6 h-6"></GiHamburgerMenu>
+              </>
+            ) : (
+              <>
+                {" "}
+                <RxCross2 className="w-6 h-6"></RxCross2>{" "}
+                <div className="">
+                  <ul
+                    tabIndex={0}
+                    className="menu m-0 dropdown-content mt-10 shadow bg-white w-screen h-screen  gap-3 "
+                  >
+                    <li>
+                      <div className="flex">
+                        <Image src={logo} className="w-36" />
+                        <Link href="/" className="font-medium text-2xl">
+                          ProgNexus
+                        </Link>
+                      </div>
+                    </li>
+                    {/* <li className="">
                         <Link href="/learn">Learn</Link>{" "}
                       </li> */}
-                      <li className="">
-                        <Link href="/learn"></Link>{" "}
-                      </li>
-                      <li className="">
-                        {" "}
-                        <Link href="/Login">Login</Link>{" "}
-                      </li>
+                    <li className="">
+                      <Link href="/learn"></Link>{" "}
+                    </li>
+                    <li className="">
+                      {" "}
+                      <Link href="/Login">Login</Link>{" "}
+                    </li>
 
-                      {Links.map(({ path, title }) => (
-                        <li className="" key={path}>
-                          <Link className="text-[15px]" href={path}>
-                            {title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>{" "}
-                </>
-              )}
-            </button>
-          </div>
+                    {Links.map(({ path, title }) => (
+                      <li className="" key={path}>
+                        <Link className="text-[15px]" href={path}>
+                          {title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>{" "}
+              </>
+            )}
+          </button>
         </div>
       </div>
     </nav>

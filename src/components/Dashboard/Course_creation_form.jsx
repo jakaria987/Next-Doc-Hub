@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CourseCreationForm.css'; // Import your CSS file
+import './CourseCreationForm.css'; 
 
 const  CourseCreationForm = () => {
   // Define state variables for form inputs
@@ -10,12 +10,8 @@ const  CourseCreationForm = () => {
   const [courseFee, setCourseFee] = useState('');
   const [courseDescription, setCourseDescription] = useState('');
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Here, you can send the form data to your backend or perform any other desired actions
-    // For example, you can create an object to hold the form data
     const formData = {
       name,
       email,
@@ -25,7 +21,6 @@ const  CourseCreationForm = () => {
       courseDescription,
     };
 
-    // You can then send formData to your backend API or perform any other necessary logic
     console.log(formData);
   };
 

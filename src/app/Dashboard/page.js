@@ -1,5 +1,5 @@
 "use client";
-import Layout from "@/components/Dashboard/Layout";
+import Layout from "../../components/Dashboard/Layout";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";

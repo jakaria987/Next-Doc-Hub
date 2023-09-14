@@ -4,7 +4,7 @@ import "./SignUp.css";
 import signUpSvg from "./Sign up-cuate.png";
 import signUpArrow from "./dbl-arrow.png";
 import { useForm } from "react-hook-form";
-import { Authcontext } from "@/components/Provider/AuthProvider";
+import { Authcontext } from "../../components/Provider/AuthProvider";
 import Link from "next/link";
 import Image from "next/image";
 import Swal from "sweetalert2";

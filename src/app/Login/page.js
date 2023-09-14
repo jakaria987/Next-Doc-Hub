@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import log from "./undraw_secure_login_pdn4.svg";
 import "./Login.css";
-import { Authcontext } from '@/components/Provider/AuthProvider';
+import { Authcontext } from '../../components/Provider/AuthProvider';
 import Link from 'next/link';
 
 const LoginPage = () => {
