@@ -21,14 +21,19 @@ const Links = [
     title: "Docs",
   },
   {
+    path: "/Quiz",
+    title: "Quiz",
+  },
+  {
     path: "/Blog",
     title: "Blog",
   },
-  
+
   {
     path: "/Code-Editor",
     title: "CodeEditor",
   },
+
   {
     path: "/Team",
     title: "Team",
@@ -67,7 +72,7 @@ const Navbar = () => {
           )}
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-2">
+          <ul className="menu menu-horizontal px-2 text-base">
             {Links.map(({ path, title }) => (
               <li key={path}>
                 <Link href={path}>{title}</Link>
@@ -76,25 +81,15 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <input
-          type="text"
-          placeholder="Search Documentation..."
-          onChange={(e) => handleSearch(e.target.value)}
-          className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
-        />
-
         {/* <Darkreader /> */}
         <div className="invisible lg:visible navbar-end ">
+          <input
+            type="text"
+            placeholder="Search Documentation..."
+            onChange={(e) => handleSearch(e.target.value)}
+            className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-3/5 max-w-xs"
+          />
           <div className="hidden md:flex items-center">
-            {/* <div>
-              {currentUser && (
-                <img
-                  src={currentUser.photoURL || ""}
-                  className="h-12 w-12 rounded-full ml-2"
-                  title={currentUser.displayName || ""}
-                />
-              )}
-            </div> */}
             <div className="mr-3">
               {currentUser ? (
                 <button
@@ -115,55 +110,54 @@ const Navbar = () => {
             </Link> */}
           </div>
         </div>
-        <div className="">
-            <button onClick={() => setNavbar(!navbar)} className="">
-              {navbar ? (
-                <>
-                  <GiHamburgerMenu className="w-6 h-6"></GiHamburgerMenu>
-                </>
-              ) : (
-                <>
-                  {" "}
-                  <RxCross2 className="w-6 h-6"></RxCross2>{" "}
-                  <div className="">
-                    <ul
-                      tabIndex={0}
-                      className="menu m-0 dropdown-content mt-10 shadow bg-white w-screen h-screen  gap-3 "
-                    >
-                      <li>
-                        <div className="flex">
-                          <Image src={logo} className="w-36" />
-                          <Link href="/" className="font-medium text-2xl">
-                            ProgNexus
-                          </Link>
-                        </div>
-                      </li>
-                      {/* <li className="">
+        <div className="lg:hidden items-end">
+          <button onClick={() => setNavbar(!navbar)} className="">
+            {navbar ? (
+              <>
+                <GiHamburgerMenu className="w-6 h-6"></GiHamburgerMenu>
+              </>
+            ) : (
+              <>
+                {" "}
+                <RxCross2 className="w-6 h-6"></RxCross2>{" "}
+                <div className="">
+                  <ul
+                    tabIndex={0}
+                    className="menu m-0 dropdown-content mt-10 shadow bg-white w-screen h-screen  gap-3 "
+                  >
+                    <li>
+                      <div className="flex">
+                        <Image src={logo} className="w-36" />
+                        <Link href="/" className="font-medium text-2xl">
+                          ProgNexus
+                        </Link>
+                      </div>
+                    </li>
+                    {/* <li className="">
                         <Link href="/learn">Learn</Link>{" "}
                       </li> */}
-                      <li className="">
-                        <Link href="/learn"></Link>{" "}
-                      </li>
-                      <li className="">
-                        {" "}
-                        <Link href="/Login">Login</Link>{" "}
-                      </li>
+                    <li className="">
+                      <Link href="/learn"></Link>{" "}
+                    </li>
+                    <li className="">
+                      {" "}
+                      <Link href="/Login">Login</Link>{" "}
+                    </li>
 
-                      {Links.map(({ path, title }) => (
-                        <li className="" key={path}>
-                          <Link className="text-[15px]" href={path}>
-                            {title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>{" "}
-                </>
-              )}
-            </button>
-          </div>
+                    {Links.map(({ path, title }) => (
+                      <li className="" key={path}>
+                        <Link className="text-[15px]" href={path}>
+                          {title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>{" "}
+              </>
+            )}
+          </button>
         </div>
-     
+      </div>
     </nav>
   );
 };
