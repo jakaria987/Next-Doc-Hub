@@ -21,16 +21,20 @@ const Links = [
     title: "Docs",
   },
   {
+    path: "/Quiz",
+    title: "Quiz",
+  },
+  {
     path: "/Blog",
     title: "Blog",
   },
   {
-    path: "/Dashboard",
-    title: "Dashboard",
-  },
-  {
     path: "/Code-Editor",
     title: "CodeEditor",
+  },
+  {
+    path: "/Dashboard",
+    title: "Dashboard",
   },
 
   {
@@ -63,7 +67,7 @@ const Navbar = () => {
           )}
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-2">
+          <ul className="menu menu-horizontal px-3 text-base">
             {Links.map(({ path, title }) => (
               <li key={path}>
                 <Link href={path}>{title}</Link>
@@ -72,15 +76,14 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <input
-          type="text"
-          placeholder="Search Documentation..."
-          onChange={(e) => handleSearch(e.target.value)}
-          className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-2/5 max-w-xs"
-        />
-
         {/* <Darkreader /> */}
         <div className="invisible lg:visible navbar-end ">
+          <input
+            type="text"
+            placeholder="Search Documentation..."
+            onChange={(e) => handleSearch(e.target.value)}
+            className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-3/5 max-w-xs"
+          />
           <div className="hidden md:flex items-center">
             {/* <div>
               {currentUser && (
