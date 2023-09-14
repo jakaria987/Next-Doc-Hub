@@ -1,5 +1,5 @@
 
-import { connect } from "@/app/Mongodb/db";
+import { connect } from "../../Mongodb/db";
 import { NextResponse } from "next/server";
  // Update the path to your db.js module
 
