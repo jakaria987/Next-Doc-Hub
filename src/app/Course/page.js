@@ -5,7 +5,8 @@ import { RxCross2 } from "react-icons/rx";
 import { FaHome, FaUsers } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
 import Link from "next/link";
-import Layout from "../../components/";
+import Layout from "../../components/Dashboard/Layout";
+import CourseCreationForm from "../../components/Dashboard/Course_creation_form";
 
 const Course = () => {
   const [sideNav, setSideNav] = useState(true);
@@ -60,7 +61,7 @@ const Course = () => {
         <div className="lg:col-span-2 ">
           <div>
             <h5 className="text-3xl font-semibold text-center">Create Your Course</h5> <br />
-            <Course_creation_form></Course_creation_form>
+            <CourseCreationForm></CourseCreationForm>
           </div>
         </div>
       </div>
