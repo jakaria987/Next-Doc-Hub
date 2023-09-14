@@ -4,8 +4,8 @@ import styled from "styled-components";
 import Image from "next/image";
 import bgImg from "../../../public/Images/typing-girl.svg";
 import { headingAnimationColor, primaryColor } from "../../components/TypingTest/color/color";
-import TypingCard from "@/components/TypingTest/TypingCard";
-import TypingHead from "@/components/TypingTest/TypingHead";
+import TypingCard from "../../components/TypingTest/TypingCard";
+import TypingHead from "../../components/TypingTest/TypingHead";
 
 const Typingtest = () => {
   const [currentSpeed, setCurrentSpeed] = useState(0);

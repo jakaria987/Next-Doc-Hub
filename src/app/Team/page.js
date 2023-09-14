@@ -1,4 +1,4 @@
-import Team from '@/components/Team/Team';
+import Team from '../../components/Team/Team';
 import React from 'react';
 
 const TeamMember = () => {

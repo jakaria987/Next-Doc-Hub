@@ -1,8 +1,8 @@
 "use client";
-import CSSDocs from "@/components/Docs/CSSDocs/CSSDocs";
-import HTMLDocs from "@/components/Docs/HTMLDocs/HTMLDocs";
-import JavaScriptDocs from "@/components/Docs/JavaScriptDocs/JavaScriptDocs";
-import ReactDocs from "@/components/Docs/ReactDocs/ReactDocs";
+import CSSDocs from "../../components/Docs/CSSDocs/CSSDocs";
+import HTMLDocs from "../../components/Docs/HTMLDocs/HTMLDocs";
+import JavaScriptDocs from "../../components/Docs/JavaScriptDocs/JavaScriptDocs";
+import ReactDocs from "../../components/Docs/ReactDocs/ReactDocs";
 import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";

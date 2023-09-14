@@ -1,5 +1,5 @@
 "use client";
-import Layout from "@/components/Dashboard/Layout";
+import Layout from "../../components/Dashboard/Layout";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
