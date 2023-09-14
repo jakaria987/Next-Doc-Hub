@@ -33,10 +33,6 @@ const Links = [
     path: "/Code-Editor",
     title: "CodeEditor",
   },
-  {
-    path: "/Dashboard",
-    title: "Dashboard",
-  },
 
   {
     path: "/Team",
@@ -76,7 +72,7 @@ const Navbar = () => {
           )}
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-3 text-base">
+          <ul className="menu menu-horizontal px-2 text-base">
             {Links.map(({ path, title }) => (
               <li key={path}>
                 <Link href={path}>{title}</Link>
@@ -94,15 +90,6 @@ const Navbar = () => {
             className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-3/5 max-w-xs"
           />
           <div className="hidden md:flex items-center">
-            {/* <div>
-              {currentUser && (
-                <img
-                  src={currentUser.photoURL || ""}
-                  className="h-12 w-12 rounded-full ml-2"
-                  title={currentUser.displayName || ""}
-                />
-              )}
-            </div> */}
             <div className="mr-3">
               {currentUser ? (
                 <button
@@ -123,7 +110,7 @@ const Navbar = () => {
             </Link> */}
           </div>
         </div>
-        <div className="">
+        <div className="lg:hidden items-end">
           <button onClick={() => setNavbar(!navbar)} className="">
             {navbar ? (
               <>
