@@ -9,6 +9,7 @@ import { Authcontext } from "../../components/Provider/AuthProvider";
 import { FaUserPlus, FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import Darkreader from "react-darkreader";
 // import Darkreader from "react-darkreader";
 
 const Links = [
@@ -72,7 +73,7 @@ const Navbar = () => {
           )}
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-2 text-base">
+          <ul className="menu menu-horizontal  text-base">
             {Links.map(({ path, title }) => (
               <li key={path}>
                 <Link href={path}>{title}</Link>
@@ -87,10 +88,11 @@ const Navbar = () => {
             type="text"
             placeholder="Search Documentation..."
             onChange={(e) => handleSearch(e.target.value)}
-            className="input input-sm mr-5 invisible lg:visible focus:outline-none bg-base-200 w-3/5 max-w-xs"
+            className="input input-sm mr-3 invisible lg:visible focus:outline-none bg-base-200 w-4/5 max-w-xs"
           />
+          <Darkreader />
           <div className="hidden md:flex items-center">
-            <div className="mr-3">
+            <div className="ml-3">
               {currentUser ? (
                 <button
                   className="bg-red-600 font-extrabold text-white rounded-md py-2 px-2 "
