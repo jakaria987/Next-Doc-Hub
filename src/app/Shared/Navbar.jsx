@@ -29,10 +29,7 @@ const Links = [
     title: "Blog",
   },
 
-  {
-    path: "/Code-Editor",
-    title: "CodeEditor",
-  },
+  
 
   {
     path: "/Team",
@@ -146,7 +143,7 @@ const Navbar = () => {
 
                     {Links.map(({ path, title }) => (
                       <li className="" key={path}>
-                        <Link className="text-[15px]" href={path}>
+                        <Link className="text-[15px] " href={path}>
                           {title}
                         </Link>
                       </li>
