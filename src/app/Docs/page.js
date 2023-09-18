@@ -1,4 +1,5 @@
 "use client";
+import CDocs from "@/components/Docs/CDocs/CDocs";
 import CSSDocs from "../../components/Docs/CSSDocs/CSSDocs";
 import HTMLDocs from "../../components/Docs/HTMLDocs/HTMLDocs";
 import JavaScriptDocs from "../../components/Docs/JavaScriptDocs/JavaScriptDocs";
@@ -6,6 +7,7 @@ import ReactDocs from "../../components/Docs/ReactDocs/ReactDocs";
 import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import PythonDocs from "@/components/Docs/PythonDocs/PythonDocs";
 const Docs = () => {
   const [docs, setDocs] = useState([]);
   useEffect(() => {
@@ -38,7 +40,6 @@ const Docs = () => {
           <Tab>Python</Tab>
           <Tab></Tab>
           <Tab></Tab>
-          <Tab>Java</Tab>
         </TabList>
         <TabPanel className="my-16 mx-0 lg:mx-20 ">
           <HTMLDocs />
@@ -57,6 +58,16 @@ const Docs = () => {
         <TabPanel></TabPanel>
         <TabPanel className="my-16 mx-0 lg:mx-20 ">
           <ReactDocs />
+        </TabPanel>
+        <TabPanel></TabPanel>
+        <TabPanel></TabPanel>
+        <TabPanel className="my-16 mx-0 lg:mx-20 ">
+          <CDocs />
+        </TabPanel>
+        <TabPanel></TabPanel>
+        <TabPanel></TabPanel>
+        <TabPanel className="my-16 mx-0 lg:mx-20 ">
+          <PythonDocs />
         </TabPanel>
       </Tabs>
     </div>
