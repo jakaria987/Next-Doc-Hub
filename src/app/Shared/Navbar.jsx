@@ -69,13 +69,13 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal  text-base">
             {Links.map(({ path, title }) => (
-              <li className="text-xl font-semibold" key={path}>
+              <li className="font-semibold" key={path}>
                 <Link activeClassname="active" href={path}>{title}</Link>
               </li>
 
             ))}
             {
-              currentUser ? <> <li className="text-xl font-semibold"><Link href="/Dashboard">Dashboard</Link></li> </> : <></>
+              currentUser ? <> <li className="font-semibold"><Link href="/Dashboard">Dashboard</Link></li> </> : <></>
             }
           </ul>
         </div>
