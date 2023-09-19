@@ -10,7 +10,6 @@ import { Authcontext } from "../../components/Provider/AuthProvider";
 import { FaUserPlus, FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import Darkreader from "react-darkreader";
 
 const Links = [
   {
@@ -83,7 +82,7 @@ const Navbar = () => {
         {/* <Darkreader /> */}
         <div className="invisible lg:visible navbar-end ">
 
-          <Darkreader />
+          {/* <Darkreader /> */}
           <div className="hidden md:flex items-center ms-4">
             <div className="ml-3">
               {currentUser ? (
