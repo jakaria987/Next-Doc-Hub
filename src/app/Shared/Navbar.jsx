@@ -26,6 +26,14 @@ const Links = [
     title: "Blog",
   },
   {
+    path: "/CodeEditor",
+    title: "CodeEditor",
+  },
+  {
+    path: "/Team",
+    title: "Team",
+  },
+  {
     path: "/ColorPicker",
     title: "Pick Color",
   },
