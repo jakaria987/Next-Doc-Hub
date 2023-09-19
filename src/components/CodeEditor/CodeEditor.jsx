@@ -1,13 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Controlled as CodeMirror } from 'react-codemirror2';
-import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/material.css';
-import 'codemirror/mode/htmlmixed/htmlmixed';
-import 'codemirror/mode/css/css';
-import 'codemirror/mode/javascript/javascript';
-import './CodeEditor.css'; // Import your custom CSS file
+import './CodeEditor.css';
 
 const CodeEditor = () => {
   const [htmlCode, setHtmlCode] = useState('');
@@ -19,7 +13,7 @@ const CodeEditor = () => {
     const iframe = document.createElement('iframe');
     iframe.style.display = 'none';
     document.body.appendChild(iframe);
-
+  
     const html = `
       <html>
         <head>
@@ -29,62 +23,46 @@ const CodeEditor = () => {
         <script>${jsCode}</script>
       </html>
     `;
-
+  
     iframe.contentDocument.open();
     iframe.contentDocument.write(html);
     iframe.contentDocument.close();
-
-    iframe.setAttribute('sandbox', 'allow-scripts');
-
+  
+    // Update the sandbox attribute to allow scripts and same-origin requests.
+    iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+  
     const result = iframe.contentDocument.body.innerHTML;
     setOutput(result);
-
+  
     document.body.removeChild(iframe);
   };
+  
 
   return (
-    <div className="flex flex-col justify-center items-center text-center animate-slide-in">
+    <div className="flex flex-col items-center text-center animate-slide-in">
       <div className="mb-4 max-w-screen-xl w-full rounded-xl text-left">
-        <h2 className="text-black font-bold text-2xl  text-center">HTML</h2>
-        <CodeMirror
+        <h2 className="text-black font-bold text-2xl text-center">HTML</h2>
+        <textarea
           value={htmlCode}
-          options={{
-            mode: 'htmlmixed',
-            theme: 'material',
-            lineNumbers: true,
-          }}
-          onBeforeChange={(editor, data, value) => {
-            setHtmlCode(value);
-          }}
-        />
+          onChange={(e) => setHtmlCode(e.target.value)}
+          className="w-full h-40 px-4 py-2 border-2 border-gray-200 rounded-lg"
+        ></textarea>
       </div>
       <div className="mb-4 max-w-screen-xl w-full rounded-xl text-left">
-        <h2 className="text-black font-bold text-2xl  text-center">CSS</h2>
-        <CodeMirror
+        <h2 className="text-black font-bold text-2xl text-center">CSS</h2>
+        <textarea
           value={cssCode}
-          options={{
-            mode: 'css',
-            theme: 'material',
-            lineNumbers: true,
-          }}
-          onBeforeChange={(editor, data, value) => {
-            setCssCode(value);
-          }}
-        />
+          onChange={(e) => setCssCode(e.target.value)}
+          className="w-full h-40 px-4 py-2 border-2 border-gray-200 rounded-lg"
+        ></textarea>
       </div>
       <div className="mb-4 max-w-screen-xl w-full rounded-xl text-left">
-        <h2 className="text-black font-bold text-2xl  text-center">JS</h2>
-        <CodeMirror
+        <h2 className="text-black font-bold text-2xl text-center">JS</h2>
+        <textarea
           value={jsCode}
-          options={{
-            mode: 'javascript',
-            theme: 'material',
-            lineNumbers: true,
-          }}
-          onBeforeChange={(editor, data, value) => {
-            setJsCode(value);
-          }}
-        />
+          onChange={(e) => setJsCode(e.target.value)}
+          className="w-full h-40 px-4 py-2 border-2 border-gray-200 rounded-lg"
+        ></textarea>
       </div>
       <button
         onClick={runCode}
@@ -94,7 +72,7 @@ const CodeEditor = () => {
       </button>
       <div className="w-full max-w-screen-xl">
         <div className="bg-gray-100 p-4 rounded-lg shadow-lg mb-4 text-center">
-          <h2 className="text-black font-bold text-2xl  ">Output</h2>
+          <h2 className="text-black font-bold text-2xl">Output</h2>
           <iframe
             title="output"
             srcDoc={output}
@@ -109,8 +87,5 @@ const CodeEditor = () => {
 };
 
 export default CodeEditor;
-
-
-
 
 
