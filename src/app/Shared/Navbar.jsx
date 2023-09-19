@@ -29,9 +29,10 @@ const Links = [
     path: "/Blog",
     title: "Blog",
   },
-
-  
-
+  {
+    path: "/CodeEditor",
+    title: "CodeEditor",
+  },
   {
     path: "/Team",
     title: "Team",
