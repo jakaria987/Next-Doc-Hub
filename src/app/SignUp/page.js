@@ -61,7 +61,7 @@ const SignUpPage = () => {
       console.log(loggedUser);
       updateUserProfile(name, photoURL)
         .then(() => {
-          const saveUser = { name: loggedUser.name, email: loggedUser.email };
+          const saveUser = { name: loggedUser.name, email: loggedUser.email , role:user};
           fetch("http://localhost:3000/user", {
             method: "POST",
             headers: {

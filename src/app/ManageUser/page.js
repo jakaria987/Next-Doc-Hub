@@ -1,13 +1,24 @@
 "use client";
 import Layout from "../../components/Dashboard/Layout";
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { FaHome, FaUsers } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
 import Link from "next/link";
+import { Authcontext } from "@/components/Provider/AuthProvider";
 const ManageUser = () => {
   const [sideNav, setSideNav] = useState(true);
+//   const {currentUSer} = useContext(Authcontext)
+//   const {users, setUSers} = useState({})
+
+//   useEffect(()=>{
+// fetch('http://localhost:3000/user')
+// .then(res=> res.json())
+// .then(data => {
+//   console.log(data);
+// })
+//   },[])
   return (
     <>
       <div className="">

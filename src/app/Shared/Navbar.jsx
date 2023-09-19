@@ -1,4 +1,5 @@
 "use client";
+import './Navbar.css';
 import React, { useContext, useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,13 +11,8 @@ import { FaUserPlus, FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import Darkreader from "react-darkreader";
-// import Darkreader from "react-darkreader";
 
 const Links = [
-  {
-    path: "/",
-    title: "Home",
-  },
   {
     path: "/Docs",
     title: "Docs",
@@ -29,13 +25,6 @@ const Links = [
     path: "/Blog",
     title: "Blog",
   },
-
-  
-
-  {
-    path: "/Team",
-    title: "Team",
-  },
   {
     path: "/ColorPicker",
     title: "Pick Color",
@@ -45,9 +34,9 @@ const Links = [
     title: "Typing Test",
   },
   {
-    path: "/Dashboard",
-    title: "Dashboard",
-  },
+    path: "/Team",
+    title: "Team",
+  }
 ];
 
 const Navbar = () => {
@@ -55,7 +44,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(true);
 
   return (
-    <nav className="w-full md:h-full">
+    <nav className="w-full md:h-full  bg-white ">
       <div className="navbar bg-white shadow-sm">
         <div className="navbar-start">
           {navbar ? (
@@ -72,41 +61,43 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal  text-base">
             {Links.map(({ path, title }) => (
-              <li key={path}>
-                <Link href={path}>{title}</Link>
+              <li className="text-xl font-semibold" key={path}>
+                <Link activeClassname="active" href={path}>{title}</Link>
               </li>
+
             ))}
+            {
+              currentUser ? <> <li className="text-xl font-semibold"><Link href="/Dashboard">Dashboard</Link></li> </> : <></>
+            }
           </ul>
         </div>
 
         {/* <Darkreader /> */}
         <div className="invisible lg:visible navbar-end ">
-          <input
-            type="text"
-            placeholder="Search Documentation..."
-            onChange={(e) => handleSearch(e.target.value)}
-            className="input input-sm mr-3 invisible lg:visible focus:outline-none bg-base-200 w-4/5 max-w-xs"
-          />
+
           <Darkreader />
-          <div className="hidden md:flex items-center">
+          <div className="hidden md:flex items-center ms-4">
             <div className="ml-3">
               {currentUser ? (
+                <div className="flex gap-2"><div className="avatar">
+                <div className="w-12 rounded-full">
+                  <img src={currentUser.photoURL} />
+                </div>
+              </div>
                 <button
-                  className="bg-red-600 font-extrabold text-white rounded-md py-2 px-2 "
+                  className="btn btn-primary bg-black text-white "
                   onClick={logout}
                 >
-                  <FontAwesomeIcon icon={faSignOutAlt} />
+                  LogOut
                 </button>
+                  
+                </div>
               ) : (
-                <Link href="/Login">
-                  <FaUserPlus className=" text-3xl " />
-                </Link>
+                <button className="btn btn-primary bg-black text-white"><Link href="/Login">
+                  Login
+                </Link></button>
               )}
             </div>
-
-            {/* <Link
-              Learn
-            </Link> */}
           </div>
         </div>
         <div className="lg:hidden items-end">
@@ -132,9 +123,7 @@ const Navbar = () => {
                         </Link>
                       </div>
                     </li>
-                    {/* <li className="">
-                        <Link href="/learn">Learn</Link>{" "}
-                      </li> */}
+
                     <li className="">
                       <Link href="/learn"></Link>{" "}
                     </li>
@@ -145,7 +134,7 @@ const Navbar = () => {
 
                     {Links.map(({ path, title }) => (
                       <li className="" key={path}>
-                        <Link className="text-[15px] " href={path}>
+                        <Link activeClassName="active" className="text-[15px] " href={path}>
                           {title}
                         </Link>
                       </li>
