@@ -73,7 +73,7 @@ const Navbar = () => {
 
         <div className="invisible lg:visible navbar-end ">
 
-         
+          {/* <Darkreader /> */}
           <div className="hidden md:flex items-center ms-4">
             <div className="ml-3">
               {currentUser ? (
