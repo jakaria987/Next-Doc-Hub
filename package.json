@@ -25,10 +25,6 @@
     "react": "^18.2.0",
     "react-color": "^2.19.3",
     "react-copy-to-clipboard": "^5.1.0",
-<<<<<<< HEAD
-    "react-dom": "^18.2.0",
-=======
->>>>>>> 3fb348e51cbf9620250fbf202beaf177ce727205
     "react-easy-swipe": "^0.0.23",
     "react-fast-marquee": "^1.6.0",
     "react-hook-form": "^7.45.4",
