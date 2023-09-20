@@ -2,8 +2,6 @@
 import './Navbar.css';
 import React, { useContext, useState } from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import logo from "./logo.png";
 import { Authcontext } from "../../components/Provider/AuthProvider";
