@@ -258,9 +258,7 @@ const Team = () => {
               entire web applications on their own or contributing to different
               parts of a project.
             </p>
-            <button className="btn bg-white text-black border-0">
-              Get Started
-            </button>
+            
           </div>
         </div>
       </div>
