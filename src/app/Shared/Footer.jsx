@@ -23,6 +23,9 @@ const Footer = () => {
           <Link href="/blog" className="link link-hover">
             Blog
           </Link>
+          <Link href="/AllCourse" className="link link-hover">
+            Courses
+          </Link>
         </div>
         <div className="flex flex-col space-y-2 font-semibold">
           <span className="text-lg font-bold">More</span>

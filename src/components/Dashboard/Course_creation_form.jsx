@@ -20,9 +20,32 @@ const  CourseCreationForm = () => {
       courseFee,
       courseDescription,
     };
-
-    console.log(formData);
-  };
+  
+    // Replace 'https://example.com/api' with your actual API endpoint
+    const apiUrl = 'api/postCourse';
+  
+    fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log('POST request successful:', data);
+        // You can add additional logic here to handle the response
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        // Handle errors here
+      });
+  };  
 
   return (
     <div className="course-creation-form-container mt-4 mb-12">
