@@ -23,6 +23,10 @@ const Links = [
     title: "Blog",
   },
   {
+    path: "/CodePen",
+    title: "CodePen",
+  },
+  {
     path: "/ColorPicker",
     title: "Pick Color",
   },
